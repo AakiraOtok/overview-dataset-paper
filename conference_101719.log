@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.1)  12 JAN 2024 10:48
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.1)  12 JAN 2024 15:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -523,40 +523,63 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Font Info:    Calculating math sizes for size <11> on input line 38.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 38.
+LaTeX Font Info:    Calculating math sizes for size <11> on input line 36.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 36.
 
 
 (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 38.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 36.
 
 
 (c:/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for T5+pcr on input line 10
-7.
+<fig_info/fig1/Figure_1.png, id=1, 462.528pt x 346.896pt>
+File: fig_info/fig1/Figure_1.png Graphic file (type png)
+<use fig_info/fig1/Figure_1.png>
+Package pdftex.def Info: fig_info/fig1/Figure_1.png  used on input line 52.
+(pdftex.def)             Requested size: 252.0pt x 189.00427pt.
+
+
+! LaTeX Error: \caption outside float.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.53 	\caption
+              {Example of a figure.}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[1{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/202
+3/texmf-dist/fonts/enc/dvips/vntex/t5.enc}
+
+
+ <./fig_info/fig1/Figure_1.png>]
+LaTeX Font Info:    Trying to load font information for T5+pcr on input line 11
+3.
 
 (c:/texlive/2023/texmf-dist/tex/latex/vntex/t5pcr.fd
 File: t5ucr.fd 2005/08/24 Fontinst v1.929 font definitions for T5/pcr.
-) [1{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2
-023/texmf-dist/fonts/enc/dvips/vntex/t5.enc}
-
-
-]
-Underfull \hbox (badness 1540) in paragraph at lines 112--115
+)
+Underfull \hbox (badness 1540) in paragraph at lines 118--121
 []\T5/ptm/m/n/10 Please don't use the [][]\T5/pcr/m/n/10 {eqnarray} []\T5/ptm/m
 /n/10 equa-tion en-vi-ron-
  []
 
-<fig1.png, id=13, 82.1469pt x 71.5473pt>
+[2]
+
+LaTeX Warning: Reference `fig' on page 3 undefined on input line 198.
+
+<fig1.png, id=21, 82.1469pt x 71.5473pt>
 File: fig1.png Graphic file (type png)
 <use fig1.png>
-Package pdftex.def Info: fig1.png  used on input line 212.
+Package pdftex.def Info: fig1.png  used on input line 218.
 (pdftex.def)             Requested size: 82.14668pt x 71.5471pt.
-[2]
+[3 <./fig1.png (PNG copy)>]
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -568,20 +591,26 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[3 <./fig1.png (PNG copy)>] (./conference_101719.aux)
+[4
+
+] (./conference_101719.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2023-12-11>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
  ) 
 Here is how much of TeX's memory you used:
- 5611 strings out of 474175
- 86072 string characters out of 5749699
- 1948460 words of memory out of 5000000
- 27823 multiletter control sequences out of 15000+600000
+ 5624 strings out of 474175
+ 86434 string characters out of 5749699
+ 1946460 words of memory out of 5000000
+ 27836 multiletter control sequences out of 15000+600000
  689474 words of font info for 153 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 61i,11n,69p,661b,339s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 61i,11n,69p,1640b,339s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2023/texmf-dist/
@@ -591,10 +620,10 @@ vn/ucrr8v.pfb><c:/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmb8v.pfb><c
 :/texlive/2023/texmf-dist/fonts/type1/vntex/urwvn/utmbi8v.pfb><c:/texlive/2023/
 texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb><c:/texlive/2023/texmf-dist/fonts
 /type1/vntex/urwvn/utmri8v.pfb>
-Output written on conference_101719.pdf (3 pages, 142725 bytes).
+Output written on conference_101719.pdf (4 pages, 154460 bytes).
 PDF statistics:
- 66 PDF objects out of 1000 (max. 8388607)
- 39 compressed objects within 1 object stream
+ 72 PDF objects out of 1000 (max. 8388607)
+ 42 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
