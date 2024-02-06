@@ -62,8 +62,64 @@ H.~Kuehne, H.~Jhuang, E.~Garrote, T.~Poggio, and T.~Serre, ``Hmdb: A large
   video database for human motion recognition,'' in {\em 2011 International
   Conference on Computer Vision}, pp.~2556--2563, 2011.
 
+\bibitem{AVA}
+C.~Gu, C.~Sun, D.~A. Ross, C.~Vondrick, C.~Pantofaru, Y.~Li,
+  S.~Vijayanarasimhan, G.~Toderici, S.~Ricco, R.~Sukthankar, C.~Schmid, and
+  J.~Malik, ``Ava: A video dataset of spatio-temporally localized atomic visual
+  actions,'' 2018.
+
 \bibitem{UCF101}
 K.~Soomro, A.~R. Zamir, and M.~Shah, ``Ucf101: A dataset of 101 human actions
   classes from videos in the wild,'' 2012.
+
+\bibitem{Sports1M}
+A.~Karpathy, G.~Toderici, S.~Shetty, T.~Leung, R.~Sukthankar, and L.~Fei-Fei,
+  ``Large-scale video classification with convolutional neural networks,'' in
+  {\em CVPR}, 2014.
+
+\bibitem{YouTube8M}
+S.~Abu-El-Haija, N.~Kothari, J.~Lee, P.~Natsev, G.~Toderici, B.~Varadarajan,
+  and S.~Vijayanarasimhan, ``Youtube-8m: A large-scale video classification
+  benchmark,'' 2016.
+
+\bibitem{somethingsomething}
+R.~Goyal, S.~E. Kahou, V.~Michalski, J.~Materzyńska, S.~Westphal, H.~Kim,
+  V.~Haenel, I.~Fruend, P.~Yianilos, M.~Mueller-Freitag, F.~Hoppe, C.~Thurau,
+  I.~Bax, and R.~Memisevic, ``The "something something" video database for
+  learning and evaluating visual common sense,'' 2017.
+
+\bibitem{momentsintime}
+M.~Monfort, A.~Andonian, B.~Zhou, K.~Ramakrishnan, S.~A. Bargal, T.~Yan,
+  L.~Brown, Q.~Fan, D.~Gutfruend, C.~Vondrick, and A.~Oliva, ``Moments in time
+  dataset: one million videos for event understanding,'' 2019.
+
+\bibitem{ActivityNet}
+F.~C. Heilbron, V.~Escorcia, B.~Ghanem, and J.~C. Niebles, ``Activitynet: A
+  large-scale video benchmark for human activity understanding,'' in {\em 2015
+  IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pp.~961--970, 2015.
+
+\bibitem{THUMOS}
+H.~Idrees, A.~R. Zamir, Y.-G. Jiang, A.~Gorban, I.~Laptev, R.~Sukthankar, and
+  M.~Shah, ``The thumos challenge on action recognition for videos “in the
+  wild”,'' {\em Computer Vision and Image Understanding}, vol.~155,
+  p.~1–23, Feb. 2017.
+
+\bibitem{Charades}
+G.~A. Sigurdsson, G.~Varol, X.~Wang, A.~Farhadi, I.~Laptev, and A.~Gupta,
+  ``Hollywood in homes: Crowdsourcing data collection for activity
+  understanding,'' 2016.
+
+\bibitem{faster-rcnn}
+S.~Ren, K.~He, R.~Girshick, and J.~Sun, ``Faster r-cnn: Towards real-time
+  object detection with region proposal networks,'' 2016.
+
+\bibitem{personembedding}
+L.~Wu, C.~Shen, and A.~van~den Hengel, ``Personnet: Person re-identification
+  with deep convolutional neural networks,'' 2016.
+
+\bibitem{TheHungarian}
+H.~W. Kuhn, ``The hungarian method for the assignment problem,'' {\em Naval
+  Research Logistics (NRL)}, vol.~52, 1955.
 
 \end{thebibliography}
