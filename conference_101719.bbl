@@ -68,16 +68,6 @@ R.~Goyal, S.~E. Kahou, V.~Michalski, J.~Materzyńska, S.~Westphal, H.~Kim,
   I.~Bax, and R.~Memisevic, ``The "something something" video database for
   learning and evaluating visual common sense,'' 2017.
 
-\bibitem{AVA}
-C.~Gu, C.~Sun, D.~A. Ross, C.~Vondrick, C.~Pantofaru, Y.~Li,
-  S.~Vijayanarasimhan, G.~Toderici, S.~Ricco, R.~Sukthankar, C.~Schmid, and
-  J.~Malik, ``Ava: A video dataset of spatio-temporally localized atomic visual
-  actions,'' 2018.
-
-\bibitem{UCF101}
-K.~Soomro, A.~R. Zamir, and M.~Shah, ``Ucf101: A dataset of 101 human actions
-  classes from videos in the wild,'' 2012.
-
 \bibitem{Sports1M}
 A.~Karpathy, G.~Toderici, S.~Shetty, T.~Leung, R.~Sukthankar, and L.~Fei-Fei,
   ``Large-scale video classification with convolutional neural networks,'' in
@@ -87,6 +77,20 @@ A.~Karpathy, G.~Toderici, S.~Shetty, T.~Leung, R.~Sukthankar, and L.~Fei-Fei,
 S.~Abu-El-Haija, N.~Kothari, J.~Lee, P.~Natsev, G.~Toderici, B.~Varadarajan,
   and S.~Vijayanarasimhan, ``Youtube-8m: A large-scale video classification
   benchmark,'' 2016.
+
+\bibitem{Somethingv2}
+F.~Mahdisoltani, D.~F.~G. Berger, W.~Gharbieh, and R.~Memisevici, ``{On the
+  effectiveness of task granularity for transfer learning},'' 2018.
+
+\bibitem{AVA}
+C.~Gu, C.~Sun, D.~A. Ross, C.~Vondrick, C.~Pantofaru, Y.~Li,
+  S.~Vijayanarasimhan, G.~Toderici, S.~Ricco, R.~Sukthankar, C.~Schmid, and
+  J.~Malik, ``Ava: A video dataset of spatio-temporally localized atomic visual
+  actions,'' 2018.
+
+\bibitem{UCF101}
+K.~Soomro, A.~R. Zamir, and M.~Shah, ``Ucf101: A dataset of 101 human actions
+  classes from videos in the wild,'' 2012.
 
 \bibitem{momentsintime}
 M.~Monfort, A.~Andonian, B.~Zhou, K.~Ramakrishnan, S.~A. Bargal, T.~Yan,
