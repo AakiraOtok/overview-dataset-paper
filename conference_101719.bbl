@@ -62,6 +62,12 @@ H.~Kuehne, H.~Jhuang, E.~Garrote, T.~Poggio, and T.~Serre, ``Hmdb: A large
   video database for human motion recognition,'' in {\em 2011 International
   Conference on Computer Vision}, pp.~2556--2563, 2011.
 
+\bibitem{somethingsomething}
+R.~Goyal, S.~E. Kahou, V.~Michalski, J.~Materzyńska, S.~Westphal, H.~Kim,
+  V.~Haenel, I.~Fruend, P.~Yianilos, M.~Mueller-Freitag, F.~Hoppe, C.~Thurau,
+  I.~Bax, and R.~Memisevic, ``The "something something" video database for
+  learning and evaluating visual common sense,'' 2017.
+
 \bibitem{AVA}
 C.~Gu, C.~Sun, D.~A. Ross, C.~Vondrick, C.~Pantofaru, Y.~Li,
   S.~Vijayanarasimhan, G.~Toderici, S.~Ricco, R.~Sukthankar, C.~Schmid, and
@@ -81,12 +87,6 @@ A.~Karpathy, G.~Toderici, S.~Shetty, T.~Leung, R.~Sukthankar, and L.~Fei-Fei,
 S.~Abu-El-Haija, N.~Kothari, J.~Lee, P.~Natsev, G.~Toderici, B.~Varadarajan,
   and S.~Vijayanarasimhan, ``Youtube-8m: A large-scale video classification
   benchmark,'' 2016.
-
-\bibitem{somethingsomething}
-R.~Goyal, S.~E. Kahou, V.~Michalski, J.~Materzyńska, S.~Westphal, H.~Kim,
-  V.~Haenel, I.~Fruend, P.~Yianilos, M.~Mueller-Freitag, F.~Hoppe, C.~Thurau,
-  I.~Bax, and R.~Memisevic, ``The "something something" video database for
-  learning and evaluating visual common sense,'' 2017.
 
 \bibitem{momentsintime}
 M.~Monfort, A.~Andonian, B.~Zhou, K.~Ramakrishnan, S.~A. Bargal, T.~Yan,

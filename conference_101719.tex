@@ -321,7 +321,37 @@ IPL\_Awards\_Ceremony\_shake\_hands\_f\_cm\_np2\_ba\_med\_0.avi represents a
 video titled IPL Awards Ceremony, belonging to the shake hands class, with 'f'
 indicating full body, 'cm' indicating motion, 'np2' indicating two people, 'ba'
 representing back viewpoint, and 'med' indicating medium quality.
+\subsection{Something Something V2}
 
+\begin{itemize}
+	\item Year : 2017
+	\item Paper : The “something something” video database for learning and evaluating visual common sense
+	Actions \cite{somethingsomething}
+\end{itemize}
+
+\subsubsection{\textbf{Context and construction perspective}}
+
+The recent expansion of the Action Recognition dataset has led to a rapid increase in the number of videos available, particularly sourced from platforms like YouTube such as Sport-1M \cite{Sports1M} and Youtube-8M \cite{YouTube8M}. However, the model's work associated with these datasets still involves combining features extracted from frames, and therefore becoming a "set of image" classification task. That's the reason even these datasets empower models to infer numerous actions depicted in videos, they often lack the contextual understanding of how different actions correlate with each other. Consequently, when an action is combined with various objects, it can potentially mislead the model since it diverges from its learned associations. As an illustration, consider the action of "pointing to," which can result in two scenarios: "Pointing a finger" (Harmless) or "Pointing a knife to" (Dangerous). The objective of Something Something dataset is to address this particular problem.
+
+In the related paper \cite{somethingsomething}, Something V1 emphasizes detailed interactions between human actions and objects, aiming to provide fine-grained videos that reflect real-world aspects. Later, the V2 version was released and significantly increasing the number of videos and improving label quality.
+\subsubsection{Data collection methods}
+A group of workers from the crowdsourcing service Amazon Mechanical Turk (AMT) were asked to record and label clips. They recorded videos that demonstrated specific actions with the given labels. After the video is uploaded, it is divided into categories depends on its action, label, and object information. Afterward, they submitted the videos to an online platform, which underwent careful automatic quality checks. Each submission was then rechecked by other workers to make sure there is no mistaken.
+\subsubsection{Data distribution}
+In the newer V2 version, the number of videos has increased to 220,847 clips, which is twice the number in V1, while retaining the same set of labels totaling 174. Overall, there are 318,572 annotations, which involve 30,408 unique objects. The data is split into training, validation, and test sets with a ratio of 8:1:1. Additionally, measures are taken to ensure that videos created by a single actor are exclusively allocated to one of these three splits. 
+\begin{itemize}
+	\item Train : 168,913 clips
+	\item Validation : 24,777 clips
+	\item Test: 27,157 clips
+\end{itemize}
+\subsubsection{Annotation}
+
+An interesting aspect of this dataset is its provision of "sentence-like" information alongside the focus on human actions. This augmentation allows for descriptions of how actors interact with objects. For instance, a video featuring the phrasal verb's action "moving away" might be presented as: "Moving a bag of popcorn away from the camera". By integrating object names with actions, the dataset offers detailed action descriptions. 
+
+Due to the unique labeling approach using "natural language," conventional one-hot encoding methods are not applicable. Consequently, it is recommended that model should be first pretrain on ImageNet to enhance the capture of distinctive object characteristics.
+
+For videos in the training set marked by a unique ID, there is an annotated JSON file records detailed descriptions which includes Video IDs (containing only the training video's ID), completed labels (providing precise descriptions of the actor's actions), template categories (outlining the action skeleton), and placeholders (identifying objects used in the video).
+
+For example: {"id":"217769","label":"moving a bag of popcorn away from the camera","template":"Moving [something] away from the camera","placeholders":["a bag of popcorn"]}
 \subsection{AVA}
 
 \begin{itemize}
