@@ -62,16 +62,25 @@ H.~Kuehne, H.~Jhuang, E.~Garrote, T.~Poggio, and T.~Serre, ``Hmdb: A large
   video database for human motion recognition,'' in {\em 2011 International
   Conference on Computer Vision}, pp.~2556--2563, 2011.
 
+\bibitem{Sports1M}
+A.~Karpathy, G.~Toderici, S.~Shetty, T.~Leung, R.~Sukthankar, and L.~Fei-Fei,
+  ``Large-scale video classification with convolutional neural networks,'' in
+  {\em CVPR}, 2014.
+
+\bibitem{UCF101}
+K.~Soomro, A.~R. Zamir, and M.~Shah, ``Ucf101: A dataset of 101 human actions
+  classes from videos in the wild,'' 2012.
+
+\bibitem{AlexNet}
+A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton, ``Imagenet classification with
+  deep convolutional neural networks,'' {\em Commun. ACM}, vol.~60, p.~84–90,
+  may 2017.
+
 \bibitem{somethingsomething}
 R.~Goyal, S.~E. Kahou, V.~Michalski, J.~Materzyńska, S.~Westphal, H.~Kim,
   V.~Haenel, I.~Fruend, P.~Yianilos, M.~Mueller-Freitag, F.~Hoppe, C.~Thurau,
   I.~Bax, and R.~Memisevic, ``The "something something" video database for
   learning and evaluating visual common sense,'' 2017.
-
-\bibitem{Sports1M}
-A.~Karpathy, G.~Toderici, S.~Shetty, T.~Leung, R.~Sukthankar, and L.~Fei-Fei,
-  ``Large-scale video classification with convolutional neural networks,'' in
-  {\em CVPR}, 2014.
 
 \bibitem{YouTube8M}
 S.~Abu-El-Haija, N.~Kothari, J.~Lee, P.~Natsev, G.~Toderici, B.~Varadarajan,
@@ -87,10 +96,6 @@ C.~Gu, C.~Sun, D.~A. Ross, C.~Vondrick, C.~Pantofaru, Y.~Li,
   S.~Vijayanarasimhan, G.~Toderici, S.~Ricco, R.~Sukthankar, C.~Schmid, and
   J.~Malik, ``Ava: A video dataset of spatio-temporally localized atomic visual
   actions,'' 2018.
-
-\bibitem{UCF101}
-K.~Soomro, A.~R. Zamir, and M.~Shah, ``Ucf101: A dataset of 101 human actions
-  classes from videos in the wild,'' 2012.
 
 \bibitem{momentsintime}
 M.~Monfort, A.~Andonian, B.~Zhou, K.~Ramakrishnan, S.~A. Bargal, T.~Yan,

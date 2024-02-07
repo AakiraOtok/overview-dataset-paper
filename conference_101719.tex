@@ -8,6 +8,7 @@
 \usepackage{xcolor}
 \usepackage{tabularx,booktabs}
 \usepackage[utf8]{vietnam}
+\usepackage{hyperref}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
 		T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
@@ -329,10 +330,25 @@ representing back viewpoint, and 'med' indicating medium quality.
 	Actions \cite{Sports1M}
 \end{itemize}
 \subsubsection{\textbf{Context and construction perspective}}
-
+In recent years, the rapid growth of Artificial Intelligence has led to the evolution of image-related datasets. However, they were designed to satisfy old traditional Machine Learning methods, such as SVM \cite{HMDB51} \cite{UCF101}. This method is now prone to being left behind by the newborn CNNs method, whose effectiveness was proven by AlexNet \cite{AlexNet} in 2012. The problem arises concerning the equivalent metrics for those datasets. Therefore, a gigantic sports action dataset was developed to address this issue which is called Sports-1M.
 \subsubsection{Data collection methods}
+The videos are automatically collected from YouTube based on related sports tags. Subsequently, their associated links are stored in a text file for later download. Each clip ensures that the link is accessible before being saved.
 \subsubsection{Data distribution}
+The dataset contains 1,133,158 YouTube videos, covering a diverse range of content. There are 487 unique classes in the dataset, with each class 
+ranging from 1000 to 3000 videos. Notably, each video may be assigned multiple labels, indicating that a single video could have more than one annotation, accounting for approximately 5 \% of the dataset. The dataset is divided into training, validation, and testing sets in a 7:1:2 ratio, respectively.
+\begin{itemize}
+	\item Train and Validation : 914,491 clips
+	\item Test: 218,667 clips
+\end{itemize}
 \subsubsection{Annotation}
+The annotation process was performed automatically by a special machine algorithm. It follows the rule of analyzing the text metadata around the dataset and finding correlations to its labels. First, it identifies associated videos with pre-defined tags and then uses weakly supervised learning to structure the categories into hierarchical levels. For example, in the node "Ball Sports," it can include "freestyle football" and "ball hockey."
+
+Despite the automatic process of acquiring and annotating videos, the portion of duplicated frames are tiny (1755 out of more than 1 million clips). This is primarily attributed to the variability of frames within individual videos. Additionally, variations in actions may happened due to external factors such as camera angles or viewing distances.
+
+Each label describes in detail the associated sports. Therefore, numerous unique and rarely seen sports are also found here.
+For example, a line containing a link and labels is found in the training set: \\
+\url{https://www.youtube.com/watch?v=BWYPOToJu24} 436,431 \\
+The number "436" and "431" indicate its labels in order of "akido" and "grappling"
 \subsection{Something Something V2}
 
 \begin{itemize}
