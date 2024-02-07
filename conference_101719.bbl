@@ -122,4 +122,16 @@ L.~Wu, C.~Shen, and A.~van~den Hengel, ``Personnet: Person re-identification
 H.~W. Kuhn, ``The hungarian method for the assignment problem,'' {\em Naval
   Research Logistics (NRL)}, vol.~52, 1955.
 
+\bibitem{HACS}
+H.~Zhao, A.~Torralba, L.~Torresani, and Z.~Yan, ``Hacs: Human action clips and
+  segments dataset for recognition and temporal localization,'' 2019.
+
+\bibitem{HVU}
+A.~Diba, M.~Fayyaz, V.~Sharma, M.~Paluri, J.~Gall, R.~Stiefelhagen, and L.~V.
+  Gool, ``Large scale holistic video understanding,'' 2020.
+
+\bibitem{AViD}
+A.~Piergiovanni and M.~S. Ryoo, ``Avid dataset: Anonymized videos from diverse
+  countries,'' 2020.
+
 \end{thebibliography}

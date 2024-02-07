@@ -404,6 +404,125 @@ The format of a row is the following: video\_id, middle\_frame\_timestamp, perso
 	\item person\_id: a unique integer that allows linking this box to other boxes depicting the same person in adjacent frames of the video.
 \end{itemize}
 
+\subsection{Moments in Time}
+
+\begin{itemize}
+	\item Year : 2019
+	\item Paper : Moments in Time Dataset: one million videos for event understanding \cite{momentsintime}
+\end{itemize}
+
+\subsubsection{Context and construction perspective} 
+The authors want to create a high-coverage, highdensity, balanced dataset of hundreds of verbs depicting moments of a few seconds. To ensure top-notch data quality, datasets should encompass a wide range of topics, exhibit substantial sample diversity and density, and possess the capability to scale effectively.
+
+\subsubsection{Data collection methods}
+
+The construction of the Moments in Time dataset involves three main steps : Building a Vocabulary of Active Moments, Collection and Annotation.
+
+\begin{itemize}
+	\item \textbf{Building a Vocabulary of Active Moments} : Retrieve the 4,500 most commonly used verbs from VerbNet, then perform clustering and select the most frequently used words from each cluster. Once a word is chosen, it is removed from all clusters to which it belongs. This process yields a result of 339 frequently used and semantically diverse verbs.
+	
+	\item \textbf{Collection data} : Authors conduct an Internet search by analyzing video metadata and crawling search engines from variety of different sources (Youtube, Flickr, Vine, Metacafe, Peeks, Vimeo, VideoBlocks, Bing, Giphy, The Weather Channel, and Getty-Images) to build a list of candidate videos for each class in the vocabulary. Each video will be randomly cut a 3-second section corresponding verb. 
+	
+	\item \textbf{Annotation} : Each AMT worker is presented with a video-verb pair and asked to press a Yes or No key signifying if the action is happening in the scene. Positive responses from the first round are sent to subsequent rounds of annotation. Each HIT (a single worker assignment) contains 64 different 3-second videos that are related to a single verb and 10 ground truth videos that are used for control. In each HIT, the first 4 questions are used to train the workers on the task and require the correct answer to be selected before continuing. Only the results from HITs that earn a 90\% or above on the control videos are included in the dataset. The authors run each video in the training set through annotation at least 3 times and require a human consensus of at least 75\% to be considered a positive label. For the validation and test set we increase the minimum number of rounds of annotation to 4 with a human consensus of at least 85\%.
+	
+\end{itemize}
+
+\subsubsection{Data distribution}
+\subsubsection{Annotation}
+
+\subsection{HACS}
+
+\begin{itemize}
+	\item Year : 2019
+	\item Paper : HACS: Human Action Clips and Segments Dataset for Recognition and Temporal Localization \cite{HACS}.
+\end{itemize}
+
+\subsubsection{Context and construction perspective}
+
+Recent advancements in computer vision have been propelled by the increasing size of datasets. For image categorization, datasets have expanded significantly in just a few years. Caltech101, with only 9.1K examples, was quickly surpassed by the ImageNet dataset, which now boasts over 1.2M examples. Object detection has seen a similar trend, with Pascal VOC starting at 1.6K examples and the COCO dataset currently containing 200K images and 500K object-instance annotations. In the video domain, action recognition datasets have also experienced substantial growth. Older benchmarks like HMDB51, UCF101, and Hollywood2 consisted of only a few thousand examples, but newer datasets like Sports1M, Kinetics, and Moments-in-Time contain significantly more videos. However, the growth in action localization datasets has been limited. THUMOS, ActivityNet, AVA, and Charades, while valuable, do not possess comparable dataset sizes. To address this gap, the authors introduce a new video benchmark called Human Action Clips and Segments (HACS), motivated by the need for large-scale action datasets. HACS aims to provide a comprehensive dataset for action localization, facilitating the exploration of more advanced models in this domain.
+\subsubsection{Data collection methods}
+
+The authors employed 200 action labels (which is identical to that of the ActivityNet-v1.3 dataset) to search the YouTube video search engine, resulting in the retrieval of 890K potentially relevant videos. The number of videos per action class varied from 1100 to 6600. To ensure dataset quality, two types of de-duplication were performed. Firstly, duplicate videos within the HACS dataset were eliminated. Secondly, to ensure fair evaluation on other benchmarks, videos that overlapped with samples in the validation or test sets of datasets such as Kinetics, ActivityNet, UCF-101, and HMDB-51 were also removed. The authors observed that manually annotating the start and end of action segments in untrimmed videos is time-consuming. Therefore, they propose sampling short clips from the videos. They experimented with three different sampling methods and selected the best-performing one. Subsequently, the selected samples are annotated.
+\subsubsection{Data distribution}
+
+HACS dataset utilizes a taxonomy consisting of 200 action classes, which aligns with the ActivityNet-v1.3 dataset. It comprises a total of 504K videos obtained from YouTube, with each video strictly shorter than 4 minutes, and an average length of 2.6 minutes. The dataset includes 1.5M clips, each lasting 2 seconds, which are sparsely sampled using a combination of uniform randomness and consensus/disagreement of image classifiers. Among these clips, 0.6M are annotated as positive samples, while 0.9M are labeled as negative samples.
+
+\begin{itemize}
+	
+	\item \textbf{HACS Clips} : The dataset is divided into training, validation, and testing sets. The training set consists of 1.4M clips sampled from 492K videos, while the validation and testing sets contain 50K clips each, sampled from 6K videos .
+
+	\item \textbf{HACS Segments} : For a subset of 50K videos (38K for training, 6K for validation, and 6K for testing), manual boundaries are collected to define the start, end, and action label of each action segment within the video. It is ensured that all videos in this subset contain at least one action segment.
+
+\end{itemize}
+
+\subsubsection{Annotation}  
+
+There are two annotation files available for HACS Clips and HACS Segments. The file structure is explained in Figure \ref{fig:untitled-diagram4}, where the label section has values of 1 and -1 corresponding to positive and negative samples, respectively.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"fig_info/fig4/Untitled Diagram.drawio"}
+	\caption{}
+	\label{fig:untitled-diagram4}
+\end{figure}
+
+\subsection{HVU}
+
+\begin{itemize}
+	\item Year : 2020.
+	\item Paper : Large Scale Holistic Video Understanding \cite{HVU}.
+\end{itemize}
+
+\subsubsection{Context and construction perspective}
+
+The authors argue that training ConvNets to understand videos with a single label is insufficient to describe the content and hinders the learning of ConvNets. Furthermore, existing datasets also lack in this aspect. Recognizing this, the authors propose HVU - a dataset aiming to provide a multi-label and multi-task large-scale video benchmark with a comprehensive list of tasks and annotations for video analysis and understanding.
+
+\subsubsection{Data collection methods}
+
+\begin{itemize}
+
+	\item \textbf{Data collection} : They utilize existing video sources such as YouTube-8M, Kinetics-600, and HACS. By using these datasets as sources, they can avoid copyright issues and ensure that none of the test videos from existing datasets are included in the training set of HVU. 
+
+	\item\textbf{Anotation} : The authors employ a two-stage framework for the annotation process in HVU. In the first stage, they utilize the Google Vision API and Sensifai Video Tagging API to obtain rough annotations for the videos. These APIs predict around 30 tags per video, with a relatively low probability threshold (around 30\%) to avoid false rejects of tags. The selected tags are chosen from a dictionary of nearly 8,000 words, resulting in approximately 18 million tags for the entire dataset. In the second stage, human verification is applied to remove any potentially mislabeled noisy tags and add any missing tags that were not captured by the APIs. This involves reviewing and correcting the annotations based on human judgment. As a result, the human annotation step produces approximately 9 million tags for the entire dataset, encompassing around 3,500 different tags. This two-stage annotation process helps improve the accuracy and quality of the annotations in the HVU dataset.
+\end{itemize}
+
+\subsubsection{Data distribution}
+
+The HVU dataset comprises a total of 572k videos. These videos are divided into different sets, with 481k video clips in the training set, 31k clips in the validation set, and 65k clips in the test set. The dataset consists of trimmed video clips, where the duration of the videos varies, with a maximum length of 10 seconds. HVU does not solely rely on a single action class but instead includes multiple tags. It is organized into six main categories, which are scene, object, action, event, attribute, and concept. The dataset consists of a total of 3,143 tags.
+
+\subsubsection{Annotation}
+
+HVU provides three annotation files. One file contains tags along with their respective categories. The other two files, namely train and val, have the same structure (see fig \ref{fig:untitled-diagram5}), including columns for Tags, youtube\_id, time\_start, and time\_end. To access the test video and missing videos, it is necessary to fill out a form available on the author's official GitHub page.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"fig_info/fig5/Untitled Diagram.drawio"}
+	\caption{}
+	\label{fig:untitled-diagram5}
+\end{figure}
+
+\subsection{AViD}
+
+\begin{itemize}
+	\item Year : 2020
+	\item Paper : AViD Dataset: Anonymized Videos from Diverse Countries \cite{AViD}
+\end{itemize}
+
+\subsubsection{Context and construction perspective}
+\subsubsection{Data collection methods}
+\subsubsection{Data distribution}
+\subsubsection{Annotation}
+
+\begin{itemize}
+	\item Year : 
+	\item Paper : 
+\end{itemize}
+
+\subsubsection{Context and construction perspective}
+\subsubsection{Data collection methods}
+\subsubsection{Data distribution}
+\subsubsection{Annotation}
+
 \bibliographystyle{ieeetr}
 \bibliography{references.bib}
 
