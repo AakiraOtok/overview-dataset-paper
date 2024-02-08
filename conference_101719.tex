@@ -109,9 +109,9 @@ Having a general understanding of the history and context will help readers
 understand why datasets have their limitations and continue to evolve over the
 years.
 
-In section III, we will list the datasets in the order of their publication time
-(measured from the time the accompanying paper is published). Each dataset will
-include four pieces of information presented in the following order: "Context
+In section III, we list the datasets in the order of their publication time
+(measured from the time the accompanying paper is published). Each dataset
+includes four sections presented in the following order: "Context
 and Construction Perspective of the Dataset," "Annotations," "Dataset
 Distribution," and "Data Collection Methods." If some information is not
 provided by the authors in the original paper, it will be left blank or omitted.
@@ -257,7 +257,7 @@ of significantly enhance the evaluation and future utilization of recognition
 systems in real life. 
 
 \subsubsection{\textbf{Data collection methods}}
-A group of student is asked to collect and annotate any segment which represents
+A group of student was asked to collect and annotate any segment which represents
 a single non-ambiguous human action from videos. The videos are sourced from
 digitized movies, public databases like the Prelinger archive, additional online
 videos, as well as content from YouTube, Google videos and other videos from
@@ -276,7 +276,7 @@ category having at least 101 clips.
 \end{itemize}
 
 The authors generated three distinct training/testing split follow above rule,
-ensure that no test clip also train clip.
+ensure that no test clip is also not in train clip.
 
 \subsubsection{\textbf{Annotations}}
 
@@ -287,8 +287,8 @@ ensure that no test clip also train clip.
 	\label{fig:untitled-diagram}
 \end{figure}
 
-For each class, there will be 3 split files as mentioned above. Each file will
-include the names of all the videos in the same class along with an index
+For each class, there is 3 split files as mentioned above. Each file
+includes the names of all the videos in the same class along with an index
 belonging to $\lbrace 0, 1, 2 \rbrace$ as shown in Figure
 \ref{fig:untitled-diagram}. The file used for training is indexed as 1, for
 testing it is 2, and 0 indicates that it is not used in this split.
@@ -322,6 +322,42 @@ IPL\_Awards\_Ceremony\_shake\_hands\_f\_cm\_np2\_ba\_med\_0.avi represents a
 video titled IPL Awards Ceremony, belonging to the shake hands class, with 'f'
 indicating full body, 'cm' indicating motion, 'np2' indicating two people, 'ba'
 representing back viewpoint, and 'med' indicating medium quality.
+\subsection{UCF-101}
+
+\begin{itemize}
+	\item Year : 2012
+	\item Paper : UCF101: A Dataset of 101 Human Actions Classes From Videos in The Wild
+	Actions \cite{UCF101}
+\end{itemize}
+
+\subsubsection{\textbf{Context and construction perspective}}
+In the past, Action Recognition datasets are made artificially and often involving actors performing various actions in controlled environments. Consequently, traditional action recognition datasets often suffer from the lack of realistic context, which poses challenges for effectively addressing real-world problems. Therefore, the UCF-50 was initially introduced with the primary aim of addressing this issue through the incorporation of real-life videos which reflect the diversity of human actions represented in real-world scenarios.
+
+Serving as an extension of the UCF50 dataset, UCF101 retained the original 50 action classes from its predecessor while introducing an additional 51 new classes. The aim was to refine and expand the range of actions captured in the dataset, contributing to a more comprehensive understanding of human activities.
+
+Among the UCF family of action datasets, there are four version: UCFSports \cite{UCFSports}, UCF11 \cite{UCFSports}, UCF50, and UCF101. Of these, the dataset being referred to is the largest and most iconic.
+\subsubsection{Data collection methods}
+The videos in the dataset are primarily sourced from YouTube. Researchers begin by conducting searches related to the desired action categories. After that, they undergo the preprocess and then annotation procedures on the identified videos. Beside, these videos are selected to keep up various aspects such as camera angles, motion, spectator viewpoint, external conditions, object interactions, contextual backgrounds, and more.
+\subsubsection{Data distribution}
+The dataset contains of 13,320 video demonstrating of 101 actions. Each clip has a resolution of 320x240 pixels at 25 FPS. 
+
+Beside, this dataset is also include audio data for 50 action classes, providing valuable supplementary information to the videos. In each clip, it is separated into various variants of itself, such as reducing or increasing the length or adding audio called augmented group. These variations aid the model in learning both similarities and differences between classes.
+
+The train/test split uses the same method as mentioned above for HMDB51 which divided into three independent sets. Each split is carefully chosen to ensure the minimal correlation between them.
+\begin{itemize}
+	\item Train : for each action, 70 random clips are used.
+	\item Validation : no validation set.
+	\item Test : for each action, 30 random clips are used. 
+\end{itemize} 
+
+\subsubsection{Annotation}
+In the related paper, actions are split into action groups depending on their purpose: \textit{Human-Object Interaction, Body-Motion Only, Human-Human Interaction, Playing Musical Instruments, Sports}. The portion of each groups are shown the figure below:
+
+In the provided Figure *b*, the Sport group significantly dominates the entire dataset. As the author mentions, the distinctive motions which related to sports tend to achieve higher accuracy than others action groups when applying the SVM classisfication technique.
+
+Within each set, there exist both training and testing components. Each file contains a list of video names utilized for the proposed purpose. These video names following to a specific rule in order of: \textit{action class}, \textit{augmented group}, and \textit{clip number}. 
+
+For example, \textit{v\_PlayingGuitar\_g25\_c07} indicates the clip number \textbf{07} shows up the action \textbf{Playing Guitar} in the augmented group \textbf{25}.
 \subsection{Sport-1M}
 
 \begin{itemize}
