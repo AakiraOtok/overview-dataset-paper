@@ -387,6 +387,58 @@ Each label describes in detail the associated sports. Therefore, numerous unique
 For example, a line containing a link and labels is found in the training set: \\
 \url{https://www.youtube.com/watch?v=BWYPOToJu24} 436,431 \\
 The number "436" and "431" indicate its labels in order of "akido" and "grappling"
+
+\subsection{ActivityNet}
+
+\begin{itemize}
+	\item Year : 2015
+	\item Paper : ActivityNet: A Large-Scale Video Benchmark for Human Activity Understanding
+	Actions \cite{ActivityNet}
+\end{itemize}
+\subsubsection{Context and construction perspective}
+Although various action recognition datasets have been released in recent times, only a small portion of them focus on daily activities. For instance, datasets like UCF101 \cite{UCF101} and THUMOS 14 \cite{THUMOS} have their own category distributions, but they lack detailed organization and depth of levels, which limits the amount of information they provide. Therefore, ActivityNet is introduced to offer a solution with a large-scale dataset that provides a high level of specificity for human daily life in a hierarchical structure.
+\subsubsection{Data collection methods}
+According to the related paper, the data collection method follows three steps:
+\begin{itemize}
+	\item \textbf{Internet's data gathering:} Due to the abundance of videos available on the Internet, text based queries are used to filter out the relevant videos.
+	\item \textbf{Confirming the labels of untrimmed videos:} AMT workers verified those clips to determine whether they actually contain the action with the related label. As a result, untrimmed videos would be associated with at least one ground truth label.
+	\item \textbf{Annotating videos in the hierarchical structure}: The AMT workers then proceed to trim each video to include only one activity. Afterwards, the trimmed videos are rechecked by others to ensure the required quality
+\end{itemize}
+\subsubsection{Data distribution}
+It contains 849 hours from 27,801 videos of indoor actions with a total of 68.8 hours that appear 203 human-centric activities. Most of the videos have lengths ranging from 5 to 10 minutes at 30 FPS. Additionally, more than half of them have HD resolution quality (1280x720). The training, validation, and testing sets follow a split of 5:2.5:2.5 proportions.
+\begin{itemize}
+	\item Train : 10,024 videos
+	\item Validation : 4,926 videos
+	\item Test: 5,044 videos 
+\end{itemize}
+\subsubsection{Annotation}
+ActivityNet activities follows a hierarchical structure which referred as "roots." These roots different areas of human behavior including: \textit{Personal Care}, \textit{Eating and Drinking}, \textit{Household}, \textit{Caring and Helping}, \textit{Working}, \textit{Socializing and Leisure}, and \textit{Sports and Exercises}. Within each root category, there are more specific nodes that provide additional granularity. Finally, at the leaves, the dataset provides ground truth labels for individual activities. This hierarchical organization allows for a detailed understanding of the diverse range of behaviors captured in this dataset.
+
+The annotation process divided into two different parts: \textit{label part} and \textit{link part}. 
+
+The \textit{label part} provides the following:  
+\dirtree{%
+	.1 Taxonomy.
+	.2 Parent name.
+	.2 Node name.
+	.2 Node ID.
+	.2 Parent ID.
+}
+
+Node ID and Parent ID have a close relationship to define where the node is in the hierarchy
+
+The \textit{link part} provides the following:
+\dirtree{%
+	.1 Database.
+	.2 Youtube ID.
+	.3 Duration.
+	.3 Subset.
+	.3 Resolution.
+	.3 URL.
+	.3 Annotations.
+	.4 Segment.
+	.4 Label.
+}
 \subsection{Something Something V2}
 
 \begin{itemize}
