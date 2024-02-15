@@ -62,14 +62,14 @@ H.~Kuehne, H.~Jhuang, E.~Garrote, T.~Poggio, and T.~Serre, ``Hmdb: A large
   video database for human motion recognition,'' in {\em 2011 International
   Conference on Computer Vision}, pp.~2556--2563, 2011.
 
+\bibitem{UCF101}
+K.~Soomro, A.~R. Zamir, and M.~Shah, ``Ucf101: A dataset of 101 human actions
+  classes from videos in the wild,'' 2012.
+
 \bibitem{Sports1M}
 A.~Karpathy, G.~Toderici, S.~Shetty, T.~Leung, R.~Sukthankar, and L.~Fei-Fei,
   ``Large-scale video classification with convolutional neural networks,'' in
   {\em CVPR}, 2014.
-
-\bibitem{UCF101}
-K.~Soomro, A.~R. Zamir, and M.~Shah, ``Ucf101: A dataset of 101 human actions
-  classes from videos in the wild,'' 2012.
 
 \bibitem{AlexNet}
 A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton, ``Imagenet classification with
@@ -142,5 +142,9 @@ A.~Diba, M.~Fayyaz, V.~Sharma, M.~Paluri, J.~Gall, R.~Stiefelhagen, and L.~V.
 \bibitem{AViD}
 A.~Piergiovanni and M.~S. Ryoo, ``Avid dataset: Anonymized videos from diverse
   countries,'' 2020.
+
+\bibitem{NTURGB+D}
+A.~Shahroudy, J.~Liu, T.-T. Ng, and G.~Wang, ``Ntu rgb+d: A large scale dataset
+  for 3d human activity analysis,'' 2016.
 
 \end{thebibliography}

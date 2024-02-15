@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.16)  8 FEB 2024 14:00
-=======
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.22)  8 FEB 2024 12:33
->>>>>>> 1a20a712481fe56a4515adbdda4d2344335f8a6d
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.16)  13 FEB 2024 22:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -604,113 +600,118 @@ LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 4
 
 (c:/texlive/2023/texmf-dist/tex/latex/vntex/t5cmtt.fd
 File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-Underfull \hbox (badness 10000) in paragraph at lines 51--56
+) (./conference_101719.toc [1
+
+{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2])
+\tf@toc=\write4
+\openout4 = `conference_101719.toc'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 53--58
 
  []
 
-[1
-
-<<<<<<< HEAD
-{c:/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2{c:/texlive/2
-023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<fig_info/fig1/ILSVRCChampionTeamOvertheYears.png, id=213, 395.076pt x 251.0178
-=======
-{C:/Users/ADMIN/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] [2]
-<fig_info/fig1/ILSVRCChampionTeamOvertheYears.png, id=135, 395.076pt x 251.0178
->>>>>>> 1a20a712481fe56a4515adbdda4d2344335f8a6d
+[3] [4{c:/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
+<fig_info/fig1/ILSVRCChampionTeamOvertheYears.png, id=428, 395.076pt x 251.0178
 pt>
 File: fig_info/fig1/ILSVRCChampionTeamOvertheYears.png Graphic file (type png)
 <use fig_info/fig1/ILSVRCChampionTeamOvertheYears.png>
 Package pdftex.def Info: fig_info/fig1/ILSVRCChampionTeamOvertheYears.png  used
- on input line 143.
+ on input line 145.
 (pdftex.def)             Requested size: 345.0pt x 219.20721pt.
-<<<<<<< HEAD
- [3 <./fig_info/fig1/ILSVRCChampionTeamOvertheYears.png>] [4] [5]
-<fig_info/fig2/Untitled Diagram.drawio.png, id=256, 6649.84375pt x 2188.175pt>
-=======
 
-[3 <./fig_info/fig1/ILSVRCChampionTeamOvertheYears.png>] [4] [5]
-<fig_info/fig2/Untitled Diagram.drawio.png, id=178, 6649.84375pt x 2188.175pt>
->>>>>>> 1a20a712481fe56a4515adbdda4d2344335f8a6d
+[5 <./fig_info/fig1/ILSVRCChampionTeamOvertheYears.png>] [6] [7]
+<fig_info/fig2/Untitled Diagram.drawio.png, id=469, 6649.84375pt x 2188.175pt>
 File: fig_info/fig2/Untitled Diagram.drawio.png Graphic file (type png)
 <use fig_info/fig2/Untitled Diagram.drawio.png>
 Package pdftex.def Info: fig_info/fig2/Untitled Diagram.drawio.png  used on inp
-ut line 285.
+ut line 287.
 (pdftex.def)             Requested size: 345.0pt x 113.52197pt.
 
-Overfull \hbox (83.82904pt too wide) in paragraph at lines 299--314
+Overfull \hbox (83.82904pt too wide) in paragraph at lines 301--316
  [][][] 
  []
 
 
-Overfull \hbox (80.86823pt too wide) in paragraph at lines 316--325
+Overfull \hbox (80.86823pt too wide) in paragraph at lines 318--327
 [] 
  []
 
 
-Overfull \hbox (55.56996pt too wide) in paragraph at lines 316--325
+Overfull \hbox (55.56996pt too wide) in paragraph at lines 318--327
 \T5/cmr/m/n/10 For ex-am-ple, the name IPL_Awards_Ceremony_shake_hands_f_cm_np2
 _ba_med_0.avi
  []
 
-<<<<<<< HEAD
-[6 <./fig_info/fig2/Untitled Diagram.drawio.png>] [7] [8] [9] [10]
-<fig_info/fig3/Untitled Diagram.drawio.png, id=324, 5405.19376pt x 3658.66875pt
-=======
-[6 <./fig_info/fig2/Untitled Diagram.drawio.png>] [7] [8] [9] [10] [11]
-[12]
-<fig_info/fig3/Untitled Diagram.drawio.png, id=260, 5405.19376pt x 3658.66875pt
->>>>>>> 1a20a712481fe56a4515adbdda4d2344335f8a6d
+[8 <./fig_info/fig2/Untitled Diagram.drawio.png>] [9] [10] [11] [12] [13]
+[14]
+<fig_info/fig3/Untitled Diagram.drawio.png, id=552, 5405.19376pt x 3658.66875pt
 >
 File: fig_info/fig3/Untitled Diagram.drawio.png Graphic file (type png)
 <use fig_info/fig3/Untitled Diagram.drawio.png>
 Package pdftex.def Info: fig_info/fig3/Untitled Diagram.drawio.png  used on inp
-ut line 495.
+ut line 497.
 (pdftex.def)             Requested size: 241.49895pt x 163.46063pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 500--501
+Underfull \hbox (badness 10000) in paragraph at lines 502--503
 
  []
 
-<<<<<<< HEAD
-[11] [12 <./fig_info/fig3/Untitled Diagram.drawio.png>] [13]
-Overfull \hbox (17.6059pt too wide) in paragraph at lines 513--514
+[15 <./fig_info/fig3/Untitled Diagram.drawio.png>] [16] [17]
+Overfull \hbox (17.6059pt too wide) in paragraph at lines 551--552
 \T5/cmr/m/n/10 The au-thors em-ployed 200 ac-tion la-bels (which is iden-ti-cal
  to that of the ActivityNet-
  []
 
-[14]
-<fig_info/fig4/Untitled Diagram.drawio.png, id=355, 4797.925pt x 3718.89375pt>
+<fig_info/fig4/Untitled Diagram.drawio.png, id=574, 4797.925pt x 3718.89375pt>
 File: fig_info/fig4/Untitled Diagram.drawio.png Graphic file (type png)
 <use fig_info/fig4/Untitled Diagram.drawio.png>
 Package pdftex.def Info: fig_info/fig4/Untitled Diagram.drawio.png  used on inp
-ut line 532.
+ut line 570.
 (pdftex.def)             Requested size: 241.49895pt x 187.14723pt.
- [15 <./fig_info/fig4/Untitled Diagram.drawio.png>]
-<fig_info/fig5/Untitled Diagram.drawio.png, id=365, 8993.6pt x 2087.8pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[18] [19 <./fig_info/fig4/Untitled Diagram.drawio.png>]
+<fig_info/fig5/Untitled Diagram.drawio.png, id=589, 8993.6pt x 2087.8pt>
 File: fig_info/fig5/Untitled Diagram.drawio.png Graphic file (type png)
 <use fig_info/fig5/Untitled Diagram.drawio.png>
 Package pdftex.def Info: fig_info/fig5/Untitled Diagram.drawio.png  used on inp
-ut line 567.
+ut line 605.
 (pdftex.def)             Requested size: 241.49895pt x 56.03685pt.
+ [20 <./fig_info/fig5/Untitled Diagram.drawio.png>]
+<fig_info/fig6/Screenshot 2024-02-13 022922.png, id=599, 1138.2525pt x 202.9582
+5pt>
+File: fig_info/fig6/Screenshot 2024-02-13 022922.png Graphic file (type png)
+<use fig_info/fig6/Screenshot 2024-02-13 022922.png>
+Package pdftex.def Info: fig_info/fig6/Screenshot 2024-02-13 022922.png  used o
+n input line 652.
+(pdftex.def)             Requested size: 241.49895pt x 43.05914pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[16] (./conference_101719.bbl [17 <./fig_info/fig5/Untitled Diagram.drawio.png>
-] [18]) [19] (./conference_101719.aux)
+[21] [22 <./fig_info/fig6/Screenshot 2024-02-13 022922.png>] [23]
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 755.
+
+
+Package hyperref Warning: Difference (2) between bookmark levels is greater 
+(hyperref)                than one, level fixed on input line 773.
+
+(./conference_101719.bbl [24] [25] [26]) [27] (./conference_101719.aux)
 Package rerunfilecheck Info: File `conference_101719.out' has not changed.
-(rerunfilecheck)             Checksum: 61F83989101117F49FFD197D25BD42A9;7600.
+(rerunfilecheck)             Checksum: B5CDDFD33D542ED428DE24BA10178A97;12541.
  ) 
 Here is how much of TeX's memory you used:
- 11343 strings out of 476025
- 173586 string characters out of 5794015
- 1862382 words of memory out of 5000000
- 31505 multiletter control sequences out of 15000+600000
+ 11437 strings out of 476025
+ 175626 string characters out of 5794015
+ 1868382 words of memory out of 5000000
+ 31552 multiletter control sequences out of 15000+600000
  529508 words of font info for 72 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,76p,1278b,557s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,8n,76p,1278b,556s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/tex
 live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2023/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2023/texmf-dist/
@@ -724,50 +725,10 @@ c:/texlive/2023/texmf-dist/fonts/type1/vntex/vnr/vnr9.pfb><c:/texlive/2023/texm
 f-dist/fonts/type1/vntex/vnr/vnti10.pfb><c:/texlive/2023/texmf-dist/fonts/type1
 /vntex/vnr/vntt10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/vntex/vnr/vntt9.p
 fb>
-Output written on conference_101719.pdf (19 pages, 8752276 bytes).
+Output written on conference_101719.pdf (27 pages, 8845439 bytes).
 PDF statistics:
- 478 PDF objects out of 1000 (max. 8388607)
- 412 compressed objects within 5 object streams
- 104 named destinations out of 1000 (max. 500000)
- 402 words of extra memory for PDF output out of 10000 (max. 10000000)
-=======
-[13 <./fig_info/fig3/Untitled Diagram.drawio.png>] (conference_101719.bbl
-[14] [15]) [16] (conference_101719.aux)
- ***********
-LaTeX2e <2023-11-01> patch level 1
-L3 programming layer <2024-01-04>
- ***********
-Package rerunfilecheck Info: File `conference_101719.out' has not changed.
-(rerunfilecheck)             Checksum: 06D2432F57D3AE39B322CE5B2EE09068;4445.
- ) 
-Here is how much of TeX's memory you used:
- 11477 strings out of 474486
- 175347 string characters out of 5743755
- 1937542 words of memory out of 5000000
- 33510 multiletter control sequences out of 15000+600000
- 575290 words of font info for 76 fonts, out of 8000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 75i,8n,79p,940b,559s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\ADMIN\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
-1000.pk><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmmi10.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/publ
-ic/amsfonts/cm/cmr10.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/ty
-pe1/public/amsfonts/cm/cmr7.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ADMIN/AppData/Local/Programs
-/MiKTeX/fonts/type1/vntex/vnr/vnbx10.pfb><C:/Users/ADMIN/AppData/Local/Programs
-/MiKTeX/fonts/type1/vntex/vnr/vnbx12.pfb><C:/Users/ADMIN/AppData/Local/Programs
-/MiKTeX/fonts/type1/vntex/vnr/vnbx9.pfb><C:/Users/ADMIN/AppData/Local/Programs/
-MiKTeX/fonts/type1/vntex/vnr/vnr10.pfb><C:/Users/ADMIN/AppData/Local/Programs/M
-iKTeX/fonts/type1/vntex/vnr/vnr12.pfb><C:/Users/ADMIN/AppData/Local/Programs/Mi
-KTeX/fonts/type1/vntex/vnr/vnr17.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiK
-TeX/fonts/type1/vntex/vnr/vnr9.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTe
-X/fonts/type1/vntex/vnr/vnti10.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTe
-X/fonts/type1/vntex/vnr/vntt10.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTe
-X/fonts/type1/vntex/vnr/vntt9.pfb>
-Output written on conference_101719.pdf (16 pages, 5442293 bytes).
-PDF statistics:
- 365 PDF objects out of 1000 (max. 8388607)
- 77 named destinations out of 1000 (max. 500000)
- 240 words of extra memory for PDF output out of 10000 (max. 10000000)
->>>>>>> 1a20a712481fe56a4515adbdda4d2344335f8a6d
+ 735 PDF objects out of 1000 (max. 8388607)
+ 657 compressed objects within 7 object streams
+ 146 named destinations out of 1000 (max. 500000)
+ 655 words of extra memory for PDF output out of 10000 (max. 10000000)
 

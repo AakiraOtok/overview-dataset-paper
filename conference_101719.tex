@@ -47,6 +47,8 @@
 }
 \maketitle
 
+\tableofcontents
+
 \begin{abstract}
 	In this article, we provide a summary and an overview of the datasets used in
 	the task of action detection/recognition. The datasets will be presented in the
@@ -613,9 +615,137 @@ HVU provides three annotation files. One file contains tags along with their res
 \end{itemize}
 
 \subsubsection{Context and construction perspective}
+The authors argues that current datasets have three shortcomings:
+\begin{itemize}
+	\item \textbf{Geographical bias and limited geographic coverage}: Videos are often sourced in a geographically biased manner, resulting in limited geographic diversity in the coverage of the datasets.
+
+	\item \textbf{Lack of temporal consistency in large datasets}: Due to the data collection process primarily relying on YouTube as the main source, the videos may be unstable over time. For example, in the first year of its release, Kinetics-400 dataset had 10\% of its videos removed by YouTube.
+
+	\item \textbf{Difficult accessibility}: Downloading tools often encounter request errors, and furthermore, some videos may not be available in certain countries.
+\end{itemize}
+
 \subsubsection{Data collection methods}
+\begin{itemize}
+	\item \textbf{Action Definition}: Sử dụng lại action vocab từ Charades, Moments in Time và Kinetics. Loại bỏ các action có liên quan đến khuôn mặt do AViD làm mờ khuôn mặt của các actor. Thêm nữa, quá trình annotation cũng đề xuất ra thêm các class action. Kết quả của quá trình này gồm 887 action class. Ngoài ra nhóm tác giả cũng đề xuất hệ thống phân cấp cho các action class.
+	
+	\item \textbf{Data Collection}: The action classes were translated into 22 different languages and searched across various platforms. The group of authors ensured that all these videos comply with the Creative Commons license. The outcome of this process is a collection of 800K videos.
+	
+	\item \textbf{Data Annotation}: The combination of manual (Amazon Mechanical Turk) and automated (I3D model) methods was employed.
+	
+	\item \textbf{Data Cleaning and Filtering}:
+\end{itemize}
+
+\subsubsection{Data distribution}
+
+\begin{itemize}
+	\item \textbf{Train clips} : 410k.
+	\item \textbf{Validation clips} : no mentioned.
+	\item \textbf{Test clips} : 40k. 
+\end{itemize}
+
+\subsubsection{Annotation}
+
+Classification-only annotation. Structure : [video\_name] : [class\_name] .
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"fig_info/fig6/Screenshot 2024-02-13 022922"}
+	\caption{}
+	\label{fig:screenshot-2024-02-13-022922}
+\end{figure}
+
+\subsection{THUMOS}
+
+\begin{itemize}
+	\item Year : 2015
+	\item Paper : The THUMOS challenge on action recognition for videos “in the wild”
+\end{itemize}
+
+\subsubsection{Context and construction perspective}
+
+THUMOS Challenge is a competition held from 2013 to 2015, serving as a benchmark for action recognition.
+
+\subsubsection{Data collection methods}
+THUMOS base on UCF101 with extra data.
+\begin{itemize}
+	\item \textbf{Action Definition}: Reuse action list of UCF101.
+	\item \textbf{Data Collection}: Background : search on Internet.
+	\item \textbf{Data Annotation}: Manually annotate with predefined-criteria.
+	\item \textbf{Data Cleaning and Filtering}: 
+\end{itemize}
+\subsubsection{Data distribution}
+\begin{itemize}
+	\item  \textbf{Train} : 13k.
+	\item \textbf{Validation} : 21k.
+	\item \textbf{Test set} : 5.6l
+	\item \textbf{Background set} : aka negative set, 3k .
+\end{itemize}
+\subsubsection{Annotation}
+Base on UCF101.
+
+\subsection{YouTube-8M}
+
+\begin{itemize}
+	\item Year : 2016
+	\item Paper : YouTube-8M: A Large-Scale Video Classification Benchmark \cite{YouTube8M}
+\end{itemize}
+
+\subsubsection{Context and construction perspective}
+\subsubsection{Data collection methods}
+\begin{itemize}
+	\item \textbf{Action Definition}:
+	\item \textbf{Data Collection}:
+	\item \textbf{Data Annotation}:
+	\item \textbf{Data Cleaning and Filtering}:
+\end{itemize}
 \subsubsection{Data distribution}
 \subsubsection{Annotation}
+
+\subsection{Charades}
+
+\begin{itemize}
+	\item Year : 2016
+	\item Paper : Hollywood in Homes: Crowdsourcing Data Collection for Activity Understanding \cite{Charades}
+\end{itemize}
+
+\subsubsection{Context and construction perspective}
+The group of authors argues that everyday human activities are often mundane, whereas filming scenes or creating videos on social media platforms like YouTube always require engaging content to attract viewers. As a result, everyday life scenes and actions have not been fully utilized and there are no specific methods to collect them. The authors explain their video collection process and provide the research community with their achievement, the Charades dataset.
+\subsubsection{Data collection methods}
+\begin{itemize}
+	\item \textbf{Action Definition}: Use triplet verb-noun-scene to generate a script. This resulting 157 action class.
+	\item \textbf{Data Collection}: AMT worker capture video base on generated script.
+	\item \textbf{Data Annotation}:
+	\item \textbf{Data Cleaning and Filtering}:
+\end{itemize}
+\subsubsection{Data distribution}
+
+\begin{itemize}
+	\item  \textbf{Train} : 7,985.
+	\item \textbf{Validation} : not mentioned.
+	\item \textbf{Test set} : 1,863.
+\end{itemize}
+
+\subsubsection{Annotation}
+
+\subsection{NTU RGB+D}
+
+\begin{itemize}
+	\item Year : 2016
+	\item Paper : NTU RGB+D: A Large Scale Dataset for 3D Human Activity Analysis \cite{NTURGB+D}
+\end{itemize}
+
+\subsubsection{Context and construction perspective}
+\subsubsection{Data collection methods}
+\begin{itemize}
+	\item \textbf{Action Definition}:
+	\item \textbf{Data Collection}:
+	\item \textbf{Data Annotation}:
+	\item \textbf{Data Cleaning and Filtering}:
+\end{itemize}
+\subsubsection{Data distribution}
+\subsubsection{Annotation}
+
+\section{}
 
 \begin{itemize}
 	\item Year : 
@@ -624,6 +754,30 @@ HVU provides three annotation files. One file contains tags along with their res
 
 \subsubsection{Context and construction perspective}
 \subsubsection{Data collection methods}
+\begin{itemize}
+	\item \textbf{Action Definition}:
+	\item \textbf{Data Collection}:
+	\item \textbf{Data Annotation}:
+	\item \textbf{Data Cleaning and Filtering}:
+\end{itemize}
+\subsubsection{Data distribution}
+\subsubsection{Annotation}
+
+\section{}
+
+\begin{itemize}
+	\item Year : 
+	\item Paper : 
+\end{itemize}
+
+\subsubsection{Context and construction perspective}
+\subsubsection{Data collection methods}
+\begin{itemize}
+	\item \textbf{Action Definition}:
+	\item \textbf{Data Collection}:
+	\item \textbf{Data Annotation}:
+	\item \textbf{Data Cleaning and Filtering}:
+\end{itemize}
 \subsubsection{Data distribution}
 \subsubsection{Annotation}
 

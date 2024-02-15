@@ -1,0 +1,150 @@
+\documentclass[a4paper]{article}
+
+% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage[utf8]{vietnam}
+\usepackage{subcaption}
+\usepackage{setspace}
+\usepackage{tabularx,booktabs}
+\usepackage{relsize}
+\usepackage{multicol}
+\usepackage{etoolbox}%
+\usepackage{xpatch}
+\usepackage{blindtext}
+\usepackage[a4paper,margin=1in,footskip=0.25in]{geometry}
+\usepackage{indentfirst}
+\setlength{\parindent}{1.5cm}
+\setlength{\parskip}{0.5em}
+% defined centered version of "X" column type:
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+		T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+	
+\section{Introduction}
+\section{Overview History}
+\section{Overview Dataset}
+Nói về context và sơ lược về thông tin, quy mô của bộ dữ liệu.
+\subsection{data1}
+\subsection{data2}
+...
+
+\section{Analysis}
+Các thông tin ở từng mục sẽ được nói kĩ nhưng không đi sâu vào từng bộ dữ liệu mà mang tính tổng quát, sau đó thống kê vào bảng. Thông tin trên bảng sẽ được điền dạng kí hiệu hoặc yes/no, sau đó chú thích bên dưới.
+
+\subsection{Characteristic}
+Nói về đặc điểm hiện có của các bộ dữ liệu theo các yếu tố trong bảng bên dưới.
+
+\begin{table}[h]
+	\centering
+	%\small
+	\caption{Action recognition dataset}
+	\begin{tabular}{l|l l l l l l l l l}
+		\toprule
+		tên & phân loại(như trong sheet) & temporal & spatial & classification-only & Focus on (scale/diverse class ...) \\
+	\end{tabular}%
+	\label{config1}
+\end{table}%
+
+\subsection{Data collection method}
+Thảo luận 3 mục : 
+\begin{itemize}
+	\item Build Action class list : Dùng các công trình nghiên cứu về ngôn ngữ / Tự tiến hành nghiên cứu / Sử dụng nguồn từ dataset trước đó có/không bổ sung thêm .
+	\item Collect video : Từ Internet / Tự quay.
+	\item Annotation : Tự động / Thủ công / Bán tự động.
+\end{itemize}
+
+Bảng dự kiến : 
+
+\begin{table}[h]
+	\centering
+	%\small
+	\caption{Action recognition dataset}
+	\begin{tabular}{l|l l l l l l l l l}
+		\toprule
+		tên & pp tạo act list & nguồn vid & pp anno & các tool anno được sử dụng \\
+	\end{tabular}%
+	\label{config}
+\end{table}%
+
+\subsection{Data statistic}
+
+Phần này chưa biết phải viết gì nhiều, có thể giải thích tại sao một số data không công bố test anno.
+
+Bảng dự kiến : 
+
+\begin{table}[h]
+	\centering
+	%\small
+	\caption{Action recognition dataset}
+	\begin{tabular}{l|l l l l l l l l l}
+		\toprule
+		tên & numclass & train & val & test & duration/sample \\
+	\end{tabular}%
+	\label{config2}
+\end{table}%
+
+\subsection{Benchmark and metric}
+
+Phần này cũng chưa biết viết gì.
+
+Bảng dự kiến : 
+
+\begin{table}[h]
+	\centering
+	%\small
+	\caption{Action recognition dataset}
+	\begin{tabular}{l|l l l l l l l l l}
+		\toprule
+		tên & benchmark & metric & eval protocol \\
+	\end{tabular}%
+	\label{config3}
+\end{table}%
+
+\subsection{state of the art method result}
+
+Chưa biết viết gì
+
+\begin{table}[h]
+	\centering
+	%\small
+	\caption{Action recognition dataset}
+	\begin{tabular}{l|l l l l l l l l l}
+		\toprule
+		tên & SOTA method & result & metric & eval Protocol \\
+	\end{tabular}%
+	\label{config4}
+\end{table}%
+
+\subsection{Discussion}
+
+Chỉ vừa nghĩ ra được một mục
+
+\subsubsection{Limitations of current datasets}
+
+Thuyết minh + đưa ra dẫn chứng cụ thể.
+
+\begin{itemize}
+	\item Những data cũ :
+	\begin{itemize}
+		\item Data : Quy mô nhỏ, đơn giản.
+		\item Staturation : sota method đạt ngưỡng rất cao.
+	\end{itemize}
+	
+	\item Những data mới :
+	\begin{itemize}
+		\item Annotation : vẫn còn nhiều nhiễu/thiếu chính xác.
+		\item Data : Chất lượng phân giải / thiếu ổn định (bị gỡ bỏ, không thể tiếp cận).
+	\end{itemize}
+	
+\end{itemize}
+
+\section{Conclusion}
+
+\section{References}
+\end{document}
