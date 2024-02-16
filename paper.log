@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.22)  16 FEB 2024 12:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.22)  16 FEB 2024 13:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -705,12 +705,141 @@ LaTeX Warning: Citation `KTH' on page 3 undefined on input line 206.
 
 LaTeX Warning: Citation `Weizmann' on page 3 undefined on input line 206.
 
-[3] [4] [5]
-Overfull \hbox (36.71918pt too wide) in paragraph at lines 265--270
+
+LaTeX Warning: Citation `UCF101' on page 3 undefined on input line 210.
+
+
+LaTeX Warning: Citation `UCFSports' on page 3 undefined on input line 210.
+
+
+LaTeX Warning: Citation `UCFYouTube' on page 3 undefined on input line 210.
+
+[3]
+
+LaTeX Warning: Citation `Sports1M' on page 4 undefined on input line 214.
+
+
+LaTeX Warning: Citation `HMDB51' on page 4 undefined on input line 214.
+
+
+LaTeX Warning: Citation `UCF101' on page 4 undefined on input line 214.
+
+
+LaTeX Warning: Citation `ActivityNet' on page 4 undefined on input line 218.
+
+
+LaTeX Warning: Citation `UCF101' on page 4 undefined on input line 218.
+
+
+LaTeX Warning: Citation `THUMOS' on page 4 undefined on input line 218.
+
+
+LaTeX Warning: Citation `YouTube8M' on page 4 undefined on input line 222.
+
+
+LaTeX Warning: Citation `Sports1M' on page 4 undefined on input line 222.
+
+
+LaTeX Warning: Citation `ActivityNet' on page 4 undefined on input line 222.
+
+
+LaTeX Warning: Citation `somethingsomething' on page 4 undefined on input line 
+227.
+
+
+LaTeX Warning: Citation `Sports1M' on page 4 undefined on input line 227.
+
+
+LaTeX Warning: Citation `YouTube8M' on page 4 undefined on input line 227.
+
+[4]
+
+LaTeX Warning: Citation `Charades' on page 5 undefined on input line 233.
+
+
+LaTeX Warning: Citation `somethingsomething' on page 5 undefined on input line 
+233.
+
+
+LaTeX Warning: Citation `HMDB51' on page 5 undefined on input line 233.
+
+
+LaTeX Warning: Citation `UCF101' on page 5 undefined on input line 233.
+
+
+LaTeX Warning: Citation `AVA' on page 5 undefined on input line 238.
+
+
+LaTeX Warning: Citation `Sports1M' on page 5 undefined on input line 238.
+
+
+LaTeX Warning: Citation `YouTube8M' on page 5 undefined on input line 238.
+
+
+LaTeX Warning: Citation `somethingsomething' on page 5 undefined on input line 
+238.
+
+
+LaTeX Warning: Citation `momentsintime' on page 5 undefined on input line 238.
+
+
+LaTeX Warning: Citation `ActivityNet' on page 5 undefined on input line 238.
+
+
+LaTeX Warning: Citation `THUMOS' on page 5 undefined on input line 238.
+
+
+LaTeX Warning: Citation `momentsintime' on page 5 undefined on input line 242.
+
+
+LaTeX Warning: Citation `YouTube8M' on page 5 undefined on input line 242.
+
+
+LaTeX Warning: Citation `ActivityNet' on page 5 undefined on input line 242.
+
+
+LaTeX Warning: Citation `AVA' on page 5 undefined on input line 242.
+
+[5]
+
+LaTeX Warning: Citation `HACS' on page 6 undefined on input line 246.
+
+
+LaTeX Warning: Citation `THUMOS' on page 6 undefined on input line 246.
+
+
+LaTeX Warning: Citation `AVA' on page 6 undefined on input line 246.
+
+
+LaTeX Warning: Citation `Charades' on page 6 undefined on input line 246.
+
+
+LaTeX Warning: Citation `ActivityNet' on page 6 undefined on input line 246.
+
+
+LaTeX Warning: Citation `HVU' on page 6 undefined on input line 250.
+
+
+LaTeX Warning: Citation `AViD' on page 6 undefined on input line 254.
+
+
+LaTeX Warning: Citation `HACS' on page 6 undefined on input line 254.
+
+
+LaTeX Warning: Citation `HVU' on page 6 undefined on input line 254.
+
+
+Overfull \hbox (36.71918pt too wide) in paragraph at lines 267--272
  [][][] 
  []
 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 [6]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -728,20 +857,20 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7306 strings out of 474486
- 116143 string characters out of 5743755
+ 7318 strings out of 474486
+ 116260 string characters out of 5743755
  1937542 words of memory out of 5000000
- 29487 multiletter control sequences out of 15000+600000
+ 29499 multiletter control sequences out of 15000+600000
  566784 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 67i,8n,79p,760b,315s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 67i,8n,79p,837b,315s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\ADMIN\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
 1000.pk><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnb
 x10.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnb
 x12.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr
 10.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnti
 10.pfb>
-Output written on paper.pdf (8 pages, 96908 bytes).
+Output written on paper.pdf (8 pages, 97601 bytes).
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
