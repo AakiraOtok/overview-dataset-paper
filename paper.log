@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.22)  16 FEB 2024 13:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.22)  20 FEB 2024 00:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -743,107 +743,105 @@ LaTeX Warning: Citation `Sports1M' on page 4 undefined on input line 222.
 LaTeX Warning: Citation `ActivityNet' on page 4 undefined on input line 222.
 
 
+LaTeX Warning: Citation `Charades' on page 4 undefined on input line 227.
+
+
 LaTeX Warning: Citation `somethingsomething' on page 4 undefined on input line 
 227.
 
 
-LaTeX Warning: Citation `Sports1M' on page 4 undefined on input line 227.
+LaTeX Warning: Citation `HMDB51' on page 4 undefined on input line 227.
 
 
-LaTeX Warning: Citation `YouTube8M' on page 4 undefined on input line 227.
+LaTeX Warning: Citation `UCF101' on page 4 undefined on input line 227.
 
 [4]
 
-LaTeX Warning: Citation `Charades' on page 5 undefined on input line 233.
+LaTeX Warning: Citation `somethingsomething' on page 5 undefined on input line 
+231.
+
+
+LaTeX Warning: Citation `Sports1M' on page 5 undefined on input line 231.
+
+
+LaTeX Warning: Citation `YouTube8M' on page 5 undefined on input line 231.
+
+
+LaTeX Warning: Citation `AVA' on page 5 undefined on input line 245.
+
+
+LaTeX Warning: Citation `Sports1M' on page 5 undefined on input line 245.
+
+
+LaTeX Warning: Citation `YouTube8M' on page 5 undefined on input line 245.
 
 
 LaTeX Warning: Citation `somethingsomething' on page 5 undefined on input line 
-233.
+245.
 
 
-LaTeX Warning: Citation `HMDB51' on page 5 undefined on input line 233.
+LaTeX Warning: Citation `momentsintime' on page 5 undefined on input line 245.
 
 
-LaTeX Warning: Citation `UCF101' on page 5 undefined on input line 233.
+LaTeX Warning: Citation `ActivityNet' on page 5 undefined on input line 245.
 
 
-LaTeX Warning: Citation `AVA' on page 5 undefined on input line 238.
-
-
-LaTeX Warning: Citation `Sports1M' on page 5 undefined on input line 238.
-
-
-LaTeX Warning: Citation `YouTube8M' on page 5 undefined on input line 238.
-
-
-LaTeX Warning: Citation `somethingsomething' on page 5 undefined on input line 
-238.
-
-
-LaTeX Warning: Citation `momentsintime' on page 5 undefined on input line 238.
-
-
-LaTeX Warning: Citation `ActivityNet' on page 5 undefined on input line 238.
-
-
-LaTeX Warning: Citation `THUMOS' on page 5 undefined on input line 238.
-
-
-LaTeX Warning: Citation `momentsintime' on page 5 undefined on input line 242.
-
-
-LaTeX Warning: Citation `YouTube8M' on page 5 undefined on input line 242.
-
-
-LaTeX Warning: Citation `ActivityNet' on page 5 undefined on input line 242.
-
-
-LaTeX Warning: Citation `AVA' on page 5 undefined on input line 242.
+LaTeX Warning: Citation `THUMOS' on page 5 undefined on input line 245.
 
 [5]
 
-LaTeX Warning: Citation `HACS' on page 6 undefined on input line 246.
+LaTeX Warning: Citation `momentsintime' on page 6 undefined on input line 255.
 
 
-LaTeX Warning: Citation `THUMOS' on page 6 undefined on input line 246.
+LaTeX Warning: Citation `YouTube8M' on page 6 undefined on input line 255.
 
 
-LaTeX Warning: Citation `AVA' on page 6 undefined on input line 246.
+LaTeX Warning: Citation `ActivityNet' on page 6 undefined on input line 255.
 
 
-LaTeX Warning: Citation `Charades' on page 6 undefined on input line 246.
+LaTeX Warning: Citation `AVA' on page 6 undefined on input line 255.
 
 
-LaTeX Warning: Citation `ActivityNet' on page 6 undefined on input line 246.
+LaTeX Warning: Citation `HACS' on page 6 undefined on input line 259.
 
 
-LaTeX Warning: Citation `HVU' on page 6 undefined on input line 250.
+LaTeX Warning: Citation `THUMOS' on page 6 undefined on input line 259.
 
 
-LaTeX Warning: Citation `AViD' on page 6 undefined on input line 254.
+LaTeX Warning: Citation `AVA' on page 6 undefined on input line 259.
 
 
-LaTeX Warning: Citation `HACS' on page 6 undefined on input line 254.
+LaTeX Warning: Citation `Charades' on page 6 undefined on input line 259.
 
 
-LaTeX Warning: Citation `HVU' on page 6 undefined on input line 254.
+LaTeX Warning: Citation `ActivityNet' on page 6 undefined on input line 259.
 
 
-Overfull \hbox (36.71918pt too wide) in paragraph at lines 267--272
+LaTeX Warning: Citation `HVU' on page 6 undefined on input line 263.
+
+[6]
+
+LaTeX Warning: Citation `AViD' on page 7 undefined on input line 267.
+
+
+LaTeX Warning: Citation `HACS' on page 7 undefined on input line 267.
+
+
+LaTeX Warning: Citation `HVU' on page 7 undefined on input line 267.
+
+
+Overfull \hbox (36.71918pt too wide) in paragraph at lines 280--285
  [][][] 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[6]
+[7]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[7] [8] (paper.aux)
+[8] [9] (paper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -870,9 +868,9 @@ x10.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnb
 x12.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr
 10.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnti
 10.pfb>
-Output written on paper.pdf (8 pages, 97601 bytes).
+Output written on paper.pdf (9 pages, 100669 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
+ 59 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
