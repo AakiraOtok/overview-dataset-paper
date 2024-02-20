@@ -1,11 +1,11 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: paper.aux
-I found no \bibdata command---while reading file paper.aux
+Reallocating 'name_of_file' (item size: 1) to 11 items.
 I found no \bibstyle command---while reading file paper.aux
 You've used 24 entries,
             0 wiz_defined-function locations,
-            129 strings with 813 characters,
+            130 strings with 823 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0
@@ -44,4 +44,4 @@ warning$ -- 0
 while$ -- 0
 width$ -- 0
 write$ -- 0
-(There were 2 error messages)
+(There was 1 error message)

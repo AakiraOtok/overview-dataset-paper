@@ -18,6 +18,7 @@
 \usepackage{blindtext}
 \usepackage[a4paper,margin=1in,footskip=0.25in]{geometry}
 \usepackage{indentfirst}
+
 \setlength{\parindent}{1.5cm}
 \setlength{\parskip}{0.5em}
 % defined centered version of "X" column type:
@@ -241,6 +242,16 @@ Later in 2018, an updated version, Kinetics-600, was introduced. Kinetics-600 is
 In 2020, Kinetics-700-2020 was introduced, expanding by 30\% compared to Kinetics-600. Additional actions were sourced partly from EPIC-Kitchens and AVA datasets. Rare actions were gathered from more videos, and duplicated videos were removed. These changes resulted in a more balanced dataset.
 
 The Kinetics dataset contains 10 seconds short clips demonstrating the mentioned action. The table below shows the size of the three Kinetics version:
+\begin{center}
+	\begin{tabular}{| l | l | l | l |}
+		\hline
+		Dataset & Total videos & Action classes & Average clips per class \\ \hline
+		Kinetics-400 & 306,245 & 400 & 683\\ \hline
+		Kinetics-600 & 495,547 & 600 & 762\\ \hline
+		Kinetics-700-2020 & 647,907 & 700 &  926\\ \hline
+	\end{tabular}
+\end{center}
+
 \subsection{AVA}
 Introduced in 2018, AVA's \cite{AVA} main goal is to overcome weaknesses of previous datasets like Sports-1M \cite{Sports1M}, YouTube-8M \cite{YouTube8M}, Something Something \cite{somethingsomething}, and Moments in Time \cite{momentsintime}, which focus on large-scale datasets and are often annotated automatically, leading to noisy annotations. Other datasets such as ActivityNet \cite{ActivityNet}, THUMOS \cite{THUMOS}, and Charades utilize a large number of videos containing multiple actions but only provide temporal annotations. Therefore, AVA provides realistic fine-grained recognition in a complex environment where actors perform a set of combined actions, aiming to enhance spatio-temporal action localization.
 
@@ -267,6 +278,9 @@ HVU comprises a total of 572,000 videos and 3,143 labels. It consists of trimmed
 Introduced in 2020, AViD \cite{AViD} aims to provide an Anonymized Videos from Diverse Countries dataset. In the past, datasets such as Kinetics, HACS \cite{HACS}, and HVU \cite{HVU}, although containing numerous labeled video clips, were predominantly limited to the USA and other English-speaking countries. Moreover, those datasets were mainly sourced from YouTube links, which may not be available in some countries. AViD solves that problem by saving it as a static dataset, which can be found at the relevant link provided by the authors. When collecting videos, the authors blurred all the actors' faces to prevent machines from recognizing people in the videos but still reliably recognized actions, which is also a unique characteristic of this dataset.
 
 After the filtering process, the dataset has a total of more than 800K videos from over the world, demonstrating 887 classes. The labels follow hierarchy structure from general to particular action for studying various aspects of action performance.
+\subsection{TinyVIRAT}
+\subsection{ToyotaSmarthome}
+\subsection{FineAction}
 \section{Analysis}
 Các thông tin ở từng mục sẽ được nói kĩ nhưng không đi sâu vào từng bộ dữ liệu mà mang tính tổng quát, sau đó thống kê vào bảng. Thông tin trên bảng sẽ được điền dạng kí hiệu hoặc yes/no, sau đó chú thích bên dưới.
 
@@ -380,4 +394,5 @@ Thuyết minh + đưa ra dẫn chứng cụ thể.
 \section{Conclusion}
 
 \section{References}
+\bibliography{references}
 \end{document}

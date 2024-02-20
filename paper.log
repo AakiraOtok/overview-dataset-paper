@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.22)  20 FEB 2024 00:13
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.22)  20 FEB 2024 16:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -561,22 +561,22 @@ LaTeX Warning: Label `config' multiply defined.
 )
 \openout1 = `paper.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
 
 (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
@@ -641,10 +641,10 @@ Package caption Info: End \AtBeginDocument code.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-LaTeX Warning: Citation `ILSVRC' on page 1 undefined on input line 100.
+LaTeX Warning: Citation `ILSVRC' on page 1 undefined on input line 101.
 
 
-LaTeX Warning: Citation `PASCALVOC' on page 1 undefined on input line 101.
+LaTeX Warning: Citation `PASCALVOC' on page 1 undefined on input line 102.
 
 [1
 
@@ -654,194 +654,204 @@ LaTeX Warning: Citation `PASCALVOC' on page 1 undefined on input line 101.
 File: fig_info/fig1/ILSVRCChampionTeamOvertheYears.png Graphic file (type png)
 <use fig_info/fig1/ILSVRCChampionTeamOvertheYears.png>
 Package pdftex.def Info: fig_info/fig1/ILSVRCChampionTeamOvertheYears.png  used
- on input line 112.
+ on input line 113.
 (pdftex.def)             Requested size: 452.9679pt x 287.80643pt.
 
 
-LaTeX Warning: Citation `LeNet' on page 2 undefined on input line 117.
+LaTeX Warning: Citation `LeNet' on page 2 undefined on input line 118.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 157
+LaTeX Font Info:    Trying to load font information for U+msa on input line 158
 .
 (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 157
+LaTeX Font Info:    Trying to load font information for U+msb on input line 158
 .
 
 (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-LaTeX Warning: Citation `KTH' on page 2 undefined on input line 161.
+LaTeX Warning: Citation `KTH' on page 2 undefined on input line 162.
 
 
-LaTeX Warning: Citation `Weizmann' on page 2 undefined on input line 162.
+LaTeX Warning: Citation `Weizmann' on page 2 undefined on input line 163.
 
 
-LaTeX Warning: Citation `IXMAS' on page 2 undefined on input line 163.
+LaTeX Warning: Citation `IXMAS' on page 2 undefined on input line 164.
 
 
-LaTeX Warning: Citation `HollyWood' on page 2 undefined on input line 164.
+LaTeX Warning: Citation `HollyWood' on page 2 undefined on input line 165.
 
 
-LaTeX Warning: Citation `UCFSports' on page 2 undefined on input line 165.
+LaTeX Warning: Citation `UCFSports' on page 2 undefined on input line 166.
 
 
-LaTeX Warning: Citation `Hollywood2' on page 2 undefined on input line 166.
+LaTeX Warning: Citation `Hollywood2' on page 2 undefined on input line 167.
 
 
-LaTeX Warning: Citation `UCFYouTube' on page 2 undefined on input line 167.
+LaTeX Warning: Citation `UCFYouTube' on page 2 undefined on input line 168.
 
 
-LaTeX Warning: Citation `Olympic' on page 2 undefined on input line 168.
+LaTeX Warning: Citation `Olympic' on page 2 undefined on input line 169.
 
 [2 <./fig_info/fig1/ILSVRCChampionTeamOvertheYears.png>]
 
-LaTeX Warning: Citation `HMDB51' on page 3 undefined on input line 206.
+LaTeX Warning: Citation `HMDB51' on page 3 undefined on input line 207.
 
 
-LaTeX Warning: Citation `KTH' on page 3 undefined on input line 206.
+LaTeX Warning: Citation `KTH' on page 3 undefined on input line 207.
 
 
-LaTeX Warning: Citation `Weizmann' on page 3 undefined on input line 206.
+LaTeX Warning: Citation `Weizmann' on page 3 undefined on input line 207.
 
 
-LaTeX Warning: Citation `UCF101' on page 3 undefined on input line 210.
+LaTeX Warning: Citation `UCF101' on page 3 undefined on input line 211.
 
 
-LaTeX Warning: Citation `UCFSports' on page 3 undefined on input line 210.
+LaTeX Warning: Citation `UCFSports' on page 3 undefined on input line 211.
 
 
-LaTeX Warning: Citation `UCFYouTube' on page 3 undefined on input line 210.
+LaTeX Warning: Citation `UCFYouTube' on page 3 undefined on input line 211.
 
 [3]
 
-LaTeX Warning: Citation `Sports1M' on page 4 undefined on input line 214.
+LaTeX Warning: Citation `Sports1M' on page 4 undefined on input line 215.
 
 
-LaTeX Warning: Citation `HMDB51' on page 4 undefined on input line 214.
+LaTeX Warning: Citation `HMDB51' on page 4 undefined on input line 215.
 
 
-LaTeX Warning: Citation `UCF101' on page 4 undefined on input line 214.
+LaTeX Warning: Citation `UCF101' on page 4 undefined on input line 215.
 
 
-LaTeX Warning: Citation `ActivityNet' on page 4 undefined on input line 218.
+LaTeX Warning: Citation `ActivityNet' on page 4 undefined on input line 219.
 
 
-LaTeX Warning: Citation `UCF101' on page 4 undefined on input line 218.
+LaTeX Warning: Citation `UCF101' on page 4 undefined on input line 219.
 
 
-LaTeX Warning: Citation `THUMOS' on page 4 undefined on input line 218.
+LaTeX Warning: Citation `THUMOS' on page 4 undefined on input line 219.
 
 
-LaTeX Warning: Citation `YouTube8M' on page 4 undefined on input line 222.
+LaTeX Warning: Citation `YouTube8M' on page 4 undefined on input line 223.
 
 
-LaTeX Warning: Citation `Sports1M' on page 4 undefined on input line 222.
+LaTeX Warning: Citation `Sports1M' on page 4 undefined on input line 223.
 
 
-LaTeX Warning: Citation `ActivityNet' on page 4 undefined on input line 222.
+LaTeX Warning: Citation `ActivityNet' on page 4 undefined on input line 223.
 
 
-LaTeX Warning: Citation `Charades' on page 4 undefined on input line 227.
+LaTeX Warning: Citation `Charades' on page 4 undefined on input line 228.
 
 
 LaTeX Warning: Citation `somethingsomething' on page 4 undefined on input line 
-227.
+228.
 
 
-LaTeX Warning: Citation `HMDB51' on page 4 undefined on input line 227.
+LaTeX Warning: Citation `HMDB51' on page 4 undefined on input line 228.
 
 
-LaTeX Warning: Citation `UCF101' on page 4 undefined on input line 227.
+LaTeX Warning: Citation `UCF101' on page 4 undefined on input line 228.
 
 [4]
 
 LaTeX Warning: Citation `somethingsomething' on page 5 undefined on input line 
-231.
+232.
 
 
-LaTeX Warning: Citation `Sports1M' on page 5 undefined on input line 231.
+LaTeX Warning: Citation `Sports1M' on page 5 undefined on input line 232.
 
 
-LaTeX Warning: Citation `YouTube8M' on page 5 undefined on input line 231.
+LaTeX Warning: Citation `YouTube8M' on page 5 undefined on input line 232.
 
 
-LaTeX Warning: Citation `AVA' on page 5 undefined on input line 245.
+LaTeX Warning: Citation `HMDB51' on page 5 undefined on input line 238.
 
 
-LaTeX Warning: Citation `Sports1M' on page 5 undefined on input line 245.
+LaTeX Warning: Citation `UCF101' on page 5 undefined on input line 238.
 
 
-LaTeX Warning: Citation `YouTube8M' on page 5 undefined on input line 245.
+LaTeX Warning: Citation `AVA' on page 5 undefined on input line 256.
+
+
+LaTeX Warning: Citation `Sports1M' on page 5 undefined on input line 256.
+
+
+LaTeX Warning: Citation `YouTube8M' on page 5 undefined on input line 256.
 
 
 LaTeX Warning: Citation `somethingsomething' on page 5 undefined on input line 
-245.
+256.
 
 
-LaTeX Warning: Citation `momentsintime' on page 5 undefined on input line 245.
+LaTeX Warning: Citation `momentsintime' on page 5 undefined on input line 256.
 
 
-LaTeX Warning: Citation `ActivityNet' on page 5 undefined on input line 245.
+LaTeX Warning: Citation `ActivityNet' on page 5 undefined on input line 256.
 
 
-LaTeX Warning: Citation `THUMOS' on page 5 undefined on input line 245.
+LaTeX Warning: Citation `THUMOS' on page 5 undefined on input line 256.
 
 [5]
 
-LaTeX Warning: Citation `momentsintime' on page 6 undefined on input line 255.
+LaTeX Warning: Citation `somethingsomething' on page 6 undefined on input line 
+261.
 
 
-LaTeX Warning: Citation `YouTube8M' on page 6 undefined on input line 255.
+LaTeX Warning: Citation `Charades' on page 6 undefined on input line 261.
 
 
-LaTeX Warning: Citation `ActivityNet' on page 6 undefined on input line 255.
+LaTeX Warning: Citation `momentsintime' on page 6 undefined on input line 266.
 
 
-LaTeX Warning: Citation `AVA' on page 6 undefined on input line 255.
+LaTeX Warning: Citation `YouTube8M' on page 6 undefined on input line 266.
 
 
-LaTeX Warning: Citation `HACS' on page 6 undefined on input line 259.
+LaTeX Warning: Citation `ActivityNet' on page 6 undefined on input line 266.
 
 
-LaTeX Warning: Citation `THUMOS' on page 6 undefined on input line 259.
+LaTeX Warning: Citation `AVA' on page 6 undefined on input line 266.
 
 
-LaTeX Warning: Citation `AVA' on page 6 undefined on input line 259.
+LaTeX Warning: Citation `HACS' on page 6 undefined on input line 270.
 
 
-LaTeX Warning: Citation `Charades' on page 6 undefined on input line 259.
+LaTeX Warning: Citation `THUMOS' on page 6 undefined on input line 270.
 
 
-LaTeX Warning: Citation `ActivityNet' on page 6 undefined on input line 259.
+LaTeX Warning: Citation `AVA' on page 6 undefined on input line 270.
 
 
-LaTeX Warning: Citation `HVU' on page 6 undefined on input line 263.
+LaTeX Warning: Citation `Charades' on page 6 undefined on input line 270.
+
+
+LaTeX Warning: Citation `ActivityNet' on page 6 undefined on input line 270.
 
 [6]
 
-LaTeX Warning: Citation `AViD' on page 7 undefined on input line 267.
+LaTeX Warning: Citation `HVU' on page 7 undefined on input line 274.
 
 
-LaTeX Warning: Citation `HACS' on page 7 undefined on input line 267.
+LaTeX Warning: Citation `AViD' on page 7 undefined on input line 278.
 
 
-LaTeX Warning: Citation `HVU' on page 7 undefined on input line 267.
+LaTeX Warning: Citation `HACS' on page 7 undefined on input line 278.
 
 
-Overfull \hbox (36.71918pt too wide) in paragraph at lines 280--285
+LaTeX Warning: Citation `HVU' on page 7 undefined on input line 278.
+
+
+Overfull \hbox (36.71918pt too wide) in paragraph at lines 294--299
  [][][] 
  []
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
 
 [7]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8] [9] (paper.aux)
+(paper.bbl) [8] [9] (paper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -855,10 +865,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7318 strings out of 474486
- 116260 string characters out of 5743755
+ 7326 strings out of 474486
+ 116441 string characters out of 5743755
  1937542 words of memory out of 5000000
- 29499 multiletter control sequences out of 15000+600000
+ 29504 multiletter control sequences out of 15000+600000
  566784 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,8n,79p,837b,315s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -868,7 +878,7 @@ x10.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnb
 x12.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnr
 10.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnti
 10.pfb>
-Output written on paper.pdf (9 pages, 100669 bytes).
+Output written on paper.pdf (9 pages, 101159 bytes).
 PDF statistics:
  59 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
