@@ -1,6 +1,7 @@
 This is BibTeX, Version 0.99d (TeX Live 2023)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: paper.aux
+<<<<<<< HEAD
 The style file: ieeetr.bst
 Database file #1: references.bib
 You're missing a field name---line 639 of file references.bib
@@ -18,6 +19,16 @@ You've used 24 entries,
 and the built_in function-call counts, 7321 in all, are:
 = -- 588
 > -- 467
+=======
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+I found no \bibstyle command---while reading file paper.aux
+You've used 24 entries,
+            0 wiz_defined-function locations,
+            130 strings with 823 characters,
+and the built_in function-call counts, 0 in all, are:
+= -- 0
+> -- 0
+>>>>>>> 1aa6bb38b94565d0165273d070c6e94e75d8afec
 < -- 0
 + -- 163
 - -- 139
@@ -50,7 +61,14 @@ text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
+<<<<<<< HEAD
 while$ -- 53
 width$ -- 26
 write$ -- 209
 (There were 2 error messages)
+=======
+while$ -- 0
+width$ -- 0
+write$ -- 0
+(There was 1 error message)
+>>>>>>> 1aa6bb38b94565d0165273d070c6e94e75d8afec
