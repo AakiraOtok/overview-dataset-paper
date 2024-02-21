@@ -1,47 +1,56 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99d (TeX Live 2023)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: paper.aux
-I found no \bibdata command---while reading file paper.aux
-I found no \bibstyle command---while reading file paper.aux
+The style file: ieeetr.bst
+Database file #1: references.bib
+You're missing a field name---line 639 of file references.bib
+ : 
+ : =======
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 651 of file references.bib
+ : >>>>>>> 
+ :         a1c09371185157a5eee447f3d08c77467ff983df
+I'm skipping whatever remains of this entry
 You've used 24 entries,
-            0 wiz_defined-function locations,
-            129 strings with 813 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
+            1876 wiz_defined-function locations,
+            623 strings with 8629 characters,
+and the built_in function-call counts, 7321 in all, are:
+= -- 588
+> -- 467
 < -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
++ -- 163
+- -- 139
+* -- 563
+:= -- 1067
+add.period$ -- 24
+call.type$ -- 24
+change.case$ -- 24
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
+cite$ -- 24
+duplicate$ -- 323
+empty$ -- 675
+format.name$ -- 139
+if$ -- 1754
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
+int.to.str$ -- 24
+missing$ -- 15
+newline$ -- 75
+num.names$ -- 26
+pop$ -- 142
+preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 0
+skip$ -- 246
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 403
+swap$ -- 127
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 0
+while$ -- 53
+width$ -- 26
+write$ -- 209
 (There were 2 error messages)

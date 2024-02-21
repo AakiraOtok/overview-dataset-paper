@@ -7,6 +7,7 @@
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{pifont}
 \usepackage[utf8]{vietnam}
 \usepackage{subcaption}
 \usepackage{setspace}
@@ -260,13 +261,32 @@ Các thông tin ở từng mục sẽ được nói kĩ nhưng không đi sâu v
 \subsection{Characteristic}
 Nói về đặc điểm hiện có của các bộ dữ liệu theo các yếu tố trong bảng bên dưới.
 
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+
 \begin{table}[h]
 	\centering
 	%\small
 	\caption{Action recognition dataset}
-	\begin{tabular}{l|l l l l l l l l l}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{l|c c c c l l l l l}
 		\toprule
-		tên & phân loại(như trong sheet) & temporal & spatial & classification-only & Focus on (scale/diverse class ...) \\
+		Name & Actor-Action & Temporal & Spatial & Classification & Category \\
+		\hline
+		HMDB51               & 1 - 1 & \xmark & \xmark & \cmark & Outdoor \\
+		UCF101               & 1 - 1 & \xmark & \xmark & \cmark & Number of actions \\
+		Sport-1M             & n - 1 & \xmark & \xmark & \cmark & Large scale \\
+		ActivityNet          & 1 - 1 & \cmark & \xmark & \xmark & Number of actions \\ 
+		Youtube-8M           & n - 1 & \\
+		Something Something  & 1 - 1 & \xmark & \xmark & \cmark & Context information \\
+		Charades             & 1 - 1 & \cmark & \xmark & \xmark & Daily activity \\
+		AVA                  & n - n & \cmark & \cmark & \xmark & \\
+		Moments in Time      & 1 - 1 & \xmark & \xmark & \cmark & \\
+		HACS                 & 1 - 1 & \cmark & \xmark & \cmark & \\
+		HVU                  &       & \xmark & \xmark & \cmark & \\
+		AViD                 &       & \xmark & \xmark & \cmark & \\
+		\bottomrule
+ 		
 	\end{tabular}%
 	\label{config1}
 \end{table}%
@@ -285,11 +305,24 @@ Bảng dự kiến :
 	\centering
 	%\small
 	\caption{Action recognition dataset}
+	\renewcommand{\arraystretch}{1.5}
 	\begin{tabular}{l|l l l l l l l l l}
 		\toprule
-		tên & pp tạo act list & nguồn vid & pp anno & các tool anno được sử dụng \\
+		Name & ActMethod & Sourced & Annotate Method & Ann Tools \\
+		\hline
+		HMDB51               &  \\
+		UCF101               &  \\
+		Sport-1M             &  \\
+		ActivityNet          &  \\ 
+		Youtube-8M           &  \\
+		Something Something  &  \\
+		Charades             &  \\
+		AVA                  &  \\
+		Moments in Time      &  \\
+		HACS                 &  \\
+		HVU                  &  \\
 	\end{tabular}%
-	\label{config}
+	\label{config6}
 \end{table}%
 
 \subsection{Data statistic}
@@ -367,4 +400,7 @@ Thuyết minh + đưa ra dẫn chứng cụ thể.
 \section{Conclusion}
 
 \section{References}
+
+\bibliographystyle{ieeetr}
+\bibliography{references.bib}
 \end{document}
