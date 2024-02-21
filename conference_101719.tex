@@ -1,275 +1,842 @@
-\documentclass[conference]{IEEEtran}
-\IEEEoverridecommandlockouts
-% The preceding line is only needed to identify funding in the first footnote. If that is unneeded, please comment it out.
+%\documentclass[conference]{IEEEtran}
+\documentclass[10pt,onecolumn,letterpaper]{article}
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
 \usepackage{graphicx}
 \usepackage{textcomp}
 \usepackage{xcolor}
+\usepackage{tabularx,booktabs}
 \usepackage[utf8]{vietnam}
+\usepackage{hyperref}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
-    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+		T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
-
-\title{Video Understanding : A review of action detection-recognition dataset}
-
-\author{\IEEEauthorblockN{1\textsuperscript{st} Viet Hang Duong}
-\IEEEauthorblockA{\textit{Dept of Computer Science} \\
-\textit{University of Information Technology}\\
-Ho Chi Minh City, Viet Nam \\
-hangdv@uit.edu.vn}
-\and
-\IEEEauthorblockN{2\textsuperscript{nd} Duc Manh Nguyen Dang}
-\IEEEauthorblockA{\textit{Dept of Computer Science} \\
-\textit{University of Information Technology}\\
-Ho Chi Minh City, Viet Nam \\
-22520847@gm.uit.edu.vn}
-\and
-\IEEEauthorblockN{3\textsuperscript{rd} Ngoc Tram Phan Huynh}
-\IEEEauthorblockA{\textit{Dept of Computer Science} \\
-\textit{University of Information Technology}\\
-Ho Chi Minh City, Viet Nam \\
-22521500@uit.edu.vn}
+	
+	\title{Video Understanding : A review of action detection-recognition dataset}
+	%
+	%\author{\IEEEauthorblockN{1\textsuperscript{st} Viet Hang Duong}
+		%\IEEEauthorblockA{\textit{Dept of Computer Science} \\
+			%\textit{University of Information Technology}\\
+			%Ho Chi Minh City, Viet Nam \\
+			%hangdv@uit.edu.vn}
+		%\and
+		%\cpvrauthorblockN{2\textsuperscript{nd} Duc Manh Nguyen Dang}
+		%\IEEEauthorblockA{\textit{Dept of Computer Science} \\
+			%\textit{University of Information Technology}\\
+			%Ho Chi Minh City, Viet Nam \\
+			%22520847@gm.uit.edu.vn}
+		%\and
+		%\IEEEauthorblockN{3\textsuperscript{rd} Ngoc Tram Phan Huynh}
+		%\IEEEauthorblockA{\textit{Dept of Computer Science} \\
+			%\textit{University of Information Technology}\\
+			%Ho Chi Minh City, Viet Nam \\
+			%22521500@uit.edu.vn}
+		%}%
+	
+	\author{First Author\\
+		{\tt\small firstauthor@i1.org}
+		% For a paper whose authors are all at the same institution,
+		% omit the following lines up until the closing ``}''.
+	% Additional authors and addresses can be added with ``\and'',
+	% just like the second author.
+	% To save space, use either the email address or home page, not both
+	\and
+	Second Author\\
+	{\tt\small secondauthor@i2.org}
 }
-
 \maketitle
 
+\tableofcontents
+
 \begin{abstract}
-In this article, we provide a summary and an overview of the datasets used in the task of action detection/recognition. The datasets will be presented in the order of their publication time. For each dataset, we sequentially present four aspects: the context of its creation, data distribution, explanations of annotations, and data collection methods. \\
+	In this article, we provide a summary and an overview of the datasets used in
+	the task of action detection/recognition. The datasets will be presented in the
+	order of their publication time. For each dataset, we sequentially present four
+	aspects: the context of its creation, data distribution, explanations of
+	annotations, and data collection methods. \\
 \end{abstract}
 
-\begin{IEEEkeywords}
-Dataset Overview 
-\end{IEEEkeywords}
-
 \section{Introduction}
-In video understanding tasks, action recognition and detection are prominent and meaningful due to their practical applications in daily life. Some notable applications include Surveillance and Security, Human-Computer Interaction, Sports Analysis, Entertainment and Gaming, among others. Although deep learning models designed to solve these problems often require significant computational resources, with the advancement of computer hardware, the deployment in real-world scenarios while meeting real-time processing speed has become more feasible over time.
+In video understanding tasks, action recognition and detection are prominent and
+meaningful due to their practical applications in daily life. Some notable
+applications include Surveillance and Security, Human-Computer Interaction,
+Sports Analysis, Entertainment and Gaming, among others. Although deep learning
+models designed to solve these problems often require significant computational
+resources, with the advancement of computer hardware, the deployment in
+real-world scenarios while meeting real-time processing speed has become more
+feasible over time.
 
-Besides the requirement for significant computational resources, they also demand a large and sufficiently complex dataset. In addition to serving as training data, datasets also provide a portion of data specifically for evaluating models, thereby establishing a common benchmark for comparing different models. Over the years, new datasets have emerged, either as additions to existing datasets or as entirely new ones based on different construction perspectives. This has increased both the diversity and quantity of available data, but also inadvertently posed challenges in selecting an appropriate dataset. Evaluating whether a dataset is suitable for a given research problem is not merely a matter of its scale. Other characteristics must also be considered, such as the dataset creator's perspective, data collection methods, sample size, number of classes, level of annotation detail (spatial, temporal, sound, etc.), popularity within the research community, the baseline for comparison, and various other factors. Therefore, it is necessary to carefully examine datasets relevant to the task, gather information, evaluate, and then compare them to ultimately select the desired dataset for research purposes. This process typically consumes a significant amount of time and effort. To address this issue, in this paper, we aim to compile notable datasets in the fields of action detection and action recognition, listing them chronologically while providing concise necessary information regarding:
+Besides the requirement for significant computational resources, they also
+demand a large and sufficiently complex dataset. In addition to serving as
+training data, datasets also provide a portion of data specifically for
+evaluating models, thereby establishing a common benchmark for comparing
+different models. Over the years, new datasets have emerged, either as additions
+to existing datasets or as entirely new ones based on different construction
+perspectives. This has increased both the diversity and quantity of available
+data, but also inadvertently posed challenges in selecting an appropriate
+dataset. Evaluating whether a dataset is suitable for a given research problem
+is not merely a matter of its scale. Other characteristics must also be
+considered, such as the dataset creator's perspective, data collection methods,
+sample size, number of classes, level of annotation detail (spatial, temporal,
+sound, etc.), popularity within the research community, the baseline for
+comparison, and various other factors. Therefore, it is necessary to carefully
+examine datasets relevant to the task, gather information, evaluate, and then
+compare them to ultimately select the desired dataset for research purposes.
+This process typically consumes a significant amount of time and effort. To
+address this issue, in this paper, we aim to compile notable datasets in the
+fields of action detection and action recognition, listing them chronologically
+while providing concise necessary information regarding:
 
 \begin{itemize}
-	\item \textit{Context and construction perspective of the dataset}: Since the datasets are presented chronologically, this section clarifies the information regarding the background and the authors' perspectives on the shortcomings or the necessary additions to older datasets.
-	\item \textit{Dataset distribution}: Information about the dataset, such as the number of data samples, the number of classes, the train-validation splits, and any other available details.
-	\item \textit{Annotations}: Explanation of the annotations provided in the dataset.
-	\item \textit{Data collection methods}: We summarize the data collection process employed by the respective author groups on that dataset. This allows for a more objective assessment of the dataset's reliability and quality based on the researcher's perspective.
+	\item \textit{Context and construction perspective of the dataset}: Since the
+	datasets are presented chronologically, this section clarifies the information
+	regarding the background and the authors' perspectives on the shortcomings or
+	the necessary additions to older datasets.
+	\item \textit{Dataset distribution}: Information about the dataset, such as the
+	number of data samples, the number of classes, the train-validation splits, and
+	any other available details.
+	\item \textit{Annotations}: Explanation of the annotations provided in the
+	dataset.
+	\item \textit{Data collection methods}: We summarize the data collection
+	process employed by the respective author groups on that dataset. This allows
+	for a more objective assessment of the dataset's reliability and quality based
+	on the researcher's perspective.
 \end{itemize}
 
-In the next section, we will list the datasets in the order of their publication time (measured from the time the accompanying paper is published). Each dataset will include four pieces of information presented in the following order: "Context and Construction Perspective of the Dataset," "Annotations," "Dataset Distribution," and "Data Collection Methods." If some information is not provided by the authors in the original paper, it will be left blank or omitted. Additionally, if the authors provide any additional information included in the dataset, we will allocate a separate section below to describe it. The list of datasets, along with a brief overview of their publication dates and the mentioned data quantities, can be found in Fig1..
+In section II, we will provide a brief overview of the history and context of
+the field of artificial intelligence research from its inception to the
+emergence of CNN models and their dominance from image task to video task.
+Having a general understanding of the history and context will help readers
+understand why datasets have their limitations and continue to evolve over the
+years.
 
-\section{Ease of Use}
+In section III, we list the datasets in the order of their publication time
+(measured from the time the accompanying paper is published). Each dataset
+includes four sections presented in the following order: "Context
+and Construction Perspective of the Dataset," "Annotations," "Dataset
+Distribution," and "Data Collection Methods." If some information is not
+provided by the authors in the original paper, it will be left blank or omitted.
+Additionally, if the authors provide any additional information included in the
+dataset, we will allocate a separate section below to describe it. The list of
+datasets, along with a brief overview of their publication dates and the
+mentioned data quantities, can be found in Fig1..
 
-\subsection{Maintaining the Integrity of the Specifications}
+\section{Overview of History}
 
-The IEEEtran class file is used to format your paper and style the text. All margins, 
-column widths, line spaces, and text fonts are prescribed; please do not 
-alter them. You may note peculiarities. For example, the head margin
-measures proportionately more than is customary. This measurement 
-and others are deliberate, using specifications that anticipate your paper 
-as one part of the entire proceedings, and not as an independent document. 
-Please do not revise any of the current designations.
+Although the field of artificial intelligence emerged in the mid-1990s, it took
+several decades for significant progress to be made, thanks to the remarkable
+advancements in computer hardware - greater computing power and easier
+accessibility. As a result, the research community's interest in AI has
+significantly increased. AI competitions began to be organized, particularly in
+computer vision, attracting numerous research groups. In 2010, the ImageNet
+Large Scale Visual Recognition Challenge (ILSVRC) \cite{ILSVRC} was initiated,
+aiming to build upon the success of the PASCAL VOC challenge \cite{PASCALVOC} by
+evaluating model performance in image recognition tasks.
 
-\section{Prepare Your Paper Before Styling}
-Before you begin to format your paper, first write and save the content as a 
-separate text file. Complete all content and organizational editing before 
-formatting. Please note sections \ref{AA}--\ref{SCM} below for more information on 
-proofreading, spelling and grammar.
+ILSVRC, upon its initial launch, garnered significant attention and credibility
+within the research community due to its unprecedented scale of data: 1.2
+million training images and 1,000 object classes. It attracted participation
+from top researchers in the field and further solidified its reputation.
 
-Keep your text and graphic files separate until after the text has been 
-formatted and styled. Do not number text heads---{\LaTeX} will do that 
-for you.
-
-\subsection{Abbreviations and Acronyms}\label{AA}
-Define abbreviations and acronyms the first time they are used in the text, 
-even after they have been defined in the abstract. Abbreviations such as 
-IEEE, SI, MKS, CGS, ac, dc, and rms do not have to be defined. Do not use 
-abbreviations in the title or heads unless they are unavoidable.
-
-\subsection{Units}
-\begin{itemize}
-\item Use either SI (MKS) or CGS as primary units. (SI units are encouraged.) English units may be used as secondary units (in parentheses). An exception would be the use of English units as identifiers in trade, such as ``3.5-inch disk drive''.
-\item Avoid combining SI and CGS units, such as current in amperes and magnetic field in oersteds. This often leads to confusion because equations do not balance dimensionally. If you must use mixed units, clearly state the units for each quantity that you use in an equation.
-\item Do not mix complete spellings and abbreviations of units: ``Wb/m\textsuperscript{2}'' or ``webers per square meter'', not ``webers/m\textsuperscript{2}''. Spell out units when they appear in text: ``. . . a few henries'', not ``. . . a few H''.
-\item Use a zero before decimal points: ``0.25'', not ``.25''. Use ``cm\textsuperscript{3}'', not ``cc''.)
-\end{itemize}
-
-\subsection{Equations}
-Number equations consecutively. To make your 
-equations more compact, you may use the solidus (~/~), the exp function, or 
-appropriate exponents. Italicize Roman symbols for quantities and variables, 
-but not Greek symbols. Use a long dash rather than a hyphen for a minus 
-sign. Punctuate equations with commas or periods when they are part of a 
-sentence, as in:
-\begin{equation}
-a+b=\gamma\label{eq}
-\end{equation}
-
-Be sure that the 
-symbols in your equation have been defined before or immediately following 
-the equation. Use ``\eqref{eq}'', not ``Eq.~\eqref{eq}'' or ``equation \eqref{eq}'', except at 
-the beginning of a sentence: ``Equation \eqref{eq} is . . .''
-
-\subsection{\LaTeX-Specific Advice}
-
-Please use ``soft'' (e.g., \verb|\eqref{Eq}|) cross references instead
-of ``hard'' references (e.g., \verb|(1)|). That will make it possible
-to combine sections, add equations, or change the order of figures or
-citations without having to go through the file line by line.
-
-Please don't use the \verb|{eqnarray}| equation environment. Use
-\verb|{align}| or \verb|{IEEEeqnarray}| instead. The \verb|{eqnarray}|
-environment leaves unsightly spaces around relation symbols.
-
-Please note that the \verb|{subequations}| environment in {\LaTeX}
-will increment the main equation counter even when there are no
-equation numbers displayed. If you forget that, you might write an
-article in which the equation numbers skip from (17) to (20), causing
-the copy editors to wonder if you've discovered a new method of
-counting.
-
-{\BibTeX} does not work by magic. It doesn't get the bibliographic
-data from thin air but from .bib files. If you use {\BibTeX} to produce a
-bibliography you must send the .bib files. 
-
-{\LaTeX} can't read your mind. If you assign the same label to a
-subsubsection and a table, you might find that Table I has been cross
-referenced as Table IV-B3. 
-
-{\LaTeX} does not have precognitive abilities. If you put a
-\verb|\label| command before the command that updates the counter it's
-supposed to be using, the label will pick up the last counter to be
-cross referenced instead. In particular, a \verb|\label| command
-should not go before the caption of a figure or a table.
-
-Do not use \verb|\nonumber| inside the \verb|{array}| environment. It
-will not stop equation numbers inside \verb|{array}| (there won't be
-any anyway) and it might stop a wanted equation number in the
-surrounding equation.
-
-\subsection{Some Common Mistakes}\label{SCM}
-\begin{itemize}
-\item The word ``data'' is plural, not singular.
-\item The subscript for the permeability of vacuum $\mu_{0}$, and other common scientific constants, is zero with subscript formatting, not a lowercase letter ``o''.
-\item In American English, commas, semicolons, periods, question and exclamation marks are located within quotation marks only when a complete thought or name is cited, such as a title or full quotation. When quotation marks are used, instead of a bold or italic typeface, to highlight a word or phrase, punctuation should appear outside of the quotation marks. A parenthetical phrase or statement at the end of a sentence is punctuated outside of the closing parenthesis (like this). (A parenthetical sentence is punctuated within the parentheses.)
-\item A graph within a graph is an ``inset'', not an ``insert''. The word alternatively is preferred to the word ``alternately'' (unless you really mean something that alternates).
-\item Do not use the word ``essentially'' to mean ``approximately'' or ``effectively''.
-\item In your paper title, if the words ``that uses'' can accurately replace the word ``using'', capitalize the ``u''; if not, keep using lower-cased.
-\item Be aware of the different meanings of the homophones ``affect'' and ``effect'', ``complement'' and ``compliment'', ``discreet'' and ``discrete'', ``principal'' and ``principle''.
-\item Do not confuse ``imply'' and ``infer''.
-\item The prefix ``non'' is not a word; it should be joined to the word it modifies, usually without a hyphen.
-\item There is no period after the ``et'' in the Latin abbreviation ``et al.''.
-\item The abbreviation ``i.e.'' means ``that is'', and the abbreviation ``e.g.'' means ``for example''.
-\end{itemize}
-An excellent style manual for science writers is \cite{b7}.
-
-\subsection{Authors and Affiliations}
-\textbf{The class file is designed for, but not limited to, six authors.} A 
-minimum of one author is required for all conference articles. Author names 
-should be listed starting from left to right and then moving down to the 
-next line. This is the author sequence that will be used in future citations 
-and by indexing services. Names should not be listed in columns nor group by 
-affiliation. Please keep your affiliations as succinct as possible (for 
-example, do not differentiate among departments of the same organization).
-
-\subsection{Identify the Headings}
-Headings, or heads, are organizational devices that guide the reader through 
-your paper. There are two types: component heads and text heads.
-
-Component heads identify the different components of your paper and are not 
-topically subordinate to each other. Examples include Acknowledgments and 
-References and, for these, the correct style to use is ``Heading 5''. Use 
-``figure caption'' for your Figure captions, and ``table head'' for your 
-table title. Run-in heads, such as ``Abstract'', will require you to apply a 
-style (in this case, italic) in addition to the style provided by the drop 
-down menu to differentiate the head from the text.
-
-Text heads organize the topics on a relational, hierarchical basis. For 
-example, the paper title is the primary text head because all subsequent 
-material relates and elaborates on this one topic. If there are two or more 
-sub-topics, the next level head (uppercase Roman numerals) should be used 
-and, conversely, if there are not at least two sub-topics, then no subheads 
-should be introduced.
-
-\subsection{Figures and Tables}
-\paragraph{Positioning Figures and Tables} Place figures and tables at the top and 
-bottom of columns. Avoid placing them in the middle of columns. Large 
-figures and tables may span across both columns. Figure captions should be 
-below the figures; table heads should appear above the tables. Insert 
-figures and tables after they are cited in the text. Use the abbreviation 
-``Fig.~\ref{fig}'', even at the beginning of a sentence.
-
-\begin{table}[htbp]
-\caption{Table Type Styles}
-\begin{center}
-\begin{tabular}{|c|c|c|c|}
-\hline
-\textbf{Table}&\multicolumn{3}{|c|}{\textbf{Table Column Head}} \\
-\cline{2-4} 
-\textbf{Head} & \textbf{\textit{Table column subhead}}& \textbf{\textit{Subhead}}& \textbf{\textit{Subhead}} \\
-\hline
-copy& More table copy$^{\mathrm{a}}$& &  \\
-\hline
-\multicolumn{4}{l}{$^{\mathrm{a}}$Sample of a Table footnote.}
-\end{tabular}
-\label{tab1}
-\end{center}
-\end{table}
-
-\begin{figure}[htbp]
-\centerline{\includegraphics{fig1.png}}
-\caption{Example of a figure caption.}
-\label{figx}
+\begin{figure} [h]
+	\centering
+	
+	\includegraphics[width=1.\linewidth]{fig_info/fig1/ILSVRCChampionTeamOvertheYears}
+	\caption{ILSVRC champion team over years on classification task}
+	\label{fig:ilsvrcchampionteamovertheyears}
 \end{figure}
 
-Figure Labels: Use 8 point Times New Roman for Figure labels. Use words 
-rather than symbols or abbreviations when writing Figure axis labels to 
-avoid confusing the reader. As an example, write the quantity 
-``Magnetization'', or ``Magnetization, M'', not just ``M''. If including 
-units in the label, present them within parentheses. Do not label axes only 
-with units. In the example, write ``Magnetization (A/m)'' or ``Magnetization 
-\{A[m(1)]\}'', not just ``A/m''. Do not label axes with a ratio of 
-quantities and units. For example, write ``Temperature (K)'', not 
-``Temperature/K''.
+Go back to 1998 when LeNet \cite{LeNet}, the first CNN model, was introduced. At
+that time, CNN was just one of many research directions and had not received
+much attention. It wasn't until 2012 when the SuperVison team, led by
+researchers at the University of Toronto, proposed a CNN model called AlexNet
+and convincingly won the ILSVRC2012 in image classification with a top-5 error
+rate of only 16.422\% (Fig \ref{fig:ilsvrcchampionteamovertheyears}). They
+completely outperformed other competitors at that time, paving the way for the
+era of CNN and the dawn of Deep Learning. Since then, winning solutions in
+subsequent years of ILSVRC have consistently utilized CNN. Over time, there has
+been an increasing number of research studies applying CNN models to various
+tasks. Through experimentation, CNN has proven to be effective not only in image
+classification but also in localization, segmentation, and even beyond computer
+vision, extending to other fields such as speech processing and natural language
+processing. CNN has shown great potential in developing solutions for previously
+challenging problems that were not adequately addressed. One such problem is
+action recognition, which is a highly significant task with practical
+applications. CNN has opened up possibilities for developing solutions to
+previously unresolved problems, and action recognition is just one of them,
+receiving considerable attention and practical implications.
 
-\section*{Acknowledgment}
+The problem of Action Recognition existed before the rise of CNN. Solutions for
+action recognition during this period often involved feature extraction using
+various methods to obtain a feature vector from the data, followed by a
+classifier, typically a Support Vector Machine (SVM). This approach is called
+"hand-crafted feature" and it continued to dominate other methods, including
+CNNs, until 2015 because CNN models were still relatively new and not
+extensively explored. Over time, the research community gradually replaced these
+hand-crafted feature methods with CNNs. Continuous advancements and proposals of
+CNN models for action recognition have been made, such as Two-stream networks,
+Segment-based methods, Multi-stream networks, 3D CNNs, and so on. Alongside
+these developments, there has been an increasing demand for computational power
+and a significant growth in the amount of data. The datasets used in this period
+were also limited, as shown in Table \ref{config}, which lists prominent
+datasets from before 2012. It can be observed that in terms of scale (number of
+classes, number of video clips), the datasets were still quite limited.
 
-The preferred spelling of the word ``acknowledgment'' in America is without 
-an ``e'' after the ``g''. Avoid the stilted expression ``one of us (R. B. 
-G.) thanks $\ldots$''. Instead, try ``R. B. G. thanks$\ldots$''. Put sponsor 
-acknowledgments in the unnumbered footnote on the first page.
+\begin{table}[h]
+	\centering
+	%\small
+	\caption{Action recognition dataset}
+	\begin{tabular}{l|l l l l}
+		\toprule
+		Name & Year & NumClass & Clip/Class & Ref \\
+		\midrule
+		KTH & 2004 & 6 & 100 & \cite{KTH} \\
+		Weizmann & 2005 & 9 & 9 & \cite{Weizmann} \\
+		IXMAS & 2007 & 11 & 33 & \cite{IXMAS} \\
+		Hollywood & 2008 & 8 & 30-129 & \cite{HollyWood} \\
+		UCF Sports & 2008 & 9 & 14-35 & \cite{UCFSports} \\
+		Hollywood2 & 2009 & 12 & 61-278 & \cite{Hollywood2} \\
+		UCF YouTube & 2009 & 11 & 100 & \cite{UCFYouTube} \\
+		Olympic & 2010 & 16 & 50 & \cite{Olympic} \\
+		\bottomrule
+	\end{tabular}%
+	\label{config}
+\end{table}%
 
-\section*{References}
+Building a dataset typically goes through four steps: (1) Defining a set of
+predefined actions, (2) Collecting videos from data sources, (3) Annotating the
+data (either automatically, semi-automatically, or manually), (4) Cleaning and
+filtering the data to remove duplicates and noise. Each step presents its own
+challenges. In step (1), defining an action is not a simple task as humans often
+perform complex combinations of gestures. So, what constitutes an "atomic
+action"? In step (2), do the video sources comply with copyright rules? Privacy
+regulations? Is the dataset stable (not prone to loss or replacement)? In step
+(3), the workload scales with the dataset size, and there can be vague
+boundaries in determining the start and end of an action. In step (4), what
+criteria are used to evaluate whether a video meets the standards for usability?
+There are many related questions, such as the availability of human and
+financial resources, required to meet the demands of building a comprehensive
+research dataset. Furthermore, considering the context before CNNs gained
+significant prominence, investing in developing a large-scale dataset was highly
+risky.
 
-Please number citations consecutively within brackets \cite{b1}. The 
-sentence punctuation follows the bracket \cite{b2}. Refer simply to the reference 
-number, as in \cite{b3}---do not use ``Ref. \cite{b3}'' or ``reference \cite{b3}'' except at 
-the beginning of a sentence: ``Reference \cite{b3} was the first $\ldots$''
+CNN models possess immense power that scales with their complexity., is prone to
+overfitting, especially when dealing with small amounts of data. During the
+explosion of CNN, research groups faced many challenges due to data scarcity.
+Methods like data augmentation were effective solutions, but it was still
+necessary to supplement larger and more complex datasets to meet the growing
+demand for data in CNN models. Another reason is that the remarkable success of
+CNNs in image processing tasks has been greatly contributed by large-scale
+datasets like ImageNet. However, in the video domain, there is currently no
+comparable dataset to ImageNet. Realizing this need, research groups from all
+over the AI research community have continuously improved and published
+increasingly refined datasets. These datasets play a crucial role as a common
+benchmark for comparing different models.
 
-Number footnotes separately in superscripts. Place the actual footnote at 
-the bottom of the column in which it was cited. Do not put footnotes in the 
-abstract or reference list. Use letters for table footnotes.
+\section{Review}
 
-Unless there are six authors or more give all authors' names; do not use 
-``et al.''. Papers that have not been published, even if they have been 
-submitted for publication, should be cited as ``unpublished'' \cite{b4}. Papers 
-that have been accepted for publication should be cited as ``in press'' \cite{b5}. 
-Capitalize only the first word in a paper title, except for proper nouns and 
-element symbols.
+\subsection{HMDB51}
 
-For papers published in translation journals, please give the English 
-citation first, followed by the original foreign-language citation \cite{b6}.
+\begin{itemize}
+	\item Year : 2011
+	\item Paper : HMDB: A Large Video Database for Human Motion Recognition
+	\cite{HMDB51}.
+\end{itemize}
 
-\begin{thebibliography}{00}
-\bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
-\bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
-\bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
-\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
-\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
-\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
-\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
-\end{thebibliography}
-\vspace{12pt}
-\color{red}
-IEEE conference templates contain guidance text for composing and formatting conference papers. Please ensure that all template text is removed from your conference paper prior to submission to the conference. Failure to remove the template text from your paper may result in your paper not being published.
+\subsubsection{\textbf{Context and construction perspective}}
+KTH \cite{KTH} and Weizmann \cite{Weizmann} have long been regarded as
+pioneering datasets in the early stages of action recognition. However, over
+time, their limitations have become evident, particularly in terms of a
+restricted number of action categories and simplistic background contexts. With
+the advent of recent models, achieving accuracy rates exceeding 90\% became
+commonplace. As a result, there is a growing demand for alternative datasets
+that present more substantial challenges, aiming to push the boundaries and
+enhance the capabilities of action recognition systems. The dataset is carefully
+designed to highlight differences among action categories based on motion rather
+than static poses. With the valuable contribution, the dataset has a potential
+of significantly enhance the evaluation and future utilization of recognition
+systems in real life. 
+
+\subsubsection{\textbf{Data collection methods}}
+A group of student was asked to collect and annotate any segment which represents
+a single non-ambiguous human action from videos. The videos are sourced from
+digitized movies, public databases like the Prelinger archive, additional online
+videos, as well as content from YouTube, Google videos and other videos from
+internet. Students also were asked to consider some minimum quality standard : 
+only one action per clip, minimum height for main actor should be 60 pixels,
+minimum contrast level, minimum of clip length is 1 second, acceptable
+compression artifacts, etc. 
+
+\subsubsection{\textbf{Data distribution}} 
+It includes 6,766 video clips covering 51 different action categories, with each
+category having at least 101 clips. 
+\begin{itemize}
+	\item Train : for each action, 70 random clips are used.
+	\item Validation : no validation set.
+	\item Test : for each action, 30 random clips are used. 
+\end{itemize}
+
+The authors generated three distinct training/testing split follow above rule,
+ensure that no test clip is also not in train clip.
+
+\subsubsection{\textbf{Annotations}}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=1.\linewidth]{"fig_info/fig2/Untitled Diagram.drawio"}
+	\caption{}
+	\label{fig:untitled-diagram}
+\end{figure}
+
+For each class, there is 3 split files as mentioned above. Each file
+includes the names of all the videos in the same class along with an index
+belonging to $\lbrace 0, 1, 2 \rbrace$ as shown in Figure
+\ref{fig:untitled-diagram}. The file used for training is indexed as 1, for
+testing it is 2, and 0 indicates that it is not used in this split.
+
+\begin{table}[h]
+	\centering
+	\caption{Action recognition dataset}
+	\begin{tabular}{l | l     }
+		\toprule
+		PROPERTY & CATEGORIES \\
+		\midrule
+		Visible body parts & head(h), upper body(u), full body (f), lower body(l)\\ 
+		Camera motion & motion (cm), static (nm) \\
+		Number of people involved in the action	& single (np1), two (np2), three
+		(np3)\\
+		Camera viewpoint & front (fr), back (ba), left(le), right(ri) \\
+		Video quality & good (goo), medium (med), ok (bad)	\\
+		
+		
+		\bottomrule
+	\end{tabular}%
+	\label{config2}
+\end{table}%
+
+The name of each video also carries a meaning, with a specific structure as
+follows: \\
+\text{vid-name\_class-name\_vible-body-part\_cam-motion\_num-of-people\_cam-viewpoint\_vid-quality}\\
+The abbreviations used are listed in Table \ref{config2}. \\
+For example, the name
+IPL\_Awards\_Ceremony\_shake\_hands\_f\_cm\_np2\_ba\_med\_0.avi represents a
+video titled IPL Awards Ceremony, belonging to the shake hands class, with 'f'
+indicating full body, 'cm' indicating motion, 'np2' indicating two people, 'ba'
+representing back viewpoint, and 'med' indicating medium quality.
+\subsection{UCF-101}
+
+\begin{itemize}
+	\item Year : 2012
+	\item Paper : UCF101: A Dataset of 101 Human Actions Classes From Videos in The Wild
+	Actions \cite{UCF101}
+\end{itemize}
+
+\subsubsection{\textbf{Context and construction perspective}}
+In the past, Action Recognition datasets are made artificially and often involving actors performing various actions in controlled environments. Consequently, traditional action recognition datasets often suffer from the lack of realistic context, which poses challenges for effectively addressing real-world problems. Therefore, the UCF-50 was initially introduced with the primary aim of addressing this issue through the incorporation of real-life videos which reflect the diversity of human actions represented in real-world scenarios.
+
+Serving as an extension of the UCF50 dataset, UCF101 retained the original 50 action classes from its predecessor while introducing an additional 51 new classes. The aim was to refine and expand the range of actions captured in the dataset, contributing to a more comprehensive understanding of human activities.
+
+Among the UCF family of action datasets, there are four version: UCFSports \cite{UCFSports}, UCF11 \cite{UCFSports}, UCF50, and UCF101. Of these, the dataset being referred to is the largest and most iconic.
+\subsubsection{Data collection methods}
+The videos in the dataset are primarily sourced from YouTube. Researchers begin by conducting searches related to the desired action categories. After that, they undergo the preprocess and then annotation procedures on the identified videos. Beside, these videos are selected to keep up various aspects such as camera angles, motion, spectator viewpoint, external conditions, object interactions, contextual backgrounds, and more.
+\subsubsection{Data distribution}
+The dataset contains of 13,320 video demonstrating of 101 actions. Each clip has a resolution of 320x240 pixels at 25 FPS. 
+
+Beside, this dataset is also include audio data for 50 action classes, providing valuable supplementary information to the videos. In each clip, it is separated into various variants of itself, such as reducing or increasing the length or adding audio called augmented group. These variations aid the model in learning both similarities and differences between classes.
+
+The train/test split uses the same method as mentioned above for HMDB51 which divided into three independent sets. Each split is carefully chosen to ensure the minimal correlation between them.
+\begin{itemize}
+	\item Train : for each action, 70 random clips are used.
+	\item Validation : no validation set.
+	\item Test : for each action, 30 random clips are used. 
+\end{itemize} 
+
+\subsubsection{Annotation}
+In the related paper, actions are split into action groups depending on their purpose: \textit{Human-Object Interaction, Body-Motion Only, Human-Human Interaction, Playing Musical Instruments, Sports}. The portion of each groups are shown the figure below:
+
+In the provided Figure *b*, the Sport group significantly dominates the entire dataset. As the author mentions, the distinctive motions which related to sports tend to achieve higher accuracy than others action groups when applying the SVM classisfication technique.
+
+Within each set, there exist both training and testing components. Each file contains a list of video names utilized for the proposed purpose. These video names following to a specific rule in order of: \textit{action class}, \textit{augmented group}, and \textit{clip number}. 
+
+For example, \textit{v\_PlayingGuitar\_g25\_c07} indicates the clip number \textbf{07} shows up the action \textbf{Playing Guitar} in the augmented group \textbf{25}.
+\subsection{Sport-1M}
+
+\begin{itemize}
+	\item Year : 2014
+	\item Paper : Large-scale Video Classification with Convolutional Neural Networks
+	Actions \cite{Sports1M}
+\end{itemize}
+\subsubsection{\textbf{Context and construction perspective}}
+In recent years, the rapid growth of Artificial Intelligence has led to the evolution of image-related datasets. However, they were designed to satisfy old traditional Machine Learning methods, such as SVM \cite{HMDB51} \cite{UCF101}. This method is now prone to being left behind by the newborn CNNs method, whose effectiveness was proven by AlexNet \cite{AlexNet} in 2012. The problem arises concerning the equivalent metrics for those datasets. Therefore, a gigantic sports action dataset was developed to address this issue which is called Sports-1M.
+\subsubsection{Data collection methods}
+The videos are automatically collected from YouTube based on related sports tags. Subsequently, their associated links are stored in a text file for later download. Each clip ensures that the link is accessible before being saved.
+\subsubsection{Data distribution}
+The dataset contains 1,133,158 YouTube videos, covering a diverse range of content. There are 487 unique classes in the dataset, with each class 
+ranging from 1000 to 3000 videos. Notably, each video may be assigned multiple labels, indicating that a single video could have more than one annotation, accounting for approximately 5 \% of the dataset. The dataset is divided into training, validation, and testing sets in a 7:1:2 ratio, respectively.
+\begin{itemize}
+	\item Train and Validation : 914,491 clips
+	\item Test: 218,667 clips
+\end{itemize}
+\subsubsection{Annotation}
+The annotation process was performed automatically by a special machine algorithm. It follows the rule of analyzing the text metadata around the dataset and finding correlations to its labels. First, it identifies associated videos with pre-defined tags and then uses weakly supervised learning to structure the categories into hierarchical levels. For example, in the node "Ball Sports," it can include "freestyle football" and "ball hockey."
+
+Despite the automatic process of acquiring and annotating videos, the portion of duplicated frames are tiny (1755 out of more than 1 million clips). This is primarily attributed to the variability of frames within individual videos. Additionally, variations in actions may happened due to external factors such as camera angles or viewing distances.
+
+Each label describes in detail the associated sports. Therefore, numerous unique and rarely seen sports are also found here.
+For example, a line containing a link and labels is found in the training set: \\
+\url{https://www.youtube.com/watch?v=BWYPOToJu24} 436,431 \\
+The number "436" and "431" indicate its labels in order of "akido" and "grappling"
+
+\subsection{ActivityNet}
+
+\begin{itemize}
+	\item Year : 2015
+	\item Paper : ActivityNet: A Large-Scale Video Benchmark for Human Activity Understanding
+	Actions \cite{ActivityNet}
+\end{itemize}
+\subsubsection{Context and construction perspective}
+Although various action recognition datasets have been released in recent times, only a small portion of them focus on daily activities. For instance, datasets like UCF101 \cite{UCF101} and THUMOS 14 \cite{THUMOS} have their own category distributions, but they lack detailed organization and depth of levels, which limits the amount of information they provide. Therefore, ActivityNet is introduced to offer a solution with a large-scale dataset that provides a high level of specificity for human daily life in a hierarchical structure.
+\subsubsection{Data collection methods}
+According to the related paper, the data collection method follows three steps:
+\begin{itemize}
+	\item \textbf{Internet's data gathering:} Due to the abundance of videos available on the Internet, text based queries are used to filter out the relevant videos.
+	\item \textbf{Confirming the labels of untrimmed videos:} AMT workers verified those clips to determine whether they actually contain the action with the related label. As a result, untrimmed videos would be associated with at least one ground truth label.
+	\item \textbf{Annotating videos in the hierarchical structure}: The AMT workers then proceed to trim each video to include only one activity. Afterwards, the trimmed videos are rechecked by others to ensure the required quality
+\end{itemize}
+\subsubsection{Data distribution}
+It contains 849 hours from 27,801 videos of indoor actions with a total of 68.8 hours that appear 203 human-centric activities. Most of the videos have lengths ranging from 5 to 10 minutes at 30 FPS. Additionally, more than half of them have HD resolution quality (1280x720). The training, validation, and testing sets follow a split of 5:2.5:2.5 proportions.
+\begin{itemize}
+	\item Train : 10,024 videos
+	\item Validation : 4,926 videos
+	\item Test: 5,044 videos 
+\end{itemize}
+\subsubsection{Annotation}
+ActivityNet activities follows a hierarchical structure which referred as "roots." These roots different areas of human behavior including: \textit{Personal Care}, \textit{Eating and Drinking}, \textit{Household}, \textit{Caring and Helping}, \textit{Working}, \textit{Socializing and Leisure}, and \textit{Sports and Exercises}. Within each root category, there are more specific nodes that provide additional granularity. Finally, at the leaves, the dataset provides ground truth labels for individual activities. This hierarchical organization allows for a detailed understanding of the diverse range of behaviors captured in this dataset.
+
+The annotation process divided into two different parts: \textit{label part} and \textit{link part}. 
+
+The \textit{label part} provides the following:  
+\dirtree{%
+	.1 Taxonomy.
+	.2 Parent name.
+	.2 Node name.
+	.2 Node ID.
+	.2 Parent ID.
+}
+
+Node ID and Parent ID have a close relationship to define where the node is in the hierarchy
+
+The \textit{link part} provides the following:
+\dirtree{%
+	.1 Database.
+	.2 Youtube ID.
+	.3 Duration.
+	.3 Subset.
+	.3 Resolution.
+	.3 URL.
+	.3 Annotations.
+	.4 Segment.
+	.4 Label.
+}
+\subsection{Something Something V2}
+
+\begin{itemize}
+	\item Year : 2016
+	\item Paper : The “something something” video database for learning and evaluating visual common sense
+	Actions \cite{somethingsomething}
+\end{itemize}
+
+\subsubsection{\textbf{Context and construction perspective}}
+
+The recent expansion of the Action Recognition dataset has led to a rapid increase in the number of available videos, particularly sourced from platforms like YouTube such as Sport-1M \cite{Sports1M} and Youtube-8M \cite{YouTube8M}. However, the model's work associated with these datasets still involves combining features extracted from frames, and therefore becoming a "set of image" classification task. That's the reason even these datasets empower models to infer numerous actions depicted in videos, they often lack the contextual understanding of how different actions correlate with each other. Consequently, when an action is combined with various objects, it can potentially mislead the model since it diverges from its learned associations. 
+
+As an illustration, consider the action of "pointing" which can result in two scenarios: "Pointing a finger" (Harmless) or "Pointing a knife" (Dangerous). The main objective of Something Something dataset is to address this particular problem.
+
+In the related paper \cite{somethingsomething}, Something V1 emphasizes detailed interactions between human actions and objects, aiming to provide fine-grained videos that reflect real-world aspects. One year after, the V2 version was released in \cite{Somethingv2} and significantly increasing the number of videos and improving label quality.
+\subsubsection{Data collection methods}
+A group of workers from the crowdsourcing service Amazon Mechanical Turk (AMT) were asked to record and label clips. They recorded videos that demonstrated specific actions with the given labels. After the video is uploaded, it is divided into categories depends on its action, label, and object information. Afterward, they submitted the videos to an online platform, which underwent careful automatic quality checks. Each submission was then rechecked by other workers to make sure there is no mistaken.
+\subsubsection{Data distribution}
+In the newer V2 version, the number of videos has increased to 220,847 clips, which is twice the number in V1, while retaining the same set of labels totaling 174. Additionally, each clip has been upgraded to a quality of 240px, compared to the previous 100px. Each clip has an average length of 2-6 seconds, demonstrating only a single action mentioned in the its label. Overall, there are 318,572 annotations, which involve 30,408 unique objects. The data is split into training, validation, and test sets with a ratio of 8:1:1. Additionally, measures are taken to ensure that videos created by a single actor are exclusively allocated to one of these three splits. 
+\begin{itemize}
+	\item Train : 168,913 clips
+	\item Validation : 24,777 clips
+	\item Test: 27,157 clips
+\end{itemize}
+
+\subsubsection{Annotation}
+
+An interesting aspect of this dataset is its provision of "sentence-like" information alongside the focus on human actions. This augmentation allows for descriptions of how actors interact with objects. For instance, a video featuring the phrasal verb's action "moving away" might be presented as: "Moving a bag of popcorn away from the camera". By integrating object names with actions, the dataset offers detailed action descriptions. 
+
+Due to the unique labeling approach using "natural language," conventional one-hot encoding methods are not applicable. Consequently, it is recommended that model should be first pretrain on ImageNet to enhance the capture of distinctive object characteristics.
+
+For videos in the training set marked by a unique ID, there is an annotated JSON file records detailed descriptions which includes Video IDs (containing only the training video's ID), completed labels (providing precise descriptions of the actor's actions), template categories (outlining the action skeleton), and placeholders (identifying objects used in the video).
+
+For example, a line in JSON file follows:
+\begin{itemize}
+\item \textbf{id:} 217769
+\item \textbf{label:} moving a bag of popcorn away from the camera
+\item \textbf{template}: Moving [something] away from the camera
+\item \textbf{placeholders}: a bag of popcorn
+\end{itemize}
+In the testing set, each video is assigned its own true label, which corresponds to the template in the JSON file. For example, the video show that a person is moving a calculator away, it will have the true label "Moving [something] away from the camera".
+\subsection{AVA}
+
+\begin{itemize}
+	\item Year : 2018
+	\item Paper : AVA: A Video Dataset of Spatio-temporally Localized Atomic Visual
+	Actions \cite{AVA}
+\end{itemize}
+
+\subsubsection{\textbf{Context and construction perspective}}
+
+Popular action classification datasets such as KTH \cite{KTH}, Weizmann
+\cite{Weizmann}, HMDB51 \cite{HMDB51}, and UCF101 \cite{UCF101} only consist of
+short clips manually trimmed to capture a single action. Newer datasets like
+Sports-1M \cite{Sports1M}, YouTube-8M \cite{YouTube8M}, Something-something
+\cite{somethingsomething}, and Moments in Time \cite{momentsintime} focus on
+larger-scale data and are often annotated automatically, leading to noisy
+annotations. Some recent studies, such as ActivityNet \cite{ActivityNet}, THUMOS
+\cite{THUMOS}, and Charades \cite{Charades}, utilize a large number of videos
+containing multiple actions but only provide temporal annotations. Recognizing
+the limitations from their perspective, the authors of this paper proposed the
+AVA dataset.
+
+\subsubsection{Data collection methods}
+
+The process of constructing the AVA dataset involves five steps : action
+vocabulary generation, movie and segment selection, person bounding box
+annotation, person linking and action annotation.
+
+\begin{itemize}
+	\item \textbf{Action vocabulary generation} : They generate action vocabulary
+	base on three principle :  
+	\subitem \textit{Generality} : Generic action in daily-life scenes, opposite of
+	specific actions in a specific situation, for example, playing football on a
+	football field, would be general or nonspecific actions in a general situation.
+	\subitem \textit{Atomicity} : Independent of interacted objects (e.g., hold
+	without specifying what object to hold).
+	\subitem \textit{Exhaustivity} : The authors initialized list of actions using
+	knowledge
+	from previous datasets. They iterated through this list multiple times until it
+	covered approximately 99\% of the actions in the AVA dataset.
+	
+	\item \textbf{Movie and segment selection} : Raw video content is sourced from YouTube. The authors initially compile a list of top actors from various nationalities. Each actor is then searched using a YouTube query, retrieving up to 2000 results. The selected videos must fall under the categories of "film" or "television," have a duration of over 30 minutes, be uploaded at least one year prior, and have a minimum of 1000 views. Additionally, black and white videos, low-resolution videos, animated and cartoon content, gaming videos, as well as videos containing adult content, are excluded. Each video is partition into a 15-minute long segment and divided into 897 movie segments. The result is 430 videos.
+	
+	\item \textbf{Person bounding box annotation} : First, the bounding boxes are automatically detected using the Faster-RCNN \cite{faster-rcnn} person detector, which significantly reduces the manual annotation time. Then, annotators re-annotate the missed boxes to ensure complete coverage. In the final step, incorrectly labeled boxes are marked and removed.
+	
+	\item \textbf{Person link annotation} : The bounding boxes are linked using person embeddings \cite{personembedding}, and then the optimal matching with the Hungarian algorithm \cite{TheHungarian} is applied to match the boxes together. In order to increase accuracy, annotators remove false positive boxes in the next step.
+	
+	\item \textbf{Action annotation} : Recognizing the practicality that annotators may make labeling mistakes is unavoidable when dealing with up to 80 classes, the authors divided Action annotation into two stages: action proposal and verification. In the proposal stage, annotators are required to suggest action classes, and these proposals are verified by annotators in the verification stage.
+	
+\end{itemize}
+	
+\subsubsection{Data distribution}
+	
+	In total, there are 430 videos covering 80 classes, with each video contributing 15 minutes at a sample rate of 1Hz (meaning one frame per second, 897 segments per 15 minutes). The train/val/test ratio is divided as 55:15:30, respectively.
+	\begin{itemize}
+		\item Train : 235 videos, 211k segments.
+		\item Val : 64 videos, 57k segments.
+		\item Test : 131 videos, 118k segments.
+	\end{itemize}
+	
+\subsubsection{Annotation}
+
+The AVA action dataset has four versions : v1.0, v2.0, v2.1 and v2.2. There are two key differences between AVA v2.2 and v2.1. Firstly, an additional round of human rating was carried out to include missing labels, resulting in a 2.5\% increase in the total number of annotations. Secondly, box locations were corrected for a few videos that had aspect ratios significantly larger than 16:9. Regarding AVA v2.1, the only modification compared to v2.0 was the removal of a few duplicate movies. The class list and label map remained unchanged from v1.0. The differences between v1.0 and v2.0 is not mentioned by authors.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"fig_info/fig3/Untitled Diagram.drawio"}
+	\caption{}
+	\label{fig:untitled-diagram2}
+\end{figure}
+
+Figure \ref{fig:untitled-diagram2} lists the annotation files provided across different versions, v2.0 is not mentioned because it has been replaced by v2.1. Unlike v1.0, v2.1, and v2.2 include additional action list files (60 classes as a subset of the 80 classes in AVA), which serve the purpose of the ActivityNet Challenge \cite{ActivityNet}. Additionally, there are included files and excluded files. Raters typically provided annotations at timestamps ranging from 902 to 1798, inclusive, in seconds, with a 1-second interval. Performance evaluation includes all these "included" timestamps, even those where raters indicated the absence of any action. However, for certain videos, specific timestamps were excluded from annotation due to raters flagging the corresponding video clips as inappropriate. Evaluation of performance does not take into account the "excluded" timestamps.\\
+
+The format of a row is the following: video\_id, middle\_frame\_timestamp, person\_box, action\_id, person\_id , as described on the official website :
+\begin{itemize}
+	\item video\_id: YouTube identifier
+	\item middle\_frame\_timestamp: the timestamp in seconds from the start of the YouTube video
+	\item person\_box: the bounding box coordinates of the person, given as the top-left $(x_1, y_1)$ and bottom-right $(x_2, y_2)$ points normalized with respect to the frame size. The coordinate range is from $(0.0, 0.0)$ at the top left to $(1.0, 1.0)$ at the bottom right.
+	\item action\_id: the identifier of an action class
+	\item person\_id: a unique integer that allows linking this box to other boxes depicting the same person in adjacent frames of the video.
+\end{itemize}
+
+\subsection{Moments in Time}
+
+\begin{itemize}
+	\item Year : 2019
+	\item Paper : Moments in Time Dataset: one million videos for event understanding \cite{momentsintime}
+\end{itemize}
+
+\subsubsection{Context and construction perspective} 
+The authors want to create a high-coverage, highdensity, balanced dataset of hundreds of verbs depicting moments of a few seconds. To ensure top-notch data quality, datasets should encompass a wide range of topics, exhibit substantial sample diversity and density, and possess the capability to scale effectively.
+
+\subsubsection{Data collection methods}
+
+The construction of the Moments in Time dataset involves three main steps : Building a Vocabulary of Active Moments, Collection and Annotation.
+
+\begin{itemize}
+	\item \textbf{Building a Vocabulary of Active Moments} : Retrieve the 4,500 most commonly used verbs from VerbNet, then perform clustering and select the most frequently used words from each cluster. Once a word is chosen, it is removed from all clusters to which it belongs. This process yields a result of 339 frequently used and semantically diverse verbs.
+	
+	\item \textbf{Collection data} : Authors conduct an Internet search by analyzing video metadata and crawling search engines from variety of different sources (Youtube, Flickr, Vine, Metacafe, Peeks, Vimeo, VideoBlocks, Bing, Giphy, The Weather Channel, and Getty-Images) to build a list of candidate videos for each class in the vocabulary. Each video will be randomly cut a 3-second section corresponding verb. 
+	
+	\item \textbf{Annotation} : The AMT workers are shown a pair of videos and verbs and are asked to confirm whether the action is completed in the video or not. The confirmed samples are then annotated. Each HIT (a worker's annotation request) consists of 64 three-second videos related to a single verb, with 10 ground truth videos used for control purposes. Each HIT includes four initial questions that workers must answer correctly in order to proceed. Only the results from HITs that achieve a 90\% or higher accuracy on the control videos are included in the dataset. Each video in the training set must be reviewed at least three times and must receive at least 75\% confirmation from the AMT workers to be considered a positive sample. For the test and validation sets, the authors increase the minimum review frequency to four times and the confirmation rate to 85\%.
+	
+\end{itemize}
+
+\subsubsection{Data distribution}
+\subsubsection{Annotation}
+
+\subsection{HACS}
+
+\begin{itemize}
+	\item Year : 2019
+	\item Paper : HACS: Human Action Clips and Segments Dataset for Recognition and Temporal Localization \cite{HACS}.
+\end{itemize}
+
+\subsubsection{Context and construction perspective}
+
+Recent advancements in computer vision have been propelled by the increasing size of datasets. For image categorization, datasets have expanded significantly in just a few years. Caltech101, with only 9.1K examples, was quickly surpassed by the ImageNet dataset, which now boasts over 1.2M examples. Object detection has seen a similar trend, with Pascal VOC starting at 1.6K examples and the COCO dataset currently containing 200K images and 500K object-instance annotations. In the video domain, action recognition datasets have also experienced substantial growth. Older benchmarks like HMDB51, UCF101, and Hollywood2 consisted of only a few thousand examples, but newer datasets like Sports1M, Kinetics, and Moments-in-Time contain significantly more videos. However, the growth in action localization datasets has been limited. THUMOS, ActivityNet, AVA, and Charades, while valuable, do not possess comparable dataset sizes. To address this gap, the authors introduce a new video benchmark called Human Action Clips and Segments (HACS), motivated by the need for large-scale action datasets. HACS aims to provide a comprehensive dataset for action localization, facilitating the exploration of more advanced models in this domain.
+\subsubsection{Data collection methods}
+
+The authors employed 200 action labels (which is identical to that of the ActivityNet-v1.3 dataset) to search the YouTube video search engine, resulting in the retrieval of 890K potentially relevant videos. The number of videos per action class varied from 1100 to 6600. To ensure dataset quality, two types of de-duplication were performed. Firstly, duplicate videos within the HACS dataset were eliminated. Secondly, to ensure fair evaluation on other benchmarks, videos that overlapped with samples in the validation or test sets of datasets such as Kinetics, ActivityNet, UCF-101, and HMDB-51 were also removed. The authors observed that manually annotating the start and end of action segments in untrimmed videos is time-consuming. Therefore, they propose sampling short clips from the videos. They experimented with three different sampling methods and selected the best-performing one. Subsequently, the selected samples are annotated.
+\subsubsection{Data distribution}
+
+HACS dataset utilizes a taxonomy consisting of 200 action classes, which aligns with the ActivityNet-v1.3 dataset. It comprises a total of 504K videos obtained from YouTube, with each video strictly shorter than 4 minutes, and an average length of 2.6 minutes. The dataset includes 1.5M clips, each lasting 2 seconds, which are sparsely sampled using a combination of uniform randomness and consensus/disagreement of image classifiers. Among these clips, 0.6M are annotated as positive samples, while 0.9M are labeled as negative samples.
+
+\begin{itemize}
+	
+	\item \textbf{HACS Clips} : The dataset is divided into training, validation, and testing sets. The training set consists of 1.4M clips sampled from 492K videos, while the validation and testing sets contain 50K clips each, sampled from 6K videos .
+
+	\item \textbf{HACS Segments} : For a subset of 50K videos (38K for training, 6K for validation, and 6K for testing), manual boundaries are collected to define the start, end, and action label of each action segment within the video. It is ensured that all videos in this subset contain at least one action segment.
+
+\end{itemize}
+
+\subsubsection{Annotation}  
+
+There are two annotation files available for HACS Clips and HACS Segments. The file structure is explained in Figure \ref{fig:untitled-diagram4}, where the label section has values of 1 and -1 corresponding to positive and negative samples, respectively.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"fig_info/fig4/Untitled Diagram.drawio"}
+	\caption{}
+	\label{fig:untitled-diagram4}
+\end{figure}
+
+\subsection{HVU}
+
+\begin{itemize}
+	\item Year : 2020.
+	\item Paper : Large Scale Holistic Video Understanding \cite{HVU}.
+\end{itemize}
+
+\subsubsection{Context and construction perspective}
+
+The authors argue that training ConvNets to understand videos with a single label is insufficient to describe the content and hinders the learning of ConvNets. Furthermore, existing datasets also lack in this aspect. Recognizing this, the authors propose HVU - a dataset aiming to provide a multi-label and multi-task large-scale video benchmark with a comprehensive list of tasks and annotations for video analysis and understanding.
+
+\subsubsection{Data collection methods}
+
+\begin{itemize}
+
+	\item \textbf{Data collection} : They utilize existing video sources such as YouTube-8M, Kinetics-600, and HACS. By using these datasets as sources, they can avoid copyright issues and ensure that none of the test videos from existing datasets are included in the training set of HVU. 
+
+	\item\textbf{Anotation} : The authors employ a two-stage framework for the annotation process in HVU. In the first stage, they utilize the Google Vision API and Sensifai Video Tagging API to obtain rough annotations for the videos. These APIs predict around 30 tags per video, with a relatively low probability threshold (around 30\%) to avoid false rejects of tags. The selected tags are chosen from a dictionary of nearly 8,000 words, resulting in approximately 18 million tags for the entire dataset. In the second stage, human verification is applied to remove any potentially mislabeled noisy tags and add any missing tags that were not captured by the APIs. This involves reviewing and correcting the annotations based on human judgment. As a result, the human annotation step produces approximately 9 million tags for the entire dataset, encompassing around 3,500 different tags. This two-stage annotation process helps improve the accuracy and quality of the annotations in the HVU dataset.
+\end{itemize}
+
+\subsubsection{Data distribution}
+
+The HVU dataset comprises a total of 572k videos. These videos are divided into different sets, with 481k video clips in the training set, 31k clips in the validation set, and 65k clips in the test set. The dataset consists of trimmed video clips, where the duration of the videos varies, with a maximum length of 10 seconds. HVU does not solely rely on a single action class but instead includes multiple tags. It is organized into six main categories, which are scene, object, action, event, attribute, and concept. The dataset consists of a total of 3,143 tags.
+
+\subsubsection{Annotation}
+
+HVU provides three annotation files. One file contains tags along with their respective categories. The other two files, namely train and val, have the same structure (see fig \ref{fig:untitled-diagram5}), including columns for Tags, youtube\_id, time\_start, and time\_end. To access the test video and missing videos, it is necessary to fill out a form available on the author's official GitHub page.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"fig_info/fig5/Untitled Diagram.drawio"}
+	\caption{}
+	\label{fig:untitled-diagram5}
+\end{figure}
+
+\subsection{AViD}
+
+\begin{itemize}
+	\item Year : 2020
+	\item Paper : AViD Dataset: Anonymized Videos from Diverse Countries \cite{AViD}
+\end{itemize}
+
+\subsubsection{Context and construction perspective}
+The authors argues that current datasets have three shortcomings:
+\begin{itemize}
+	\item \textbf{Geographical bias and limited geographic coverage}: Videos are often sourced in a geographically biased manner, resulting in limited geographic diversity in the coverage of the datasets.
+
+	\item \textbf{Lack of temporal consistency in large datasets}: Due to the data collection process primarily relying on YouTube as the main source, the videos may be unstable over time. For example, in the first year of its release, Kinetics-400 dataset had 10\% of its videos removed by YouTube.
+
+	\item \textbf{Difficult accessibility}: Downloading tools often encounter request errors, and furthermore, some videos may not be available in certain countries.
+\end{itemize}
+
+\subsubsection{Data collection methods}
+\begin{itemize}
+	\item \textbf{Action Definition}: Sử dụng lại action vocab từ Charades, Moments in Time và Kinetics. Loại bỏ các action có liên quan đến khuôn mặt do AViD làm mờ khuôn mặt của các actor. Thêm nữa, quá trình annotation cũng đề xuất ra thêm các class action. Kết quả của quá trình này gồm 887 action class. Ngoài ra nhóm tác giả cũng đề xuất hệ thống phân cấp cho các action class.
+	
+	\item \textbf{Data Collection}: The action classes were translated into 22 different languages and searched across various platforms. The group of authors ensured that all these videos comply with the Creative Commons license. The outcome of this process is a collection of 800K videos.
+	
+	\item \textbf{Data Annotation}: The combination of manual (Amazon Mechanical Turk) and automated (I3D model) methods was employed.
+	
+	\item \textbf{Data Cleaning and Filtering}:
+\end{itemize}
+
+\subsubsection{Data distribution}
+
+\begin{itemize}
+	\item \textbf{Train clips} : 410k.
+	\item \textbf{Validation clips} : no mentioned.
+	\item \textbf{Test clips} : 40k. 
+\end{itemize}
+
+\subsubsection{Annotation}
+
+Classification-only annotation. Structure : [video\_name] : [class\_name] .
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{"fig_info/fig6/Screenshot 2024-02-13 022922"}
+	\caption{}
+	\label{fig:screenshot-2024-02-13-022922}
+\end{figure}
+
+\subsection{THUMOS}
+
+\begin{itemize}
+	\item Year : 2015
+	\item Paper : The THUMOS challenge on action recognition for videos “in the wild”
+\end{itemize}
+
+\subsubsection{Context and construction perspective}
+
+THUMOS Challenge is a competition held from 2013 to 2015, serving as a benchmark for action recognition.
+
+\subsubsection{Data collection methods}
+THUMOS base on UCF101 with extra data.
+\begin{itemize}
+	\item \textbf{Action Definition}: Reuse action list of UCF101.
+	\item \textbf{Data Collection}: Background : search on Internet.
+	\item \textbf{Data Annotation}: Manually annotate with predefined-criteria.
+	\item \textbf{Data Cleaning and Filtering}: 
+\end{itemize}
+\subsubsection{Data distribution}
+\begin{itemize}
+	\item  \textbf{Train} : 13k.
+	\item \textbf{Validation} : 21k.
+	\item \textbf{Test set} : 5.6l
+	\item \textbf{Background set} : aka negative set, 3k .
+\end{itemize}
+\subsubsection{Annotation}
+Base on UCF101.
+
+\subsection{YouTube-8M}
+
+\begin{itemize}
+	\item Year : 2016
+	\item Paper : YouTube-8M: A Large-Scale Video Classification Benchmark \cite{YouTube8M}
+\end{itemize}
+
+\subsubsection{Context and construction perspective}
+\subsubsection{Data collection methods}
+\begin{itemize}
+	\item \textbf{Action Definition}:
+	\item \textbf{Data Collection}:
+	\item \textbf{Data Annotation}:
+	\item \textbf{Data Cleaning and Filtering}:
+\end{itemize}
+\subsubsection{Data distribution}
+\subsubsection{Annotation}
+
+\subsection{Charades}
+
+\begin{itemize}
+	\item Year : 2016
+	\item Paper : Hollywood in Homes: Crowdsourcing Data Collection for Activity Understanding \cite{Charades}
+\end{itemize}
+
+\subsubsection{Context and construction perspective}
+The group of authors argues that everyday human activities are often mundane, whereas filming scenes or creating videos on social media platforms like YouTube always require engaging content to attract viewers. As a result, everyday life scenes and actions have not been fully utilized and there are no specific methods to collect them. The authors explain their video collection process and provide the research community with their achievement, the Charades dataset.
+\subsubsection{Data collection methods}
+\begin{itemize}
+	\item \textbf{Action Definition}: Use triplet verb-noun-scene to generate a script. This resulting 157 action class.
+	\item \textbf{Data Collection}: AMT worker capture video base on generated script.
+	\item \textbf{Data Annotation}:
+	\item \textbf{Data Cleaning and Filtering}:
+\end{itemize}
+\subsubsection{Data distribution}
+
+\begin{itemize}
+	\item  \textbf{Train} : 7,985.
+	\item \textbf{Validation} : not mentioned.
+	\item \textbf{Test set} : 1,863.
+\end{itemize}
+
+\subsubsection{Annotation}
+
+\subsection{NTU RGB+D}
+
+\begin{itemize}
+	\item Year : 2016
+	\item Paper : NTU RGB+D: A Large Scale Dataset for 3D Human Activity Analysis \cite{NTURGB+D}
+\end{itemize}
+
+\subsubsection{Context and construction perspective}
+\subsubsection{Data collection methods}
+\begin{itemize}
+	\item \textbf{Action Definition}:
+	\item \textbf{Data Collection}:
+	\item \textbf{Data Annotation}:
+	\item \textbf{Data Cleaning and Filtering}:
+\end{itemize}
+\subsubsection{Data distribution}
+\subsubsection{Annotation}
+
+\section{}
+
+\begin{itemize}
+	\item Year : 
+	\item Paper : 
+\end{itemize}
+
+\subsubsection{Context and construction perspective}
+\subsubsection{Data collection methods}
+\begin{itemize}
+	\item \textbf{Action Definition}:
+	\item \textbf{Data Collection}:
+	\item \textbf{Data Annotation}:
+	\item \textbf{Data Cleaning and Filtering}:
+\end{itemize}
+\subsubsection{Data distribution}
+\subsubsection{Annotation}
+
+\section{}
+
+\begin{itemize}
+	\item Year : 
+	\item Paper : 
+\end{itemize}
+
+\subsubsection{Context and construction perspective}
+\subsubsection{Data collection methods}
+\begin{itemize}
+	\item \textbf{Action Definition}:
+	\item \textbf{Data Collection}:
+	\item \textbf{Data Annotation}:
+	\item \textbf{Data Cleaning and Filtering}:
+\end{itemize}
+\subsubsection{Data distribution}
+\subsubsection{Annotation}
+
+\bibliographystyle{ieeetr}
+\bibliography{references.bib}
 
 \end{document}
+
+
+s

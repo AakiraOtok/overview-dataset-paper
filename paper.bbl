@@ -1,0 +1,125 @@
+\begin{thebibliography}{10}
+
+\bibitem{ILSVRC}
+O.~Russakovsky, J.~Deng, H.~Su, J.~Krause, S.~Satheesh, S.~Ma, Z.~Huang,
+  A.~Karpathy, A.~Khosla, M.~Bernstein, A.~C. Berg, and L.~Fei-Fei, ``{ImageNet
+  Large Scale Visual Recognition Challenge},'' {\em International Journal of
+  Computer Vision (IJCV)}, vol.~115, no.~3, pp.~211--252, 2015.
+
+\bibitem{PASCALVOC}
+M.~Everingham, L.~Van~Gool, C.~Williams, J.~Winn, and A.~Zisserman, ``The
+  pascal visual object classes (voc) challenge,'' {\em International Journal of
+  Computer Vision}, vol.~88, pp.~303--338, 06 2010.
+
+\bibitem{LeNet}
+Y.~Lecun, L.~Bottou, Y.~Bengio, and P.~Haffner, ``Gradient-based learning
+  applied to document recognition,'' {\em Proceedings of the IEEE}, vol.~86,
+  no.~11, pp.~2278--2324, 1998.
+
+\bibitem{KTH}
+C.~Schuldt, I.~Laptev, and B.~Caputo, ``Recognizing human actions: a local svm
+  approach,'' in {\em Proceedings of the 17th International Conference on
+  Pattern Recognition, 2004. ICPR 2004.}, vol.~3, pp.~32--36 Vol.3, 2004.
+
+\bibitem{Weizmann}
+M.~Blank, L.~Gorelick, E.~Shechtman, M.~Irani, and R.~Basri, ``Actions as
+  space-time shapes,'' in {\em Tenth IEEE International Conference on Computer
+  Vision (ICCV'05) Volume 1}, vol.~2, pp.~1395--1402 Vol. 2, 2005.
+
+\bibitem{IXMAS}
+D.~Weinland, E.~Boyer, and R.~Ronfard, ``Action recognition from arbitrary
+  views using 3d exemplars,'' in {\em 2007 IEEE 11th International Conference
+  on Computer Vision}, pp.~1--7, 2007.
+
+\bibitem{HollyWood}
+I.~Laptev, M.~Marszalek, C.~Schmid, and B.~Rozenfeld, ``Learning realistic
+  human actions from movies,'' in {\em 2008 IEEE Conference on Computer Vision
+  and Pattern Recognition}, pp.~1--8, 2008.
+
+\bibitem{UCFSports}
+M.~D. Rodriguez, J.~Ahmed, and M.~Shah, ``Action mach a spatio-temporal maximum
+  average correlation height filter for action recognition,'' in {\em 2008 IEEE
+  Conference on Computer Vision and Pattern Recognition}, pp.~1--8, 2008.
+
+\bibitem{Hollywood2}
+M.~Marszalek, I.~Laptev, and C.~Schmid, ``Actions in context,'' in {\em 2009
+  IEEE Conference on Computer Vision and Pattern Recognition}, pp.~2929--2936,
+  2009.
+
+\bibitem{UCFYouTube}
+J.~Liu, J.~Luo, and M.~Shah, ``Recognizing realistic actions from videos “in
+  the wild”,'' in {\em 2009 IEEE Conference on Computer Vision and Pattern
+  Recognition}, pp.~1996--2003, 2009.
+
+\bibitem{Olympic}
+J.~C. Niebles, C.-W. Chen, and L.~Fei-Fei, ``Modeling temporal structure of
+  decomposable motion segments for activity classification,'' in {\em Computer
+  Vision -- ECCV 2010} (K.~Daniilidis, P.~Maragos, and N.~Paragios, eds.),
+  (Berlin, Heidelberg), pp.~392--405, Springer Berlin Heidelberg, 2010.
+
+\bibitem{HMDB51}
+H.~Kuehne, H.~Jhuang, E.~Garrote, T.~Poggio, and T.~Serre, ``Hmdb: A large
+  video database for human motion recognition,'' in {\em 2011 International
+  Conference on Computer Vision}, pp.~2556--2563, 2011.
+
+\bibitem{UCF101}
+K.~Soomro, A.~R. Zamir, and M.~Shah, ``Ucf101: A dataset of 101 human actions
+  classes from videos in the wild,'' 2012.
+
+\bibitem{Sports1M}
+A.~Karpathy, G.~Toderici, S.~Shetty, T.~Leung, R.~Sukthankar, and L.~Fei-Fei,
+  ``Large-scale video classification with convolutional neural networks,'' in
+  {\em CVPR}, 2014.
+
+\bibitem{ActivityNet}
+F.~C. Heilbron, V.~Escorcia, B.~Ghanem, and J.~C. Niebles, ``Activitynet: A
+  large-scale video benchmark for human activity understanding,'' in {\em 2015
+  IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+  pp.~961--970, 2015.
+
+\bibitem{THUMOS}
+H.~Idrees, A.~R. Zamir, Y.-G. Jiang, A.~Gorban, I.~Laptev, R.~Sukthankar, and
+  M.~Shah, ``The thumos challenge on action recognition for videos “in the
+  wild”,'' {\em Computer Vision and Image Understanding}, vol.~155,
+  p.~1–23, Feb. 2017.
+
+\bibitem{YouTube8M}
+S.~Abu-El-Haija, N.~Kothari, J.~Lee, P.~Natsev, G.~Toderici, B.~Varadarajan,
+  and S.~Vijayanarasimhan, ``Youtube-8m: A large-scale video classification
+  benchmark,'' 2016.
+
+\bibitem{somethingsomething}
+R.~Goyal, S.~E. Kahou, V.~Michalski, J.~Materzyńska, S.~Westphal, H.~Kim,
+  V.~Haenel, I.~Fruend, P.~Yianilos, M.~Mueller-Freitag, F.~Hoppe, C.~Thurau,
+  I.~Bax, and R.~Memisevic, ``The "something something" video database for
+  learning and evaluating visual common sense,'' 2017.
+
+\bibitem{Charades}
+G.~A. Sigurdsson, G.~Varol, X.~Wang, A.~Farhadi, I.~Laptev, and A.~Gupta,
+  ``Hollywood in homes: Crowdsourcing data collection for activity
+  understanding,'' 2016.
+
+\bibitem{AVA}
+C.~Gu, C.~Sun, D.~A. Ross, C.~Vondrick, C.~Pantofaru, Y.~Li,
+  S.~Vijayanarasimhan, G.~Toderici, S.~Ricco, R.~Sukthankar, C.~Schmid, and
+  J.~Malik, ``Ava: A video dataset of spatio-temporally localized atomic visual
+  actions,'' 2018.
+
+\bibitem{momentsintime}
+M.~Monfort, A.~Andonian, B.~Zhou, K.~Ramakrishnan, S.~A. Bargal, T.~Yan,
+  L.~Brown, Q.~Fan, D.~Gutfruend, C.~Vondrick, and A.~Oliva, ``Moments in time
+  dataset: one million videos for event understanding,'' 2019.
+
+\bibitem{HACS}
+H.~Zhao, A.~Torralba, L.~Torresani, and Z.~Yan, ``Hacs: Human action clips and
+  segments dataset for recognition and temporal localization,'' 2019.
+
+\bibitem{HVU}
+A.~Diba, M.~Fayyaz, V.~Sharma, M.~Paluri, J.~Gall, R.~Stiefelhagen, and L.~V.
+  Gool, ``Large scale holistic video understanding,'' 2020.
+
+\bibitem{AViD}
+A.~Piergiovanni and M.~S. Ryoo, ``Avid dataset: Anonymized videos from diverse
+  countries,'' 2020.
+
+\end{thebibliography}

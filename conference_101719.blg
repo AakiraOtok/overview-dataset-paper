@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2023)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: conference_101719.aux
+The style file: ieeetr.bst
+Database file #1: references.bib
+You're missing a field name---line 639 of file references.bib
+ : 
+ : =======
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting an "="---line 651 of file references.bib
+ : >>>>>>> 
+ :         a1c09371185157a5eee447f3d08c77467ff983df
+I'm skipping whatever remains of this entry
+Warning--empty journal in Somethingv2
+You've used 30 entries,
+            1876 wiz_defined-function locations,
+            654 strings with 9588 characters,
+and the built_in function-call counts, 8431 in all, are:
+= -- 679
+> -- 535
+< -- 0
++ -- 188
+- -- 158
+* -- 635
+:= -- 1234
+add.period$ -- 30
+call.type$ -- 30
+change.case$ -- 30
+chr.to.int$ -- 0
+cite$ -- 31
+duplicate$ -- 375
+empty$ -- 786
+format.name$ -- 158
+if$ -- 2022
+int.to.chr$ -- 0
+int.to.str$ -- 30
+missing$ -- 18
+newline$ -- 93
+num.names$ -- 32
+pop$ -- 174
+preamble$ -- 1
+purify$ -- 0
+quote$ -- 0
+skip$ -- 283
+stack$ -- 0
+substring$ -- 417
+swap$ -- 143
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 0
+warning$ -- 1
+while$ -- 60
+width$ -- 32
+write$ -- 256
+(There were 2 error messages)
