@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.22)  25 FEB 2024 11:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.12) (preloaded format=pdflatex 2024.1.22)  25 FEB 2024 21:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -636,6 +636,9 @@ LaTeX Warning: Label `Kinetics-400' multiply defined.
 LaTeX Warning: Label `Kinetics-600' multiply defined.
 
 
+LaTeX Warning: Label `Kinetics-700' multiply defined.
+
+
 LaTeX Warning: Label `Kinetics-700-2020' multiply defined.
 
 
@@ -657,7 +660,10 @@ LaTeX Warning: Label `HVU' multiply defined.
 LaTeX Warning: Label `AViD' multiply defined.
 
 
-LaTeX Warning: Label `FineGym' multiply defined.
+LaTeX Warning: Label `FineAction' multiply defined.
+
+
+LaTeX Warning: Label `ToyotaSmarthome' multiply defined.
 
 )
 \openout1 = `paper.aux'.
@@ -769,13 +775,9 @@ LaTeX Warning: Citation `Some' on page 4 undefined on input line 229.
 
 [4] [5]
 
-LaTeX Warning: Citation `momentsintime' on page 6 undefined on input line 271.
+LaTeX Warning: Citation `momentsintime' on page 6 undefined on input line 273.
 
-[6] [7] [8]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[9] (paper.bbl [10]
+[6] [7] [8] [9] (paper.bbl [10]
 Underfull \hbox (badness 1163) in paragraph at lines 108--111
 []\T5/cmr/m/n/10 W. Kay, J. Car-reira, K. Si-monyan, B. Zhang, C. Hillier, S. V
 i-jaya-narasimhan, F. Vi-ola,
@@ -787,7 +789,7 @@ Underfull \hbox (badness 1163) in paragraph at lines 108--111
 i-jaya-narasimhan, F. Vi-ola,
  []
 
-) [13] (paper.aux)
+[13]) [14] (paper.aux)
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -801,10 +803,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7402 strings out of 474486
- 117900 string characters out of 5743755
+ 7404 strings out of 474486
+ 117934 string characters out of 5743755
  1939542 words of memory out of 5000000
- 29566 multiletter control sequences out of 15000+600000
+ 29568 multiletter control sequences out of 15000+600000
  567474 words of font info for 54 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  67i,8n,79p,837b,315s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -815,9 +817,9 @@ bx10.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vn
 bx12.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vn
 r10.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vnt
 i10.pfb>
-Output written on paper.pdf (13 pages, 131948 bytes).
+Output written on paper.pdf (14 pages, 134054 bytes).
 PDF statistics:
- 77 PDF objects out of 1000 (max. 8388607)
+ 80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 

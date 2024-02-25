@@ -113,6 +113,11 @@ W.~Kay, J.~Carreira, K.~Simonyan, B.~Zhang, C.~Hillier, S.~Vijayanarasimhan,
 J.~Carreira, E.~Noland, A.~Banki-Horvath, C.~Hillier, and A.~Zisserman, ``A
   short note about kinetics-600,'' {\em arXiv preprint arXiv:1808.01340}, 2018.
 
+\bibitem{Kinetics-700}
+J.~Carreira, E.~Noland, C.~Hillier, and A.~Zisserman, ``A short note on the
+  kinetics-700 human action dataset,'' {\em arXiv preprint arXiv:1907.06987},
+  2019.
+
 \bibitem{Kinetics-700-2020}
 L.~Smaira, J.~Carreira, E.~Noland, E.~Clancy, A.~Wu, and A.~Zisserman, ``A
   short note on the kinetics-700-2020 human action dataset,'' {\em arXiv
@@ -148,9 +153,15 @@ A.~Diba, M.~Fayyaz, V.~Sharma, M.~Paluri, J.~Gall, R.~Stiefelhagen, and L.~V.
 A.~Piergiovanni and M.~S. Ryoo, ``Avid dataset: Anonymized videos from diverse
   countries,'' 2020.
 
-\bibitem{FineGym}
-D.~Shao, Y.~Zhao, B.~Dai, and D.~Lin, ``Finegym: A hierarchical video dataset
-  for fine-grained action understanding,'' in {\em IEEE Conference on Computer
-  Vision and Pattern Recognition (CVPR)}, 2020.
+\bibitem{FineAction}
+Y.~Liu, L.~Wang, Y.~Wang, X.~Ma, and Y.~Qiao, ``Fineaction: A fine-grained
+  video dataset for temporal action localization,'' {\em IEEE Transactions on
+  Image Processing}, 2022.
+
+\bibitem{ToyotaSmarthome}
+S.~Das, R.~Dai, M.~Koperski, L.~Minciullo, L.~Garattoni, F.~Bremond, and
+  G.~Francesca, ``Toyota smarthome: Real-world activities of daily living,'' in
+  {\em Proceedings of the IEEE/CVF international conference on computer
+  vision}, pp.~833--842, 2019.
 
 \end{thebibliography}
