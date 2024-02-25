@@ -1,74 +1,59 @@
-This is BibTeX, Version 0.99d (TeX Live 2023)
+This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: paper.aux
-<<<<<<< HEAD
+Case mismatch error between cite keys momentsintime and MomentsinTime
+---line 71 of file paper.aux
+ : \citation{momentsintime
+ :                        }
+I'm skipping whatever remains of this command
+Reallocating 'name_of_file' (item size: 1) to 7 items.
 The style file: ieeetr.bst
+Reallocating 'name_of_file' (item size: 1) to 15 items.
+Illegal, another \bibdata command---line 150 of file paper.aux
+ : \bibdata
+ :         {references}
+I'm skipping whatever remains of this command
 Database file #1: references.bib
-You're missing a field name---line 639 of file references.bib
- : 
- : =======
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-I was expecting an "="---line 651 of file references.bib
- : >>>>>>> 
- :         a1c09371185157a5eee447f3d08c77467ff983df
-I'm skipping whatever remains of this entry
-You've used 24 entries,
+Warning--I didn't find a database entry for "Some"
+You've used 30 entries,
             1876 wiz_defined-function locations,
-            623 strings with 8629 characters,
-and the built_in function-call counts, 7321 in all, are:
-= -- 588
-> -- 467
-=======
-Reallocating 'name_of_file' (item size: 1) to 11 items.
-I found no \bibstyle command---while reading file paper.aux
-You've used 24 entries,
-            0 wiz_defined-function locations,
-            130 strings with 823 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
->>>>>>> 1aa6bb38b94565d0165273d070c6e94e75d8afec
+            659 strings with 10152 characters,
+and the built_in function-call counts, 8852 in all, are:
+= -- 688
+> -- 608
 < -- 0
-+ -- 163
-- -- 139
-* -- 563
-:= -- 1067
-add.period$ -- 24
-call.type$ -- 24
-change.case$ -- 24
++ -- 212
+- -- 182
+* -- 700
+:= -- 1330
+add.period$ -- 30
+call.type$ -- 30
+change.case$ -- 30
 chr.to.int$ -- 0
-cite$ -- 24
-duplicate$ -- 323
-empty$ -- 675
-format.name$ -- 139
-if$ -- 1754
+cite$ -- 30
+duplicate$ -- 391
+empty$ -- 800
+format.name$ -- 182
+if$ -- 2091
 int.to.chr$ -- 0
-int.to.str$ -- 24
-missing$ -- 15
-newline$ -- 75
-num.names$ -- 26
-pop$ -- 142
+int.to.str$ -- 30
+missing$ -- 21
+newline$ -- 93
+num.names$ -- 32
+pop$ -- 167
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 246
+skip$ -- 269
 stack$ -- 0
-substring$ -- 403
-swap$ -- 127
+substring$ -- 439
+swap$ -- 143
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-<<<<<<< HEAD
-while$ -- 53
-width$ -- 26
-write$ -- 209
+while$ -- 61
+width$ -- 32
+write$ -- 260
 (There were 2 error messages)
-=======
-while$ -- 0
-width$ -- 0
-write$ -- 0
-(There was 1 error message)
->>>>>>> 1aa6bb38b94565d0165273d070c6e94e75d8afec

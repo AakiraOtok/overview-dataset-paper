@@ -88,16 +88,35 @@ S.~Abu-El-Haija, N.~Kothari, J.~Lee, P.~Natsev, G.~Toderici, B.~Varadarajan,
   and S.~Vijayanarasimhan, ``Youtube-8m: A large-scale video classification
   benchmark,'' 2016.
 
-\bibitem{somethingsomething}
+\bibitem{Charades}
+G.~A. Sigurdsson, G.~Varol, X.~Wang, A.~Farhadi, I.~Laptev, and A.~Gupta,
+  ``Hollywood in homes: Crowdsourcing data collection for activity
+  understanding,'' 2016.
+
+\bibitem{SomethingV1}
 R.~Goyal, S.~E. Kahou, V.~Michalski, J.~Materzyńska, S.~Westphal, H.~Kim,
   V.~Haenel, I.~Fruend, P.~Yianilos, M.~Mueller-Freitag, F.~Hoppe, C.~Thurau,
   I.~Bax, and R.~Memisevic, ``The "something something" video database for
   learning and evaluating visual common sense,'' 2017.
 
-\bibitem{Charades}
-G.~A. Sigurdsson, G.~Varol, X.~Wang, A.~Farhadi, I.~Laptev, and A.~Gupta,
-  ``Hollywood in homes: Crowdsourcing data collection for activity
-  understanding,'' 2016.
+\bibitem{Multi-THUMOS}
+S.~Yeung, O.~Russakovsky, N.~Jin, M.~Andriluka, G.~Mori, and L.~Fei-Fei,
+  ``Every moment counts: Dense detailed labeling of actions in complex
+  videos,'' {\em International Journal of Computer Vision}, 2017.
+
+\bibitem{Kinetics-400}
+W.~Kay, J.~Carreira, K.~Simonyan, B.~Zhang, C.~Hillier, S.~Vijayanarasimhan,
+  F.~Viola, T.~Green, T.~Back, P.~Natsev, {\em et~al.}, ``The kinetics human
+  action video dataset,'' {\em arXiv preprint arXiv:1705.06950}, 2017.
+
+\bibitem{Kinetics-600}
+J.~Carreira, E.~Noland, A.~Banki-Horvath, C.~Hillier, and A.~Zisserman, ``A
+  short note about kinetics-600,'' {\em arXiv preprint arXiv:1808.01340}, 2018.
+
+\bibitem{Kinetics-700-2020}
+L.~Smaira, J.~Carreira, E.~Noland, E.~Clancy, A.~Wu, and A.~Zisserman, ``A
+  short note on the kinetics-700-2020 human action dataset,'' {\em arXiv
+  preprint arXiv:2010.10864}, 2020.
 
 \bibitem{AVA}
 C.~Gu, C.~Sun, D.~A. Ross, C.~Vondrick, C.~Pantofaru, Y.~Li,
@@ -105,10 +124,17 @@ C.~Gu, C.~Sun, D.~A. Ross, C.~Vondrick, C.~Pantofaru, Y.~Li,
   J.~Malik, ``Ava: A video dataset of spatio-temporally localized atomic visual
   actions,'' 2018.
 
-\bibitem{momentsintime}
+\bibitem{MomentsinTime}
 M.~Monfort, A.~Andonian, B.~Zhou, K.~Ramakrishnan, S.~A. Bargal, T.~Yan,
   L.~Brown, Q.~Fan, D.~Gutfruend, C.~Vondrick, and A.~Oliva, ``Moments in time
   dataset: one million videos for event understanding,'' 2019.
+
+\bibitem{EPIC-KITCHENS}
+D.~Damen, H.~Doughty, G.~M. Farinella, S.~Fidler, A.~Furnari, E.~Kazakos,
+  D.~Moltisanti, J.~Munro, T.~Perrett, W.~Price, and M.~Wray, ``The
+  epic-kitchens dataset: Collection, challenges and baselines,'' {\em IEEE
+  Transactions on Pattern Analysis and Machine Intelligence (TPAMI)}, vol.~43,
+  no.~11, pp.~4125--4141, 2021.
 
 \bibitem{HACS}
 H.~Zhao, A.~Torralba, L.~Torresani, and Z.~Yan, ``Hacs: Human action clips and
@@ -121,5 +147,10 @@ A.~Diba, M.~Fayyaz, V.~Sharma, M.~Paluri, J.~Gall, R.~Stiefelhagen, and L.~V.
 \bibitem{AViD}
 A.~Piergiovanni and M.~S. Ryoo, ``Avid dataset: Anonymized videos from diverse
   countries,'' 2020.
+
+\bibitem{FineGym}
+D.~Shao, Y.~Zhao, B.~Dai, and D.~Lin, ``Finegym: A hierarchical video dataset
+  for fine-grained action understanding,'' in {\em IEEE Conference on Computer
+  Vision and Pattern Recognition (CVPR)}, 2020.
 
 \end{thebibliography}
