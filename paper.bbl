@@ -88,16 +88,16 @@ S.~Abu-El-Haija, N.~Kothari, J.~Lee, P.~Natsev, G.~Toderici, B.~Varadarajan,
   and S.~Vijayanarasimhan, ``Youtube-8m: A large-scale video classification
   benchmark,'' 2016.
 
+\bibitem{Charades}
+G.~A. Sigurdsson, G.~Varol, X.~Wang, A.~Farhadi, I.~Laptev, and A.~Gupta,
+  ``Hollywood in homes: Crowdsourcing data collection for activity
+  understanding,'' 2016.
+
 \bibitem{somethingsomething}
 R.~Goyal, S.~E. Kahou, V.~Michalski, J.~Materzyńska, S.~Westphal, H.~Kim,
   V.~Haenel, I.~Fruend, P.~Yianilos, M.~Mueller-Freitag, F.~Hoppe, C.~Thurau,
   I.~Bax, and R.~Memisevic, ``The "something something" video database for
   learning and evaluating visual common sense,'' 2017.
-
-\bibitem{Charades}
-G.~A. Sigurdsson, G.~Varol, X.~Wang, A.~Farhadi, I.~Laptev, and A.~Gupta,
-  ``Hollywood in homes: Crowdsourcing data collection for activity
-  understanding,'' 2016.
 
 \bibitem{AVA}
 C.~Gu, C.~Sun, D.~A. Ross, C.~Vondrick, C.~Pantofaru, Y.~Li,

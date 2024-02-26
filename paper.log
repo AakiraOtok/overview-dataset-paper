@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.1)  22 FEB 2024 01:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2024.1.1)  26 FEB 2024 16:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -569,80 +569,7 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
 (c:/texlive/2023/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
-) (./paper.aux
-
-LaTeX Warning: Label `ILSVRC' multiply defined.
-
-
-LaTeX Warning: Label `PASCALVOC' multiply defined.
-
-
-LaTeX Warning: Label `LeNet' multiply defined.
-
-
-LaTeX Warning: Label `KTH' multiply defined.
-
-
-LaTeX Warning: Label `Weizmann' multiply defined.
-
-
-LaTeX Warning: Label `IXMAS' multiply defined.
-
-
-LaTeX Warning: Label `HollyWood' multiply defined.
-
-
-LaTeX Warning: Label `UCFSports' multiply defined.
-
-
-LaTeX Warning: Label `Hollywood2' multiply defined.
-
-
-LaTeX Warning: Label `UCFYouTube' multiply defined.
-
-
-LaTeX Warning: Label `Olympic' multiply defined.
-
-
-LaTeX Warning: Label `HMDB51' multiply defined.
-
-
-LaTeX Warning: Label `UCF101' multiply defined.
-
-
-LaTeX Warning: Label `Sports1M' multiply defined.
-
-
-LaTeX Warning: Label `ActivityNet' multiply defined.
-
-
-LaTeX Warning: Label `THUMOS' multiply defined.
-
-
-LaTeX Warning: Label `YouTube8M' multiply defined.
-
-
-LaTeX Warning: Label `somethingsomething' multiply defined.
-
-
-LaTeX Warning: Label `Charades' multiply defined.
-
-
-LaTeX Warning: Label `AVA' multiply defined.
-
-
-LaTeX Warning: Label `momentsintime' multiply defined.
-
-
-LaTeX Warning: Label `HACS' multiply defined.
-
-
-LaTeX Warning: Label `HVU' multiply defined.
-
-
-LaTeX Warning: Label `AViD' multiply defined.
-
-)
+) (./paper.aux)
 \openout1 = `paper.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
@@ -661,7 +588,8 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
 LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 29.
 LaTeX Font Info:    ... okay on input line 29.
- (c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(c:/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count319
 \scratchdimen=\dimen197
@@ -750,19 +678,15 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[8] (./paper.bbl [9] [10]) (./paper.bbl [11]) [12] (./paper.aux)
+[8] (./paper.bbl [9] [10]) [11] (./paper.aux)
  ***********
 LaTeX2e <2023-11-01>
 L3 programming layer <2020/03/25>
  ***********
-
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 7384 strings out of 474175
- 114701 string characters out of 5749699
+ 7382 strings out of 474175
+ 114681 string characters out of 5749699
  1939460 words of memory out of 5000000
  29564 multiletter control sequences out of 15000+600000
  567474 words of font info for 54 fonts, out of 8000000 for 9000
@@ -773,10 +697,10 @@ ive/2023/texmf-dist/fonts/type1/urw/zapfding/uzdr.pfb><c:/texlive/2023/texmf-di
 st/fonts/type1/vntex/vnr/vnbx10.pfb><c:/texlive/2023/texmf-dist/fonts/type1/vnt
 ex/vnr/vnbx12.pfb><c:/texlive/2023/texmf-dist/fonts/type1/vntex/vnr/vnr10.pfb><
 c:/texlive/2023/texmf-dist/fonts/type1/vntex/vnr/vnti10.pfb>
-Output written on paper.pdf (12 pages, 122586 bytes).
+Output written on paper.pdf (11 pages, 117063 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 73 PDF objects out of 1000 (max. 8388607)
+ 45 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  6 words of extra memory for PDF output out of 10000 (max. 10000000)
 
