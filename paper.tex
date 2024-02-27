@@ -19,6 +19,7 @@
 \usepackage{blindtext}
 \usepackage[a4paper,margin=1in,footskip=0.25in]{geometry}
 \usepackage{indentfirst}
+\usepackage{rotating}
 
 \setlength{\parindent}{1.5cm}
 \setlength{\parskip}{0.5em}
@@ -297,40 +298,60 @@ The dataset consists of 31 daily living activities performed by 18 actors, resul
 Các thông tin ở từng mục sẽ được nói kĩ nhưng không đi sâu vào từng bộ dữ liệu mà mang tính tổng quát, sau đó thống kê vào bảng. Thông tin trên bảng sẽ được điền dạng kí hiệu hoặc yes/no, sau đó chú thích bên dưới.
 
 \subsection{Characteristic}
-Nói về đặc điểm hiện có của các bộ dữ liệu theo các yếu tố trong bảng bên dưới.
+Based on the nature of each task provided in each dataset, we have divided the dataset into three main tasks: Localization, Detection, and Classification. Although the common classification approach only consists of two tasks, Detection and Recognition, we have found that defining three tasks as mentioned above makes it much easier to consolidate information.
+ 
+\begin{itemize}
+	\item \textbf{Localization}: This task requires our model to determine the time period during which an action occurs in a video. This can involve predicting the time of occurrence for the action in the video or providing predictions for each frame at the frame-level.
+
+	\item \textbf{Detection}: The task of this is to identify which action (label) is being performed and where it is happening (bounding box) in each frame. This means our model needs to accurately identify the specific action taking place in the video and provide information about its location in each frame.
+
+	\item \textbf{Classification}: The task involves determining the class (or multiple classes) of actions that the model believes are present in a given video. This requires our model to have the ability to classify and recognize different actions based on the content of the video.
+\end{itemize}
 
 \newcommand{\cmark}{\ding{51}}%
 \newcommand{\xmark}{\ding{55}}%
+
+Table \ref{characteristic} summarizes all the datasets analyzed in this paper. For some datasets such as ActivityNet \cite{ActivityNet} or YouTube8M \cite{YouTube8M}, which have later updated versions, we have also noted the version alongside the dataset name. However, the accompanying papers may not always be updated along with the dataset, so we cannot guarantee that the version mentioned in the paper will match the version stated in this paper. Nevertheless, the attached paper will at least be the initial version when the dataset was released. The datasets are arranged in chronological order of their release year. To provide a visual representation, the tasks associated with each dataset are marked with a \cmark, while the others are left blank. In order to be concise, except for the datasets mentioned above, the remaining information will not be reiterated in the tables in subsequent sections.
 
 \begin{table}[h]
 	\centering
 	%\small
 	\caption{Action recognition dataset}
 	\renewcommand{\arraystretch}{1.5}
-	\begin{tabular}{l|c c c c l l l l l}
+	\begin{tabular}{l|c|c|c c c}
 		\toprule
-		Name & Actor-Action & Temporal & Spatial & Classification & Category \\
+		Name                    & Ref                       & Year & Localization & Detection & Classification\\
 		\hline
-		HMDB51               & 1 - 1 & \xmark & \xmark & \cmark & Outdoor \\
-		UCF101               & 1 - 1 & \xmark & \xmark & \cmark & Number of actions \\
-		Sport-1M             & n - 1 & \xmark & \xmark & \cmark & Large scale \\
-		ActivityNet          & 1 - 1 & \cmark & \xmark & \xmark & Number of actions \\ 
-		Youtube-8M           & n - 1 & \\
-		Something Something  & 1 - 1 & \xmark & \xmark & \cmark & Context information \\
-		Charades             & 1 - 1 & \cmark & \xmark & \xmark & Daily activity \\
-		AVA                  & n - n & \cmark & \cmark & \xmark & \\
-		Moments in Time      & 1 - 1 & \xmark & \xmark & \cmark & \\
-		HACS                 & 1 - 1 & \cmark & \xmark & \cmark & \\
-		HVU                  &       & \xmark & \xmark & \cmark & \\
-		AViD                 &       & \xmark & \xmark & \cmark & \\
+		HMDB51                  & \cite{HMDB51}             & 2011 &              &           & \cmark         \\
+		UCF101                  & \cite{UCF101}             & 2012 &              &           & \cmark         \\
+		Sport-1M                & \cite{Sports1M}           & 2014 &              &           & \cmark         \\
+		MultiTHUMOS             & \cite{Multi-THUMOS}       & 2015 & \cmark       &           &                \\
+		ActivityNet(v1.3)       & \cite{ActivityNet}        & 2016 & \cmark       &           & \cmark         \\ 
+		Charades                & \cite{Charades}           & 2016 & \cmark       &           & \cmark         \\
+		Kinetics-400            & \cite{Kinetics-400}       & 2017 &              &           & \cmark         \\
+		Kinetics-600            & \cite{Kinetics-600}       & 2018 &              &           & \cmark         \\
+		Youtube-8M(v2018)       & \cite{YouTube8M}          & 2018 &              &           & \cmark         \\
+		Something Something(v2) & \cite{SomethingSomething} & 2018 &              &           & \cmark         \\
+		AVA(v2.2)               & \cite{AVA}                & 2018 &              & \cmark    &                \\
+		Moments in Time(v1)     & \cite{MomentsinTime}      & 2018 &              &           & \cmark         \\
+		HACS                    & \cite{HACS}               & 2019 & \cmark       &           & \cmark         \\
+		Kinetics-700            & \cite{Kinetics-700}       & 2019 &              &           & \cmark         \\
+		HVU                     & \cite{HVU}                & 2020 &              &           & \cmark         \\
+		AViD                    & \cite{AViD}               & 2020 &              &           & \cmark         \\
+		Kinetics-700-2020       & \cite{Kinetics-700-2020}  & 2020 &              &           & \cmark         \\
+		Toyota Smarthome        & \cite{ToyotaSmarthome}    & 2020 & \cmark       &           & \cmark         \\
+		EPIC-KITCHENS-100       & \cite{EPICKITCHENS100}    & 2021 & \cmark       &           & \cmark         \\	
+		FineAction              & \cite{FineAction}         & 2021 & \cmark       &           &                \\
 		\bottomrule
  		
 	\end{tabular}%
-	\label{config1}
+	\label{characteristic}
 \end{table}%
 
 \subsection{Data collection method}
-Thảo luận 3 mục : 
+
+Quy trình thu thập dữ liệu thông thường bao gồm ba bước chính : Định nghĩa danh sách các lớp hành động
+
 \begin{itemize}
 	\item Build Action class list : Dùng các công trình nghiên cứu về ngôn ngữ / Tự tiến hành nghiên cứu / Sử dụng nguồn từ dataset trước đó có/không bổ sung thêm .
 	\item Collect video : Từ Internet / Tự quay.
@@ -339,29 +360,39 @@ Thảo luận 3 mục :
 
 Bảng dự kiến : 
 
-\begin{table}[h]
+\begin{sidewaystable}[h]
 	\centering
-	%\small
 	\caption{Action recognition dataset}
 	\renewcommand{\arraystretch}{1.5}
-	\begin{tabular}{l|l l l l l l l l l}
-		\toprule
-		Name & ActMethod & Sourced & Annotate Method & Ann Tools \\
+	\begin{tabular}{l|c|c|c|c|c}
+		\toprule  
+		Name                    & ActList Build Method     & Data Sources                    & Anno Method   & Ann Protocol  \\
 		\hline
-		HMDB51               &  \\
-		UCF101               &  \\
-		Sport-1M             &  \\
-		ActivityNet          &  \\ 
-		Youtube-8M           &  \\
-		Something Something  &  \\
-		Charades             &  \\
-		AVA                  &  \\
-		Moments in Time      &  \\
-		HACS                 &  \\
-		HVU                  &  \\
+		HMDB51                  & research                 & Internet + digital movie        & manually      & No mentioned     \\
+		UCF101                  & no mentioned             & YouTube                         & no mentiond   & No mentioned \\
+		Sport-1M                & research                 & YouTube                         & automatically & No mentioned \\
+		MultiTHUMOS             & base on another research & THUMOS                          & manually      & No mentioned \\
+		ActivityNet(v1.3)       & base on another research & Online repositories             & hybrid        & AMT    \\ 
+		Charades                & research                 & Crowdsourced record             & predefine     & AMT   \\
+		Kinetics-400            & base on another research & YouTube                         & manually      & AMT\\
+		Kinetics-600            & base on another research & YouTube                         & manually      & AMT\\
+		Youtube-8M(v2018)       & research                 & YouTube                         & predefine     & No mentioned\\
+		Something Something(v2) & research                 & Crowdsourced record             & predefine     & AMT\\
+		AVA(v2.2)               & research                 & YouTube                         & hybrid        & Faster-RCNN, perembed, Hungarian\\
+		Moments in Time(v1)     & base on another research & Youtube, Flickr, Vine etc       & hybrid        & AMT     \\
+		HACS                    & base on another research & YouTube                         & hybrid        & author's tool (no information) \\
+		Kinetics-700            & base on another research & YouTube                         & manually      & AMT  \\
+		HVU                     & research                 & YouTube-8M, Kinetics-600, HACS  & hybrid        & Google Vision API , Sensifai Video Tagging API \\
+		AViD                    & base on another research & Flickr, Instagram etc           & hybrid        & AMT, I3D   \\
+		Kinetics-700-2020       & base on another research & YouTube                         & manually      & AMT  \\
+		Toyota Smarthome        & research                 & Crowdsourced record             & manually      & ELAN  \\
+		EPIC-KITCHENS-100       & research                 & Crowdsourced record             & hybrid        & AMT, Mask R-CNN  \\	
+		FineAction              & base on another research & Existing dataset                & manually      & author's tool (no information) \\
+		\bottomrule
+		
 	\end{tabular}%
-	\label{config6}
-\end{table}%
+	\label{DataCollectionMethod}
+\end{sidewaystable}%
 
 \subsection{Data statistic}
 
@@ -371,46 +402,125 @@ Bảng dự kiến :
 
 \begin{table}[h]
 	\centering
-	%\small
+	\smaller
 	\caption{Action recognition dataset}
-	\begin{tabular}{l|l l l l l l l l l}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{l|l|c c c c c}
 		\toprule
-		tên & numclass & train & val & test & duration/sample \\
+		Name                    & split         & numclass & total sample & train          & val          & test \\
+		\hline
+		HMDB51                  & No            & 51       & 6766         & 70 clips/class & none         & 30 clips/class         \\
+		UCF101                  & No            & 101      & 13k          & 70 clips/class & none         & 30 clips/class        \\
+		Sport-1M                & No            & 487      & 1.1M         & 70\%           & 10\%         & 20\%        \\
+		MultiTHUMOS             & No            & 65       & no mentioned & no mentioned   & no mentioned & no mentioned    \\
+		ActivityNet(v1.3)       & No            & 200      & 20k          & 10k            & 5k           & 5k         \\ 
+		Charades                & No            & 157      & 10k          & 8k             & none         & 2k         \\
+		Kinetics-400            & No            & 400      & 306k         & 246k           & 20k          & 40k        \\
+		Kinetics-600            & No            & 600      & 482k         & 392k           & 30k          & 60k        \\
+		Youtube-8M(v2018)       & No            & 3862     & 6.1M         & 70\%           & 10\%         & 20\%       \\
+		Something Something(v2) & No            & 174      & 221k         & 169k           & 25k          & 27k        \\
+		AVA(v2.2)               & No            & 80       & 356k         & 211k           & 57k          & 118k               \\
+		Moments in Time(v1)     & No            & 339      & 904k         & 802k           & 34k          & 68k       \\
+		HACS                    & HACS clip     & 200      & 1.5M         & 1.4M           & 50K          & 50K     \\
+		                        & HACS segments & 200      & 140K         & no mentioned   & no mentioned & no mentioned \\
+		Kinetics-700            & No            & 700      & 650k         & 545k           & 35k          & 70k   \\
+		HVU                     & No            & 3142     & 572k         & 481k           & 31k          & 65k      \\
+		AViD                    & No            & 887      & 450k         & 410k           & none         & 40k      \\
+		Kinetics-700-2020       & No            & 700      & 648k         & 545k           & 34k          & 69k        \\
+		Toyota Smarthome        & Untrimmed     & 51       & 41K          & no mentioned   & no mentioned & no mentioned        \\
+		                        & Trimmed       & 31       & 16K          & no mentioned   & no mentioned & no mentioned \\
+		EPIC-KITCHENS-100       & No            & 4053     & 90k          & 75\%           & 10\%         & 15\%         \\	
+		FineAction              & No            & 106      & 103k         & 58k            & 24k          & 21k         \\
+		\bottomrule
+		
 	\end{tabular}%
-	\label{config2}
+	\label{DataStatistic}
 \end{table}%
 
 \subsection{Benchmark and metric}
 
 Phần này cũng chưa biết viết gì.
 
-Bảng dự kiến : 
-
-\begin{table}[h]
+\begin{sidewaystable}[h]
 	\centering
-	%\small
+	\smaller[0.5]
 	\caption{Action recognition dataset}
-	\begin{tabular}{l|l l l l l l l l l}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{l|l|c c c c c}
 		\toprule
-		tên & benchmark & metric & eval protocol \\
+		Name                    & split         & Baseline                   & Metric                                     & Result                                               \\
+		\hline
+		HMDB51                  & No            & C2  feature+SVM            & Accuracy                                   & 22.83\%                                              \\
+		UCF101                  & No            & Harris3D+HOG/HOF+SVM       & Accuracy                                   & 44.5\%                                               \\
+		Sport-1M                & No            & Slow fusion                & clipHit@1, videoHit@1, videoHit@5          & 41.9\%, 60.9\%, 80.2\%                               \\
+		MultiTHUMOS             & No            & MultiLSTM                  & per frame mAP                              & 29.7\%                                               \\
+		ActivityNet(v1.3)       & No            & none (due to diff version) &                                            &                                                      \\ 
+		Charades                & No            & Combined                   & classification : mAP                       & 18.6\%                                               \\
+		Kinetics-400            & No            & Two-Stream (RGB+Flow)      & top1-accuracy, top5-accuracy               & 61.0\%, 81.3\%                                       \\
+		Kinetics-600            & No            & I3D                        & top1-accuracy, top5-accuracy               & 69.7\%, 89.1\%                                       \\
+		Youtube-8M(v2018)       & No            & none (due to diff version) &                                            &                                                      \\
+		Something Something(v2) & No            & 2D+3D-CNN                  & Top 1 error rate                           & 44.9\% (10 classes), 63.8\% (40 classes)             \\
+		AVA(v2.2)               & No            & 3D two-stream              & mAP                                        & 15.6\%(action detect), 75.3\%(actor detect)          \\
+		Moments in Time(v1)     & No            & Ensemble (SVM)             & top1-accuracy, top5-accuracy               & 31.16\%, 57.67\%                                     \\
+		HACS                    & HACS clip     & I3D RGB+Flow               & top1-accuracy                              & 83.5\%                                               \\
+		                        & HACS segments & SSN                        & mAP@0.5, mAP@0.75, mAP@0.95, mAP           & 28.82\%, 18.80\%, 5.32\%, 18.97\%                    \\
+		Kinetics-700            & No            & I3D                        & Top-1 Accuracy                             & 57.3\%                                               \\
+		HVU                     & No            & HATNet                     & mAP(overall)                               & 40\%                                                 \\
+		AViD                    & No            & SlowFast-101 16x8          & Accuracy                                   & 50.8\%                                               \\
+		Kinetics-700-2020       & No            & no mentioned               &                                            &                                                      \\
+		Toyota Smarthome        & Untrimmed     & AGNet                      & frame-mAP, CrossSub, CrossView             & 33.2\%, 23.2\%                                       \\
+	                          	& Trimmed       & no mentioned               &                                            &                                                      \\
+		EPIC-KITCHENS-100       & No            & classification : TSM       & top1-accuracy(verb-noun-act)               & 67.86\%, 49.01\%, 38.27                              \\	
+		                        &               & localization : BMN         & mAP@0.1, @0.2, @0.3, @0.4, @0.5, Avg (act) & 10.83\%, 09.84\%, 08.43\%, 07.11\%, 05.58\%, 08.36\% \\
+		FineAction              & No            & Author's model             & mAP@0.5, mAP@0.75, mAP@0.95, mAP           & 22.01\%, 12.09\%, 3.88\%, 13.17\%                    \\
+		\bottomrule
+		
 	\end{tabular}%
-	\label{config3}
-\end{table}%
+	\label{BenchmarkMetric}
+\end{sidewaystable}%
 
 \subsection{state of the art method result}
 
-Chưa biết viết gì
-
-\begin{table}[h]
+\begin{sidewaystable}[h]
 	\centering
-	%\small
+	\smaller[0.5]
 	\caption{Action recognition dataset}
-	\begin{tabular}{l|l l l l l l l l l}
+	\renewcommand{\arraystretch}{1.5}
+	\begin{tabular}{l|l|c c c c c}
 		\toprule
-		tên & SOTA method & result & metric & eval Protocol \\
+		Name                    & split         & SOTA Method                   & Ref                  & Metric                                         & Result                                               \\
+		\hline
+		HMDB51                  & No            & VideoMAE V2-g                 & \cite{VideoMAEV2g}   & Accuracy                                       & 88.1\%                                             \\
+		UCF101                  & No            & VideoMAE V2-g                 & \cite{VideoMAEV2g}   & Accuracy                                       & 99.6\%                                              \\
+		Sport-1M                & No            & ip-CSN-152                    & \cite{ip-CSN-152}    & videoHit@1, videoHit@5                         & 75.5\%, 92.8\%                              \\
+		MultiTHUMOS             & No            & TriDet                        & \cite{TriDet}        & per frame mAP                                  & 37.5\%                                               \\
+		ActivityNet(v1.3)       & No            & localization : AdaTAD         & \cite{AdaTAD}        & mAP, mAP@0.5, mAP@0.75, mAP@0.95               & 41.93\%, 61.72\%, 43.35\%, 10.85\%                      \\ 
+		                        &               & classification : Text4Vis     & \cite{Text4Vis}      & mAP                                            & 96.9\%  \\
+		Charades                & No            & localization : TTM            & \cite{TTM}           & per frame mAP                                  & 28.79\%                                              \\
+		                        &               & classification : TokenLearner & \cite{TokenLearner}  & mAP                                            & 66.3\%       \\
+		Kinetics-400            & No            & InternVideo                   & \cite{InternVideo}   & top1 accuracy                                  & 91.1\%                                       \\
+		Kinetics-600            & No            & TubeVit-H                     & \cite{TubeVit-H}     & top1 accuracy, top5 accuracy                   & 91.8\%, 98.9\%	                                     \\
+		Youtube-8M(v2018)       & No            & DCGN                          & \cite{DCGN}          & Hit@1                                          & 87.7\%                                                     \\
+		Something Something(v2) & No            & MVD                           & \cite{MVD}           & top1 accuracy, top5 accuracy                   & 77.3\%, 95.7\%            \\
+		AVA(v2.2)               & No            & LART                          & \cite{LART}          & mAP                                            & 45.1\%          \\
+		Moments in Time(v1)     & No            & UMT-L                         & \cite{UMT-L}         & top1-accuracy, top5-accuracy                   & 48.7\%, 78.2\%                                    \\
+		HACS                    & HACS clip     & UniFormerV2-L                 & \cite{UniFormerV2-L} & top1-accuracy, top5-accuracy                   & 95.5\%, 99.8\%                                             \\
+								& HACS segments & TriDet                        & \cite{TriDet}        & mAP@0.5, mAP@0.75, mAP@0.95, mAP               & 62.4\%, 44.1\%, 13.1\%, 43.1\%              \\
+		Kinetics-700            & No            & InternVideo-T                 & \cite{InternVideo}   & Top-1 Accuracy                                 & 84\%                                              \\
+		HVU                     & No            &                               &                      &                                                &                                                 \\
+		AViD                    & No            & TokenLearner                  & \cite{TokenLearner}  & Accuracy                                       & 53.8\%                                              \\
+		Kinetics-700-2020       & No            &                               &                      &                                                &                                                      \\
+		Toyota Smarthome        & Untrimmed     & MS-TCT                        & \cite{MS-TCT}        & frame-mAP                                      & 33.7\%	                                    \\
+								& Trimmed       & PAAT                          & \cite{PAAT}          & Accuracy, CrossSubject, CrossView1, CrossView2 & 72.5\%, 54.8\%, 62.2\%	  \\
+		EPIC-KITCHENS-100       & No            & classification: Avion         & \cite{Avion}         & Action@1, Verb@1, Noun@1                       & 54.4\%, 73.0\%, 65.4\%                            \\	
+								&               & localization: AdaTAD          & \cite{AdaTAD}        & mAP@0.1, @0.2, @0.3, @0.4, @0.5, Avg. (verb)   & 33.1\%, 32.2\%, 30.4\%, 27.5\%, 23.1\%, 29.3\% \\
+		FineAction              & No            & VideoMAE V2-g                 & \cite{VideoMAEV2g}   & mAP                                            & 18.2\%                   \\
+		\bottomrule
+		
 	\end{tabular}%
-	\label{config4}
-\end{table}%
+	\label{BenchmarkMetric}
+\end{sidewaystable}%
+
 
 \subsection{Discussion}
 

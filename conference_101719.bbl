@@ -76,32 +76,6 @@ A.~Krizhevsky, I.~Sutskever, and G.~E. Hinton, ``Imagenet classification with
   deep convolutional neural networks,'' {\em Commun. ACM}, vol.~60, p.~84–90,
   may 2017.
 
-\bibitem{somethingsomething}
-R.~Goyal, S.~E. Kahou, V.~Michalski, J.~Materzyńska, S.~Westphal, H.~Kim,
-  V.~Haenel, I.~Fruend, P.~Yianilos, M.~Mueller-Freitag, F.~Hoppe, C.~Thurau,
-  I.~Bax, and R.~Memisevic, ``The "something something" video database for
-  learning and evaluating visual common sense,'' 2017.
-
-\bibitem{YouTube8M}
-S.~Abu-El-Haija, N.~Kothari, J.~Lee, P.~Natsev, G.~Toderici, B.~Varadarajan,
-  and S.~Vijayanarasimhan, ``Youtube-8m: A large-scale video classification
-  benchmark,'' 2016.
-
-\bibitem{Somethingv2}
-F.~Mahdisoltani, D.~F.~G. Berger, W.~Gharbieh, and R.~Memisevici, ``{On the
-  effectiveness of task granularity for transfer learning},'' 2018.
-
-\bibitem{AVA}
-C.~Gu, C.~Sun, D.~A. Ross, C.~Vondrick, C.~Pantofaru, Y.~Li,
-  S.~Vijayanarasimhan, G.~Toderici, S.~Ricco, R.~Sukthankar, C.~Schmid, and
-  J.~Malik, ``Ava: A video dataset of spatio-temporally localized atomic visual
-  actions,'' 2018.
-
-\bibitem{momentsintime}
-M.~Monfort, A.~Andonian, B.~Zhou, K.~Ramakrishnan, S.~A. Bargal, T.~Yan,
-  L.~Brown, Q.~Fan, D.~Gutfruend, C.~Vondrick, and A.~Oliva, ``Moments in time
-  dataset: one million videos for event understanding,'' 2019.
-
 \bibitem{ActivityNet}
 F.~C. Heilbron, V.~Escorcia, B.~Ghanem, and J.~C. Niebles, ``Activitynet: A
   large-scale video benchmark for human activity understanding,'' in {\em 2015
@@ -113,6 +87,22 @@ H.~Idrees, A.~R. Zamir, Y.-G. Jiang, A.~Gorban, I.~Laptev, R.~Sukthankar, and
   M.~Shah, ``The thumos challenge on action recognition for videos “in the
   wild”,'' {\em Computer Vision and Image Understanding}, vol.~155,
   p.~1–23, Feb. 2017.
+
+\bibitem{YouTube8M}
+S.~Abu-El-Haija, N.~Kothari, J.~Lee, P.~Natsev, G.~Toderici, B.~Varadarajan,
+  and S.~Vijayanarasimhan, ``Youtube-8m: A large-scale video classification
+  benchmark,'' 2016.
+
+\bibitem{AVA}
+C.~Gu, C.~Sun, D.~A. Ross, C.~Vondrick, C.~Pantofaru, Y.~Li,
+  S.~Vijayanarasimhan, G.~Toderici, S.~Ricco, R.~Sukthankar, C.~Schmid, and
+  J.~Malik, ``Ava: A video dataset of spatio-temporally localized atomic visual
+  actions,'' 2018.
+
+\bibitem{momentsintime}
+M.~Monfort, A.~Andonian, B.~Zhou, K.~Ramakrishnan, S.~A. Bargal, T.~Yan,
+  L.~Brown, Q.~Fan, D.~Gutfruend, C.~Vondrick, and A.~Oliva, ``Moments in time
+  dataset: one million videos for event understanding,'' 2019.
 
 \bibitem{Charades}
 G.~A. Sigurdsson, G.~Varol, X.~Wang, A.~Farhadi, I.~Laptev, and A.~Gupta,

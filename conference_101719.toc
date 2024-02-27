@@ -16,63 +16,68 @@
 \contentsline {subsubsection}{\numberline {3.3.2}Data collection methods}{11}{subsubsection.3.3.2}%
 \contentsline {subsubsection}{\numberline {3.3.3}Data distribution}{11}{subsubsection.3.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.4}Annotation}{11}{subsubsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.4}Something Something V2}{11}{subsection.3.4}%
-\contentsline {subsubsection}{\numberline {3.4.1}\textbf {Context and construction perspective}}{12}{subsubsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4}ActivityNet}{11}{subsection.3.4}%
+\contentsline {subsubsection}{\numberline {3.4.1}Context and construction perspective}{12}{subsubsection.3.4.1}%
 \contentsline {subsubsection}{\numberline {3.4.2}Data collection methods}{12}{subsubsection.3.4.2}%
 \contentsline {subsubsection}{\numberline {3.4.3}Data distribution}{12}{subsubsection.3.4.3}%
-\contentsline {subsubsection}{\numberline {3.4.4}Annotation}{13}{subsubsection.3.4.4}%
-\contentsline {subsection}{\numberline {3.5}AVA}{13}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.4.4}Annotation}{12}{subsubsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.5}Something Something V2}{13}{subsection.3.5}%
 \contentsline {subsubsection}{\numberline {3.5.1}\textbf {Context and construction perspective}}{13}{subsubsection.3.5.1}%
-\contentsline {subsubsection}{\numberline {3.5.2}Data collection methods}{14}{subsubsection.3.5.2}%
-\contentsline {subsubsection}{\numberline {3.5.3}Data distribution}{15}{subsubsection.3.5.3}%
-\contentsline {subsubsection}{\numberline {3.5.4}Annotation}{15}{subsubsection.3.5.4}%
-\contentsline {subsection}{\numberline {3.6}Moments in Time}{16}{subsection.3.6}%
-\contentsline {subsubsection}{\numberline {3.6.1}Context and construction perspective}{16}{subsubsection.3.6.1}%
-\contentsline {subsubsection}{\numberline {3.6.2}Data collection methods}{16}{subsubsection.3.6.2}%
-\contentsline {subsubsection}{\numberline {3.6.3}Data distribution}{17}{subsubsection.3.6.3}%
-\contentsline {subsubsection}{\numberline {3.6.4}Annotation}{17}{subsubsection.3.6.4}%
-\contentsline {subsection}{\numberline {3.7}HACS}{17}{subsection.3.7}%
-\contentsline {subsubsection}{\numberline {3.7.1}Context and construction perspective}{17}{subsubsection.3.7.1}%
+\contentsline {subsubsection}{\numberline {3.5.2}Data collection methods}{13}{subsubsection.3.5.2}%
+\contentsline {subsubsection}{\numberline {3.5.3}Data distribution}{14}{subsubsection.3.5.3}%
+\contentsline {subsubsection}{\numberline {3.5.4}Annotation}{14}{subsubsection.3.5.4}%
+\contentsline {subsection}{\numberline {3.6}AVA}{15}{subsection.3.6}%
+\contentsline {subsubsection}{\numberline {3.6.1}\textbf {Context and construction perspective}}{15}{subsubsection.3.6.1}%
+\contentsline {subsubsection}{\numberline {3.6.2}Data collection methods}{15}{subsubsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.3}Data distribution}{16}{subsubsection.3.6.3}%
+\contentsline {subsubsection}{\numberline {3.6.4}Annotation}{16}{subsubsection.3.6.4}%
+\contentsline {subsection}{\numberline {3.7}Moments in Time}{17}{subsection.3.7}%
+\contentsline {subsubsection}{\numberline {3.7.1}Context and construction perspective}{18}{subsubsection.3.7.1}%
 \contentsline {subsubsection}{\numberline {3.7.2}Data collection methods}{18}{subsubsection.3.7.2}%
 \contentsline {subsubsection}{\numberline {3.7.3}Data distribution}{18}{subsubsection.3.7.3}%
 \contentsline {subsubsection}{\numberline {3.7.4}Annotation}{18}{subsubsection.3.7.4}%
-\contentsline {subsection}{\numberline {3.8}HVU}{19}{subsection.3.8}%
+\contentsline {subsection}{\numberline {3.8}HACS}{18}{subsection.3.8}%
 \contentsline {subsubsection}{\numberline {3.8.1}Context and construction perspective}{19}{subsubsection.3.8.1}%
 \contentsline {subsubsection}{\numberline {3.8.2}Data collection methods}{19}{subsubsection.3.8.2}%
-\contentsline {subsubsection}{\numberline {3.8.3}Data distribution}{20}{subsubsection.3.8.3}%
+\contentsline {subsubsection}{\numberline {3.8.3}Data distribution}{19}{subsubsection.3.8.3}%
 \contentsline {subsubsection}{\numberline {3.8.4}Annotation}{20}{subsubsection.3.8.4}%
-\contentsline {subsection}{\numberline {3.9}AViD}{20}{subsection.3.9}%
+\contentsline {subsection}{\numberline {3.9}HVU}{20}{subsection.3.9}%
 \contentsline {subsubsection}{\numberline {3.9.1}Context and construction perspective}{20}{subsubsection.3.9.1}%
 \contentsline {subsubsection}{\numberline {3.9.2}Data collection methods}{21}{subsubsection.3.9.2}%
 \contentsline {subsubsection}{\numberline {3.9.3}Data distribution}{21}{subsubsection.3.9.3}%
 \contentsline {subsubsection}{\numberline {3.9.4}Annotation}{21}{subsubsection.3.9.4}%
-\contentsline {subsection}{\numberline {3.10}THUMOS}{21}{subsection.3.10}%
+\contentsline {subsection}{\numberline {3.10}AViD}{21}{subsection.3.10}%
 \contentsline {subsubsection}{\numberline {3.10.1}Context and construction perspective}{22}{subsubsection.3.10.1}%
 \contentsline {subsubsection}{\numberline {3.10.2}Data collection methods}{22}{subsubsection.3.10.2}%
 \contentsline {subsubsection}{\numberline {3.10.3}Data distribution}{22}{subsubsection.3.10.3}%
-\contentsline {subsubsection}{\numberline {3.10.4}Annotation}{22}{subsubsection.3.10.4}%
-\contentsline {subsection}{\numberline {3.11}YouTube-8M}{22}{subsection.3.11}%
-\contentsline {subsubsection}{\numberline {3.11.1}Context and construction perspective}{22}{subsubsection.3.11.1}%
-\contentsline {subsubsection}{\numberline {3.11.2}Data collection methods}{22}{subsubsection.3.11.2}%
+\contentsline {subsubsection}{\numberline {3.10.4}Annotation}{23}{subsubsection.3.10.4}%
+\contentsline {subsection}{\numberline {3.11}THUMOS}{23}{subsection.3.11}%
+\contentsline {subsubsection}{\numberline {3.11.1}Context and construction perspective}{23}{subsubsection.3.11.1}%
+\contentsline {subsubsection}{\numberline {3.11.2}Data collection methods}{23}{subsubsection.3.11.2}%
 \contentsline {subsubsection}{\numberline {3.11.3}Data distribution}{23}{subsubsection.3.11.3}%
 \contentsline {subsubsection}{\numberline {3.11.4}Annotation}{23}{subsubsection.3.11.4}%
-\contentsline {subsection}{\numberline {3.12}Charades}{23}{subsection.3.12}%
-\contentsline {subsubsection}{\numberline {3.12.1}Context and construction perspective}{23}{subsubsection.3.12.1}%
-\contentsline {subsubsection}{\numberline {3.12.2}Data collection methods}{23}{subsubsection.3.12.2}%
-\contentsline {subsubsection}{\numberline {3.12.3}Data distribution}{23}{subsubsection.3.12.3}%
-\contentsline {subsubsection}{\numberline {3.12.4}Annotation}{23}{subsubsection.3.12.4}%
-\contentsline {subsection}{\numberline {3.13}NTU RGB+D}{23}{subsection.3.13}%
+\contentsline {subsection}{\numberline {3.12}YouTube-8M}{24}{subsection.3.12}%
+\contentsline {subsubsection}{\numberline {3.12.1}Context and construction perspective}{24}{subsubsection.3.12.1}%
+\contentsline {subsubsection}{\numberline {3.12.2}Data collection methods}{24}{subsubsection.3.12.2}%
+\contentsline {subsubsection}{\numberline {3.12.3}Data distribution}{24}{subsubsection.3.12.3}%
+\contentsline {subsubsection}{\numberline {3.12.4}Annotation}{24}{subsubsection.3.12.4}%
+\contentsline {subsection}{\numberline {3.13}Charades}{24}{subsection.3.13}%
 \contentsline {subsubsection}{\numberline {3.13.1}Context and construction perspective}{24}{subsubsection.3.13.1}%
 \contentsline {subsubsection}{\numberline {3.13.2}Data collection methods}{24}{subsubsection.3.13.2}%
-\contentsline {subsubsection}{\numberline {3.13.3}Data distribution}{24}{subsubsection.3.13.3}%
-\contentsline {subsubsection}{\numberline {3.13.4}Annotation}{24}{subsubsection.3.13.4}%
-\contentsline {section}{\numberline {4}}{24}{section.4}%
-\contentsline {subsubsection}{\numberline {4.0.1}Context and construction perspective}{24}{subsubsection.4.0.1}%
-\contentsline {subsubsection}{\numberline {4.0.2}Data collection methods}{24}{subsubsection.4.0.2}%
-\contentsline {subsubsection}{\numberline {4.0.3}Data distribution}{24}{subsubsection.4.0.3}%
-\contentsline {subsubsection}{\numberline {4.0.4}Annotation}{24}{subsubsection.4.0.4}%
-\contentsline {section}{\numberline {5}}{24}{section.5}%
-\contentsline {subsubsection}{\numberline {5.0.1}Context and construction perspective}{24}{subsubsection.5.0.1}%
-\contentsline {subsubsection}{\numberline {5.0.2}Data collection methods}{24}{subsubsection.5.0.2}%
-\contentsline {subsubsection}{\numberline {5.0.3}Data distribution}{25}{subsubsection.5.0.3}%
-\contentsline {subsubsection}{\numberline {5.0.4}Annotation}{25}{subsubsection.5.0.4}%
+\contentsline {subsubsection}{\numberline {3.13.3}Data distribution}{25}{subsubsection.3.13.3}%
+\contentsline {subsubsection}{\numberline {3.13.4}Annotation}{25}{subsubsection.3.13.4}%
+\contentsline {subsection}{\numberline {3.14}NTU RGB+D}{25}{subsection.3.14}%
+\contentsline {subsubsection}{\numberline {3.14.1}Context and construction perspective}{25}{subsubsection.3.14.1}%
+\contentsline {subsubsection}{\numberline {3.14.2}Data collection methods}{25}{subsubsection.3.14.2}%
+\contentsline {subsubsection}{\numberline {3.14.3}Data distribution}{25}{subsubsection.3.14.3}%
+\contentsline {subsubsection}{\numberline {3.14.4}Annotation}{25}{subsubsection.3.14.4}%
+\contentsline {section}{\numberline {4}}{25}{section.4}%
+\contentsline {subsubsection}{\numberline {4.0.1}Context and construction perspective}{25}{subsubsection.4.0.1}%
+\contentsline {subsubsection}{\numberline {4.0.2}Data collection methods}{25}{subsubsection.4.0.2}%
+\contentsline {subsubsection}{\numberline {4.0.3}Data distribution}{26}{subsubsection.4.0.3}%
+\contentsline {subsubsection}{\numberline {4.0.4}Annotation}{26}{subsubsection.4.0.4}%
+\contentsline {section}{\numberline {5}}{26}{section.5}%
+\contentsline {subsubsection}{\numberline {5.0.1}Context and construction perspective}{26}{subsubsection.5.0.1}%
+\contentsline {subsubsection}{\numberline {5.0.2}Data collection methods}{26}{subsubsection.5.0.2}%
+\contentsline {subsubsection}{\numberline {5.0.3}Data distribution}{26}{subsubsection.5.0.3}%
+\contentsline {subsubsection}{\numberline {5.0.4}Annotation}{26}{subsubsection.5.0.4}%
