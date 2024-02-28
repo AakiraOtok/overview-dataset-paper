@@ -20,6 +20,7 @@
 \usepackage[a4paper,margin=1in,footskip=0.25in]{geometry}
 \usepackage{indentfirst}
 \usepackage{rotating}
+\usepackage{placeins}
 
 \setlength{\parindent}{1.5cm}
 \setlength{\parskip}{0.5em}
@@ -348,17 +349,31 @@ Table \ref{characteristic} summarizes all the datasets analyzed in this paper. F
 	\label{characteristic}
 \end{table}%
 
-\subsection{Data collection method}
+\subsection{Data construction method}
 
-Quy trình thu thập dữ liệu thông thường bao gồm ba bước chính : Định nghĩa danh sách các lớp hành động
-
+Each dataset has a different process for constructing the dataset, but in general, these processes share three main points: 1) Defining a list of action classes. 2) Data collection. 3) Annotation.
 \begin{itemize}
-	\item Build Action class list : Dùng các công trình nghiên cứu về ngôn ngữ / Tự tiến hành nghiên cứu / Sử dụng nguồn từ dataset trước đó có/không bổ sung thêm .
-	\item Collect video : Từ Internet / Tự quay.
-	\item Annotation : Tự động / Thủ công / Bán tự động.
+	\item \textbf{Define action classes}: Typically, defining action classes is the first step in the aforementioned three-step process. Authors generally take two main approaches: relying on previous research or constructing action classes from scratch. However, there are also some datasets that define action classes during the annotation process.
+	\begin{itemize}
+		\item Based on previous research: (\textit{base one another research}) Datasets that rely on linguistic studies or utilize action classes from previous datasets (either fully or with additional modifications) fall into this category.
+		
+		\item Constructing action classes from scratch: (\textit{research}) Datasets that independently construct their own set of action classes without relying on any specific research (or with minimal reliance) are classified under this category.
+	\end{itemize}
+	
+	\item \textbf{Collect video} : For datasets focusing on scale expansion, such as YouTube-8M \cite{YouTube8M}, they are often sourced from the internet (primarily from YouTube) due to the abundance of data. On the other hand, datasets focusing on fine-grained actions tend to utilize user-generated videos from crowdsources. This information is explicitly mentioned in the "Data Sources" column.
+	
+	\item \textbf{Annotation} : The annotation process can be classified into three main categories: manual, automatic, and hybrid.
+	\begin{itemize}
+		\item \textit{manually} : Manually labeling data typically involves hiring human labor from platforms like Amazon Mechanical Turk (AMT). Datasets that employ this method often have a small scale (e.g., HMDB51) or focus on fine-grained actions (e.g., Toyota Smart Home).
+		
+		\item \textit{automatically} : Using automatic labeling tools, these datasets often exhibit a high level of noise \cite{Sports1M}.
+		
+		\item \textit{hybrid} : Combining automatic and manual methods, typically involving the use of deep learning models for automated labeling followed by human verification, is often employed.
+	\end{itemize}
+	Additionally, there are \textit{predefined} labels, which means the data is searched based on existing labels and directly assigned to those labels.
 \end{itemize}
 
-Bảng dự kiến : 
+Table \ref{DataCollectionMethod} summarizes the information mentioned above. Any unavailable information will be annotated as \textit{no mentioned}. Additionally, the annotation methods are also referenced in the Ann Protocol column.
 
 \begin{sidewaystable}[h]
 	\centering
@@ -366,7 +381,7 @@ Bảng dự kiến :
 	\renewcommand{\arraystretch}{1.5}
 	\begin{tabular}{l|c|c|c|c|c}
 		\toprule  
-		Name                    & ActList Build Method     & Data Sources                    & Anno Method   & Ann Protocol  \\
+		Name                    & ActList Construction Method     & Data Sources                    & Anno Method   & Ann Protocol  \\
 		\hline
 		HMDB51                  & research                 & Internet + digital movie        & manually      & No mentioned     \\
 		UCF101                  & no mentioned             & YouTube                         & no mentiond   & No mentioned \\
@@ -380,13 +395,13 @@ Bảng dự kiến :
 		Something Something(v2) & research                 & Crowdsourced record             & predefine     & AMT\\
 		AVA(v2.2)               & research                 & YouTube                         & hybrid        & Faster-RCNN, perembed, Hungarian\\
 		Moments in Time(v1)     & base on another research & Youtube, Flickr, Vine etc       & hybrid        & AMT     \\
-		HACS                    & base on another research & YouTube                         & hybrid        & author's tool (no information) \\
+		HACS                    & base on another research & YouTube                         & hybrid        & Faster RCNN \\
 		Kinetics-700            & base on another research & YouTube                         & manually      & AMT  \\
 		HVU                     & research                 & YouTube-8M, Kinetics-600, HACS  & hybrid        & Google Vision API , Sensifai Video Tagging API \\
 		AViD                    & base on another research & Flickr, Instagram etc           & hybrid        & AMT, I3D   \\
 		Kinetics-700-2020       & base on another research & YouTube                         & manually      & AMT  \\
 		Toyota Smarthome        & research                 & Crowdsourced record             & manually      & ELAN  \\
-		EPIC-KITCHENS-100       & research                 & Crowdsourced record             & hybrid        & AMT, Mask R-CNN  \\	
+		EPIC-KITCHENS-100       & research                 & Crowdsourced record             & hybrid        & AMT, Mask R-CNN, hand object interactions\\	
 		FineAction              & base on another research & Existing dataset                & manually      & author's tool (no information) \\
 		\bottomrule
 		
@@ -396,9 +411,7 @@ Bảng dự kiến :
 
 \subsection{Data statistic}
 
-Phần này chưa biết phải viết gì nhiều, có thể giải thích tại sao một số data không công bố test anno.
-
-Bảng dự kiến : 
+Table \ref{DataStatistic} summarizes the distribution information of the dataset, including the number of classes (\textit{numclass}), the total number of samples used (\textit{total sample}), the number of samples used for training (\textit{train}), validation (\textit{val}), and testing (\textit{test}). Additionally, if the dataset is divided into subsets, they will be listed in the \textit{split} column with subset name; otherwise, it will be marked as \textit{No}. 
 
 \begin{table}[h]
 	\centering
@@ -439,7 +452,7 @@ Bảng dự kiến :
 
 \subsection{Benchmark and metric}
 
-Phần này cũng chưa biết viết gì.
+Table \ref{BenchmarkMetric} summarizes the provided baselines in the official paper. Please note that some datasets may have more than one task. We have selected the best-performing baseline for each task to represent it. For some datasets with newer versions, baselines may not be listed (marked as \textit{none (due to diff version)}). The corresponding metric and result are listed in the \textit{Metric} and \textit{Result} columns, respectively.
 
 \begin{sidewaystable}[h]
 	\centering
@@ -479,7 +492,9 @@ Phần này cũng chưa biết viết gì.
 	\label{BenchmarkMetric}
 \end{sidewaystable}%
 
-\subsection{state of the art method result}
+\subsection{State of the art method}
+
+Table \ref{SOTAMethod} summarizes the information about state-of-the-art methods on the datasets. Please note that due to the lack of consistency between metrics in the official paper and metric reporting in other papers, there may be variations in the reported metrics. We have provided clear annotations in the \textit{Metric} column along with the \textit{Result} to address this.
 
 \begin{sidewaystable}[h]
 	\centering
@@ -518,37 +533,27 @@ Phần này cũng chưa biết viết gì.
 		\bottomrule
 		
 	\end{tabular}%
-	\label{BenchmarkMetric}
+	\label{SOTAMethod}
 \end{sidewaystable}%
 
 
-\subsection{Discussion}
+\section{Discussion}
 
-Chỉ vừa nghĩ ra được một mục
+\subsection{Limitations of current datasets}
 
-\subsubsection{Limitations of current datasets}
+The datasets have contributed significantly and played a crucial role in advancing the development of deep convolutional models. Numerous studies have been conducted to continuously improve datasets in various aspects. However, there are still some important issues that need to be addressed.
 
-Thuyết minh + đưa ra dẫn chứng cụ thể.
+Firstly, dataset consistency is a challenge. The authors in \cite{AViD} pointed out the loss of datasets sourced from the internet over the years due to videos being removed or unavailable in certain regions. This hinders objective comparisons between future studies and older methods.
 
-\begin{itemize}
-	\item Những data cũ :
-	\begin{itemize}
-		\item Data : Quy mô nhỏ, đơn giản.
-		\item Staturation : sota method đạt ngưỡng rất cao.
-	\end{itemize}
-	
-	\item Những data mới :
-	\begin{itemize}
-		\item Annotation : vẫn còn nhiều nhiễu/thiếu chính xác.
-		\item Data : Chất lượng phân giải / thiếu ổn định (bị gỡ bỏ, không thể tiếp cận).
-	\end{itemize}
-	
-\end{itemize}
+Secondly, there is a lack of consistency in evaluation metrics. Depending on the research purpose, authors may report results using different metrics than those proposed in the original dataset paper. Additionally, the accompanying papers for datasets often do not explicitly specify recommended metrics to adhere to. This leads to potential subjectivity and lack of objectivity when comparing methods evaluated on the same dataset.
+
+Thirdly, while each research group proposes different approaches to improve datasets in terms of scale, annotation quality, data quality, etc., there is still no dataset that incorporates all of these strengths. This can be understood as a result of the significant time, effort, and financial resources required to build such a comprehensive video dataset.
+
+\subsection{Proposed suggestions for future datasets constructor}
 
 \section{Conclusion}
 
-\section{References}
-
+\FloatBarrier
 \bibliographystyle{ieeetr}
 \bibliography{references.bib}
 \end{document}
